@@ -47,10 +47,10 @@
 /* Subtle pure-CSS scroll-driven parallax (GPU transform only, no JS) */
 @keyframes subtle-parallax {
   from {
-    transform: translateY(-4%) scale(1.08);
+    transform: translateY(-7%) scale(1.15);
   }
   to {
-    transform: translateY(4%) scale(1.08);
+    transform: translateY(7%) scale(1.15);
   }
 }
 
