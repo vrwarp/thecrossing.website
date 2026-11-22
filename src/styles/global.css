@@ -46,10 +46,10 @@
    overflow: hidden creates a scroll container that traps view(). */
 @keyframes subtle-parallax {
   from {
-    transform: translateY(-10%) scale(1.22);
+    transform: translate3d(0, -10%, 0) scale(1.22);
   }
   to {
-    transform: translateY(10%) scale(1.22);
+    transform: translate3d(0, 10%, 0) scale(1.22);
   }
 }
 
@@ -59,6 +59,8 @@
     animation-timeline: view();
     animation-range: cover;
     will-change: transform;
+    backface-visibility: hidden;
+    contain: layout paint;
   }
 }
 
