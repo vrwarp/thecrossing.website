@@ -1,0 +1,143 @@
+{
+  "title": "BECOME",
+  "book": "Topical",
+  "dateRange": "2009",
+  "description": "BECOME (2009) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/become-2009.webp",
+  "featured": false,
+  "order": 51,
+  "episodes": [
+    {
+      "title": "Re-Imagine: Attaining Real Life",
+      "date": "2009/06/21",
+      "scripture": "Luke 9:23-24",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Released: The Kingdom Unbound",
+      "date": "2009/06/14",
+      "scripture": "Matt 25:31-46",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Reconsider: Investing for the Future",
+      "date": "2009/06/07",
+      "scripture": "Matt 25:14-30",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Are You All In?",
+      "date": "2009/05/31",
+      "scripture": "Mark 12:41-44",
+      "speaker": "Christopher Yen"
+    },
+    {
+      "title": "Who Am I? Who Are We?",
+      "date": "2009/05/24",
+      "scripture": "Gen 32:22-33:4",
+      "speaker": "Steve Hong"
+    },
+    {
+      "title": "Represent: Be the Body",
+      "date": "2009/05/17",
+      "scripture": "1 Cor 12:12-26; Eph 4:15-16",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Retrain: Developing a Spiritual Workout",
+      "date": "2009/05/10",
+      "scripture": "1 Tim 4:7-8",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Reorder: Habit-Breaking Intentionality",
+      "date": "2009/05/03",
+      "scripture": "Rom 8:1-17",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Paradox and Power: Walking with Jesus",
+      "date": "2009/04/26",
+      "scripture": "2 Cor 4:7-16",
+      "speaker": "Charles Self"
+    },
+    {
+      "title": "Reformation: How People Really Change",
+      "date": "2009/04/19",
+      "scripture": "Gal 5:16-6:5",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Revolution: The Door",
+      "date": "2009/04/12",
+      "scripture": "Eph 1:18-20",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Reconcile: Step into the Ring",
+      "date": "2009/04/05",
+      "scripture": "Jas 1:19-22",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Relate: A New Way to Live Together",
+      "date": "2009/03/29",
+      "scripture": "Various",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Transformation: Think What Jesus Thought",
+      "date": "2009/03/22",
+      "scripture": "Rom 12:1-2; Phil 4:8",
+      "speaker": "Ken Carlson"
+    },
+    {
+      "title": "Respond: Engaging in Risky Behavior",
+      "date": "2009/03/15",
+      "scripture": "Jdgs 6:11-32",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Reconnect: Prayer as a Way of Life",
+      "date": "2009/03/08",
+      "scripture": "Matt 6:5-15",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Embrace the Everyday Satisfied Life",
+      "date": "2009/03/01",
+      "scripture": "John 10:7-10",
+      "speaker": "Steve Hong"
+    },
+    {
+      "title": "Just Say the Word!",
+      "date": "2009/02/22",
+      "scripture": "Various Passages",
+      "speaker": "Louis Lee"
+    },
+    {
+      "title": "Reorient: Connecting to Life",
+      "date": "2009/02/15",
+      "scripture": "John 15:1-11",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "God's Calling for Us",
+      "date": "2009/02/08",
+      "scripture": "Jer 1:1-12",
+      "speaker": "Jason Wang"
+    },
+    {
+      "title": "Restore: What Does God Want?",
+      "date": "2009/02/01",
+      "scripture": "Jer 2-3",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Recognize: Uncovering Shallow Strategies",
+      "date": "2009/01/25",
+      "scripture": "John 4:7-26",
+      "speaker": "Joshua Lee"
+    }
+  ]
+}

@@ -37,7 +37,6 @@ export const SITE = {
     { name: 'RSS Feed', href: 'https://feed.podbean.com/thecrossingatcfcc/feed.xml', primary: false },
   ],
   archiveLinks: {
-    oldSite: 'http://old.thecrossing.website/',
     chineseSite: 'https://www.cfcchayward.org/',
   },
 } as const;

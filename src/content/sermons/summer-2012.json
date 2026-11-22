@@ -1,0 +1,58 @@
+{
+  "title": "Summer 2012",
+  "book": "Topical",
+  "dateRange": "Aug 2012",
+  "description": "Summer 2012 (Aug 2012) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/summer-2012.webp",
+  "featured": false,
+  "order": 43,
+  "episodes": [
+    {
+      "title": "Faith in Times of Doubt",
+      "date": "2012/09/02",
+      "scripture": "Mark 9:14-29",
+      "speaker": "Dennis Lee"
+    },
+    {
+      "title": "Redefining What Is Enough",
+      "date": "2012/08/26",
+      "scripture": "Phil 4:18-19",
+      "speaker": "Steve Korch",
+      "youtubeId": "acNN0EVj9Xg"
+    },
+    {
+      "title": "Addition & Subtraction",
+      "date": "2012/08/19",
+      "scripture": "Phil 4:14-17",
+      "speaker": "Steve Korch",
+      "youtubeId": "4kiL1ReYVDE"
+    },
+    {
+      "title": "Living Beyond Expectations",
+      "date": "2012/08/12",
+      "scripture": "Phil 4:11-13",
+      "speaker": "Steve Korch",
+      "youtubeId": "mC2dEjfJaPw"
+    },
+    {
+      "title": "Not Home Yet",
+      "date": "2012/08/05",
+      "scripture": "2 Cor 5:1-10",
+      "speaker": "Dennis Lee",
+      "youtubeId": "SObizQZQjvI"
+    },
+    {
+      "title": "Transformed",
+      "date": "2012/07/29",
+      "scripture": "Col 3:1-10",
+      "speaker": "Joshua Lee",
+      "youtubeId": "AwAkmWsacH0"
+    },
+    {
+      "title": "Getting Reception",
+      "date": "2012/07/22",
+      "scripture": "Proverbs",
+      "speaker": "Fred Mok"
+    }
+  ]
+}

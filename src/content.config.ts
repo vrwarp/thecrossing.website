@@ -7,6 +7,7 @@ const sermons = defineCollection({
     title: z.string(),
     subtitle: z.string().optional(),
     book: z.string().optional(),
+    dateRange: z.string().optional(),
     description: z.string().optional(),
     coverImage: z.string(),
     featured: z.boolean().default(false),
@@ -18,7 +19,7 @@ const sermons = defineCollection({
         speaker: z.string().optional(),
         date: z.string().optional(),
         scripture: z.string().optional(),
-        youtubeId: z.string(),
+        youtubeId: z.string().optional(),
       })
     ).default([]),
   }),

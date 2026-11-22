@@ -1,0 +1,77 @@
+{
+  "title": "(en)courage",
+  "book": "Topical",
+  "dateRange": "Summer 2010",
+  "description": "(en)courage (Summer 2010) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/encourage-2010.webp",
+  "featured": false,
+  "order": 47,
+  "episodes": [
+    {
+      "title": "Christ in the Feast of Tabernacles",
+      "date": "2010/09/05",
+      "scripture": "Various Passages",
+      "speaker": "Aaron Abramson"
+    },
+    {
+      "title": "comm(Unity)",
+      "date": "2010/08/29",
+      "scripture": "1 Thess 5:12-24",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "(re)Turn",
+      "date": "2010/08/22",
+      "scripture": "1 Thess 4:13-5:11",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "(im)Purity",
+      "date": "2010/08/15",
+      "scripture": "1 Thess 4:1-8",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "True Value",
+      "date": "2010/08/08",
+      "scripture": "Phil 3:5-14",
+      "speaker": "Gary Tuck"
+    },
+    {
+      "title": "Where Amazing Happens",
+      "date": "2010/08/01",
+      "scripture": "Luke 5:17-26",
+      "speaker": "Greg Ng"
+    },
+    {
+      "title": "Suffer Well",
+      "date": "2010/07/25",
+      "scripture": "1 Thess 2:13-16",
+      "speaker": "Dennis Lee"
+    },
+    {
+      "title": "Prodigal God *",
+      "date": "2010/07/18",
+      "scripture": "Summer Retreat",
+      "speaker": "Stephen Quen"
+    },
+    {
+      "title": "(re)Call",
+      "date": "2010/07/11",
+      "scripture": "1 Thess 2:1-12",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "(en)Courage",
+      "date": "2010/07/04",
+      "scripture": "1 Thess 1:1-10",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Saving Face, Smokescreens & Fortune Cookies",
+      "date": "2010/06/27",
+      "scripture": "John 4:7-30",
+      "speaker": "Steve Hong"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "title": "Liquid",
+  "book": "John",
+  "dateRange": "2010",
+  "description": "Liquid (2010) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/liquid-2010.webp",
+  "featured": false,
+  "order": 48,
+  "episodes": [
+    {
+      "title": "High Fidelity [Season Finale: Part 2]",
+      "date": "2010/06/20",
+      "scripture": "Various Passages",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "High Fidelity [Season Finale: Part 1]",
+      "date": "2010/06/13",
+      "scripture": "Various Passages",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Awaken",
+      "date": "2010/06/06",
+      "scripture": "Josh 14-15",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Follow Christ, Everyday",
+      "date": "2010/05/30",
+      "scripture": "Matt 16:24-28",
+      "speaker": "Christopher Yen"
+    },
+    {
+      "title": "Wake Up Call",
+      "date": "2010/05/23",
+      "scripture": "1 Cor 9:15-27",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Wake of the Church",
+      "date": "2010/05/16",
+      "scripture": "Phil 2:12-18",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Wake: Leaving a Spiritual Legacy",
+      "date": "2010/05/09",
+      "scripture": "Phil 2:1-11",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Crazy Radical Christian Love",
+      "date": "2010/05/02",
+      "scripture": "1 John 3:16-18",
+      "speaker": "Dennis Lee"
+    },
+    {
+      "title": "A Probing Question",
+      "date": "2010/04/25",
+      "scripture": "John 5:1-15",
+      "speaker": "Steve Korch"
+    },
+    {
+      "title": "Message in a Bottle",
+      "date": "2010/04/18",
+      "scripture": "Luke 10:1-9",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Reclaimed Water",
+      "date": "2010/04/11",
+      "scripture": "Matt 16:13-18",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Thirst [Easter Service]",
+      "date": "2010/04/04",
+      "scripture": "Various Passages",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Around the Water Cooler",
+      "date": "2010/03/28",
+      "scripture": "1 Pet 2:18-25",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Adding to the Cross Subtracts the Gospel",
+      "date": "2010/03/21",
+      "scripture": "Gal 1:6-9",
+      "speaker": "Dennis Lee"
+    },
+    {
+      "title": "Flowing Outward: Your Calling at Work",
+      "date": "2010/03/14",
+      "scripture": "Gen 11:27-12:3",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Still Waters: Rest for Your Soul",
+      "date": "2010/03/07",
+      "scripture": "Exo 20:8-11",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Crystal Clear: Why Work Matters",
+      "date": "2010/02/28",
+      "scripture": "Col 3:23-25",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Better than Bottled Water",
+      "date": "2010/02/21",
+      "scripture": "Col 3:22-23",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Build Below the Water Line (pt.2)",
+      "date": "2010/02/14",
+      "scripture": "Jas 3:17",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Secret Lives",
+      "date": "2010/02/07",
+      "scripture": "1 Cor 10:13",
+      "speaker": "Steve Korch"
+    },
+    {
+      "title": "Build Below the Water Line (pt.1)",
+      "date": "2010/01/31",
+      "scripture": "Jas 3:13-17",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Spray Zone: The Power of Influence",
+      "date": "2010/01/24",
+      "scripture": "Jas 3:2-12",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Liquid: Hi-Fi Life in the Marketplace",
+      "date": "2010/01/17",
+      "scripture": "John 7:37-39",
+      "speaker": "Joshua Lee"
+    }
+  ]
+}

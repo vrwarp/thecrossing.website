@@ -1,0 +1,45 @@
+{
+  "title": "Mercy",
+  "book": "Topical",
+  "dateRange": "Aug 2014",
+  "description": "Mercy (Aug 2014) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/mercy-2014.webp",
+  "featured": false,
+  "order": 39,
+  "episodes": [
+    {
+      "title": "Mercy: The Pulse of the Gospel",
+      "date": "2014/08/31",
+      "scripture": "Matt 18:21-35; Col 3:12-14",
+      "speaker": "Steve Korch",
+      "youtubeId": "h53TzlrMdLo"
+    },
+    {
+      "title": "Mercy: The Pulse of the Gospel",
+      "date": "2014/08/24",
+      "scripture": "Luke 18:10-14",
+      "speaker": "Steve Korch",
+      "youtubeId": "kCg15M3w5ew"
+    },
+    {
+      "title": "Mercy: The Pulse of the Gospel",
+      "date": "2014/08/17",
+      "scripture": "Luke 10:25-37",
+      "speaker": "Steve Korch",
+      "youtubeId": "BTyoHSlSeVo"
+    },
+    {
+      "title": "Mercy: The Pulse of the Gospel",
+      "date": "2014/08/10",
+      "scripture": "Mic 6:8",
+      "speaker": "Steve Korch",
+      "youtubeId": "-4JnfqsE3Uw"
+    },
+    {
+      "title": "Do You Know Me?",
+      "date": "2014/08/03",
+      "speaker": "Dennis Lee",
+      "youtubeId": "JysJ8xjJdFg"
+    }
+  ]
+}

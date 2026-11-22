@@ -1,0 +1,111 @@
+{
+  "title": "High Fidelity",
+  "book": "1 & 2 Timothy",
+  "dateRange": "2009\u20132010",
+  "description": "High Fidelity (2009\u20132010) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/high-fidelity.webp",
+  "featured": false,
+  "order": 49,
+  "episodes": [
+    {
+      "title": "Better Righteous than Good",
+      "date": "2010/01/10",
+      "scripture": "Gen 12:9-20",
+      "speaker": "Fred Mok"
+    },
+    {
+      "title": "The Lord Remembers *",
+      "date": "2010/01/03",
+      "scripture": "Psa 8",
+      "speaker": "Edward Cheng"
+    },
+    {
+      "title": "Gifts Worth Giving",
+      "date": "2009/12/27",
+      "scripture": "Heb 13:1-16",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Scandalous!",
+      "date": "2009/12/20",
+      "scripture": "Luke 1:26-38",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "The Cycle of Love",
+      "date": "2009/12/13",
+      "scripture": "1 John 4:16-21",
+      "speaker": "Lionel Chew"
+    },
+    {
+      "title": "More than Good Intentions",
+      "date": "2009/12/06",
+      "scripture": "Mark 10:17-31",
+      "speaker": "Christopher Yen"
+    },
+    {
+      "title": "Play the Remix: The Sound of Joy",
+      "date": "2009/11/29",
+      "scripture": "Phil 4:4-9",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Share the Remix: Pursue Great People",
+      "date": "2009/11/22",
+      "scripture": "Prov 13:20",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Adorning Sound Doctrine",
+      "date": "2009/11/15",
+      "scripture": "Titus 2:11-14",
+      "speaker": "David Chow"
+    },
+    {
+      "title": "God-Songs All Can Hear",
+      "date": "2009/11/08",
+      "scripture": "Mic 6:8",
+      "speaker": "Charles Self"
+    },
+    {
+      "title": "Hear the Remix: The Process of Change",
+      "date": "2009/11/01",
+      "scripture": "Rom 12:1-2"
+    },
+    {
+      "title": "Restore the Sound: A Love Song",
+      "date": "2009/10/25",
+      "scripture": "Hos 2:14-23",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Play the Music",
+      "date": "2009/10/18",
+      "scripture": "Acts 4",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Share the Music",
+      "date": "2009/10/11",
+      "scripture": "Heb 10:19-25",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Combined Chinese & English Service *",
+      "date": "2009/10/04",
+      "speaker": "Jay Huang"
+    },
+    {
+      "title": "Hear the Music",
+      "date": "2009/09/27",
+      "scripture": "Matt 13",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "High Fidelity",
+      "date": "2009/09/20",
+      "scripture": "Phil 1:20-21",
+      "speaker": "Joshua Lee"
+    }
+  ]
+}

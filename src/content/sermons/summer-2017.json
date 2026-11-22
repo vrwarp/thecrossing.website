@@ -1,0 +1,42 @@
+{
+  "title": "July 2017",
+  "book": "Topical",
+  "dateRange": "Jul 2017",
+  "description": "July 2017 (Jul 2017) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/summer-2017.webp",
+  "featured": false,
+  "order": 32,
+  "episodes": [
+    {
+      "title": "When We Hope in God's Power",
+      "date": "2017/07/30",
+      "youtubeId": "63vL69VrXHs"
+    },
+    {
+      "title": "Inside Out",
+      "date": "2017/07/23",
+      "youtubeId": "CpQJQLvOykE"
+    },
+    {
+      "title": "How Hope Changes",
+      "date": "2017/07/16"
+    },
+    {
+      "title": "Know Who You're Dealing With",
+      "date": "2017/07/15"
+    },
+    {
+      "title": "All I Once Held Dear (Pt.2)",
+      "date": "2017/07/15"
+    },
+    {
+      "title": "All I Once Held Dear (Pt.1)",
+      "date": "2017/07/14"
+    },
+    {
+      "title": "Trust in the Lord",
+      "date": "2017/07/09",
+      "youtubeId": "co6HvgVVPrA"
+    }
+  ]
+}

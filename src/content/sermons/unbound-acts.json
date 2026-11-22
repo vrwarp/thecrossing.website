@@ -1,0 +1,337 @@
+{
+  "title": "Unbound",
+  "book": "Acts",
+  "dateRange": "2013\u20132014",
+  "description": "Unbound (2013\u20132014) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/unbound-acts.webp",
+  "featured": false,
+  "order": 40,
+  "episodes": [
+    {
+      "title": "You Are Not Alone",
+      "date": "2014/07/27",
+      "scripture": "Exo 40:1-38",
+      "speaker": "Joshua Lee",
+      "youtubeId": "B6c_u0FKSew"
+    },
+    {
+      "title": "Game of Thrones: What side are you on?",
+      "date": "2014/07/20"
+    },
+    {
+      "title": "Finishing Well",
+      "date": "2014/07/13",
+      "scripture": "Exo 39:1-43",
+      "speaker": "Joshua Lee",
+      "youtubeId": "J07U2PFNjak"
+    },
+    {
+      "title": "Ready for the Real Thing (part 2)",
+      "date": "2014/07/06",
+      "scripture": "Exo 37:10 - 38:31",
+      "speaker": "Dennis Lee",
+      "youtubeId": "7kilCMK44mc"
+    },
+    {
+      "title": "Ready for the Real Thing",
+      "date": "2014/06/29",
+      "scripture": "Exo 36:8 - 37:9",
+      "speaker": "Joshua Lee",
+      "youtubeId": "ZsA_AdXePFo"
+    },
+    {
+      "title": "From Rest to Work",
+      "date": "2014/06/22",
+      "scripture": "Exo 35:1 - 36:7",
+      "speaker": "Dennis Lee",
+      "youtubeId": "4qDGHewrwoo"
+    },
+    {
+      "title": "A Disciple Maker Is a Dad",
+      "date": "2014/06/15",
+      "scripture": "2 Tim 2:1-7",
+      "speaker": "Fred Mok",
+      "youtubeId": "KlZCwge56jY"
+    },
+    {
+      "title": "Welcome Home",
+      "date": "2014/06/08",
+      "scripture": "Exo 34:1-35",
+      "speaker": "Dennis Lee",
+      "youtubeId": "8qQyIRRUlFw"
+    },
+    {
+      "title": "You Are Not Abandoned",
+      "date": "2014/06/01",
+      "scripture": "Exo 33:1-23",
+      "speaker": "Joshua Lee",
+      "youtubeId": "0bstkNShFRI"
+    },
+    {
+      "title": "Pivotal Circumstances",
+      "date": "2014/05/25",
+      "scripture": "Jas 1:2-4",
+      "speaker": "Steve Korch",
+      "youtubeId": "tnN3DdHEAI8"
+    },
+    {
+      "title": "Worship Gone Wild",
+      "date": "2014/05/18",
+      "scripture": "Exo 32:1-35",
+      "speaker": "Joshua Lee",
+      "youtubeId": "Pwc7T8BjfrQ"
+    },
+    {
+      "title": "Holy Work, Holy Rest",
+      "date": "2014/05/11",
+      "scripture": "Exo 31:1-18",
+      "speaker": "Joshua Lee",
+      "youtubeId": "Iv99z3s26K4"
+    },
+    {
+      "title": "You Are My People",
+      "date": "2014/05/03",
+      "scripture": "Exo 30:1-38",
+      "speaker": "Dennis Lee",
+      "youtubeId": "DVwk5uRR9gg"
+    },
+    {
+      "title": "Set Apart to Serve",
+      "date": "2014/04/27",
+      "scripture": "Exo 29:1-43",
+      "speaker": "Joshua Lee",
+      "youtubeId": "fOcOjpNDVjE"
+    },
+    {
+      "title": "Be Transformed",
+      "date": "2014/04/20",
+      "scripture": "Rom 12:1-2",
+      "speaker": "Joshua Lee",
+      "youtubeId": "QfP41rg5NLs"
+    },
+    {
+      "title": "The Right Attire",
+      "date": "2014/04/13",
+      "scripture": "Exo 28:1-43",
+      "speaker": "Joshua Lee",
+      "youtubeId": "90udEFaYblM"
+    },
+    {
+      "title": "A Second Chance",
+      "date": "2014/04/06",
+      "scripture": "Exo 27:1-21",
+      "speaker": "Dennis Lee",
+      "youtubeId": "HNYl0hcqKHA"
+    },
+    {
+      "title": "Heaven on Earth",
+      "date": "2014/03/30",
+      "scripture": "Exo 26:1-37",
+      "speaker": "Dennis Lee",
+      "youtubeId": "LBYF4dd7J8o"
+    },
+    {
+      "title": "God Dwells with Us",
+      "date": "2014/03/23",
+      "scripture": "Exo 25:1-40",
+      "speaker": "Joshua Lee",
+      "youtubeId": "zEn6_RXJsn0"
+    },
+    {
+      "title": "Commitment to God",
+      "date": "2014/03/16",
+      "scripture": "Exo 24:1-18",
+      "speaker": "Joshua Lee",
+      "youtubeId": "2eBLNrXA-Tk"
+    },
+    {
+      "title": "Life with God",
+      "date": "2014/03/09",
+      "scripture": "Exo 23:1-33",
+      "speaker": "Joshua Lee",
+      "youtubeId": "FQ_ivqb2LXo"
+    },
+    {
+      "title": "God's Good Character",
+      "date": "2014/03/02",
+      "scripture": "Exo 21:33 - 22:27",
+      "speaker": "Dennis Lee",
+      "youtubeId": "VfQw-4zVYI8"
+    },
+    {
+      "title": "The God Who Protects Us",
+      "date": "2014/02/23",
+      "scripture": "Exo 20:22 - 21:32",
+      "speaker": "Joshua Lee",
+      "youtubeId": "I-VkdSHbiWs"
+    },
+    {
+      "title": "Set Free to Live Free",
+      "date": "2014/02/16",
+      "scripture": "Exo 20:1-21",
+      "speaker": "Joshua Lee",
+      "youtubeId": "sBgiVep7ljk"
+    },
+    {
+      "title": "You Shall Be",
+      "date": "2014/02/09",
+      "scripture": "Exo 19:1-25",
+      "speaker": "Dennis Lee",
+      "youtubeId": "AoTKJiCp-Ss"
+    },
+    {
+      "title": "Burnt Out",
+      "date": "2014/02/02",
+      "scripture": "Exo 17:8 - 18:27",
+      "speaker": "Joshua Lee",
+      "youtubeId": "r0WKlGbk4hs"
+    },
+    {
+      "title": "Put to the Test",
+      "date": "2014/01/26",
+      "scripture": "Exo 16:1 - 17:7",
+      "speaker": "Joshua Lee",
+      "youtubeId": "uLBPWtEuXsM"
+    },
+    {
+      "title": "What's Your Theme Song?",
+      "date": "2014/01/19",
+      "scripture": "Exo 15:1-27",
+      "speaker": "Joshua Lee",
+      "youtubeId": "J6sKj9v1mNo"
+    },
+    {
+      "title": "Impassible",
+      "date": "2014/01/12",
+      "scripture": "Exo 14:1-31",
+      "speaker": "Joshua Lee",
+      "youtubeId": "y91rpjdwbd8"
+    },
+    {
+      "title": "God of Encouragement",
+      "date": "2014/01/05",
+      "scripture": "Exo 13:17-22",
+      "speaker": "Dennis Lee",
+      "youtubeId": "gbrcEEN5orM"
+    },
+    {
+      "title": "Teach Generations to Come",
+      "date": "2013/12/29",
+      "scripture": "Exo 13:1-16",
+      "speaker": "Joshua Lee",
+      "youtubeId": "XcRc6mSO2FA"
+    },
+    {
+      "title": "Remember",
+      "date": "2013/12/22",
+      "scripture": "Exo 12:43-51",
+      "speaker": "Joshua Lee",
+      "youtubeId": "XNn9ajHi1QI"
+    },
+    {
+      "title": "The Time Has Come",
+      "date": "2013/12/15",
+      "scripture": "Exo 12:29-42",
+      "speaker": "Dennis Lee",
+      "youtubeId": "aee0Na4GpF0"
+    },
+    {
+      "title": "Preparing for Freedom",
+      "date": "2013/12/08",
+      "scripture": "Exo 12:1-28",
+      "speaker": "Joshua Lee",
+      "youtubeId": "0iDotcmMK4E"
+    },
+    {
+      "title": "Deposing False Gods (part 4)",
+      "date": "2013/12/01",
+      "scripture": "Exo 10:21 - 11:10",
+      "speaker": "Joshua Lee",
+      "youtubeId": "wexPdvjpNiM"
+    },
+    {
+      "title": "A Dangerous Way to Live",
+      "date": "2013/11/24",
+      "scripture": "Exo 9:13 - 10:20",
+      "speaker": "Dennis Lee",
+      "youtubeId": "sauIwYN7enM"
+    },
+    {
+      "title": "Deposing False Gods (part 2)",
+      "date": "2013/11/17",
+      "scripture": "Exo 8:16 - 9:12",
+      "speaker": "Joshua Lee",
+      "youtubeId": "asz72xJW7t0"
+    },
+    {
+      "title": "Deposing False Gods (part 1)",
+      "date": "2013/11/10",
+      "scripture": "Exo 7:14 - 8:15",
+      "speaker": "Joshua Lee",
+      "youtubeId": "sA0L8XGkqSo"
+    },
+    {
+      "title": "Calling the Unqualified",
+      "date": "2013/11/03",
+      "scripture": "Exo 6:26 - 7:13",
+      "speaker": "Dennis Lee",
+      "youtubeId": "aKO5OvOZVJc"
+    },
+    {
+      "title": "From Bad to Worse",
+      "date": "2013/10/27",
+      "scripture": "Exo 5:22 - 6:27",
+      "speaker": "Joshua Lee",
+      "youtubeId": "jq2QNgnchM0"
+    },
+    {
+      "title": "One Step Forward, Two Steps Back",
+      "date": "2013/10/20",
+      "scripture": "Exo 5:1-21",
+      "speaker": "Dennis Lee",
+      "youtubeId": "iU1_aSSRznc"
+    },
+    {
+      "title": "Prepared to Serve",
+      "date": "2013/10/13",
+      "scripture": "Exo 4:1-31",
+      "speaker": "Joshua Lee",
+      "youtubeId": "3LprjZk8Ol4"
+    },
+    {
+      "title": "Who Am I?",
+      "date": "2013/10/06",
+      "scripture": "Exo 3:1-15",
+      "speaker": "Joshua Lee",
+      "youtubeId": "UeeKdG80fds"
+    },
+    {
+      "title": "The God Who Saves",
+      "date": "2013/09/29",
+      "scripture": "Exo 2:11-25",
+      "speaker": "Dennis Lee",
+      "youtubeId": "SwKbYmXcQ5Y"
+    },
+    {
+      "title": "Out of the Depths",
+      "date": "2013/09/22",
+      "scripture": "Exo 1:22 - 2:10",
+      "speaker": "Joshua Lee",
+      "youtubeId": "uRaYNqKalSQ"
+    },
+    {
+      "title": "Who Do You Fear?",
+      "date": "2013/09/15",
+      "scripture": "Exo 1:1-21",
+      "speaker": "Joshua Lee",
+      "youtubeId": "ut6cYLnGKMM"
+    },
+    {
+      "title": "Unbound",
+      "date": "2013/09/08",
+      "scripture": "Exo 6:6-8",
+      "speaker": "Joshua Lee",
+      "youtubeId": "RhPqhMmZ5rc"
+    }
+  ]
+}

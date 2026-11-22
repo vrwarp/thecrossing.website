@@ -1,0 +1,71 @@
+{
+  "title": "Summer 2016",
+  "book": "Topical",
+  "dateRange": "2016",
+  "description": "Summer 2016 (2016) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/summer-2016.webp",
+  "featured": false,
+  "order": 35,
+  "episodes": [
+    {
+      "title": "Run Light, Run Focused",
+      "date": "2016/09/04",
+      "youtubeId": "JD7KcXO-7oQ"
+    },
+    {
+      "title": "The Art of Waiting",
+      "date": "2016/08/28",
+      "youtubeId": "tKELFUetrtk"
+    },
+    {
+      "title": "The Movement",
+      "date": "2016/08/21",
+      "youtubeId": "hZNjS1ZXzlM"
+    },
+    {
+      "title": "In Christ Alone",
+      "date": "2016/08/14",
+      "youtubeId": "mfOvGPAlScY"
+    },
+    {
+      "title": "Honoring Singleness",
+      "date": "2016/08/07",
+      "youtubeId": "FXU4KENIPVA"
+    },
+    {
+      "title": "Honoring Marriage",
+      "date": "2016/07/31",
+      "youtubeId": "wi9SZriJ_nw"
+    },
+    {
+      "title": "A Valley of Hopelessness",
+      "date": "2016/07/24",
+      "youtubeId": "E5cIkBhbz0I"
+    },
+    {
+      "title": "The Singing Sufferers",
+      "date": "2016/07/17",
+      "youtubeId": "t7nDKSxDFL0"
+    },
+    {
+      "title": "Who's To Blame?",
+      "date": "2016/07/16",
+      "youtubeId": "53MKoxf4zfQ"
+    },
+    {
+      "title": "We Are Not Alone",
+      "date": "2016/07/16",
+      "youtubeId": "RntrwI1P-HQ"
+    },
+    {
+      "title": "Blessedly Broken",
+      "date": "2016/07/15",
+      "youtubeId": "dTdiY5qMy00"
+    },
+    {
+      "title": "A Story of Reconciliation",
+      "date": "2016/07/10",
+      "youtubeId": "pQQiDK6Sips"
+    }
+  ]
+}

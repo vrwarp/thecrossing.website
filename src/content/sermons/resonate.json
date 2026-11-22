@@ -1,0 +1,313 @@
+{
+  "title": "Resonate",
+  "book": "Psalms",
+  "dateRange": "2010\u20132011",
+  "description": "Resonate (2010\u20132011) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/resonate.webp",
+  "featured": false,
+  "order": 46,
+  "episodes": [
+    {
+      "title": "You Are Witnesses",
+      "date": "2011/07/31",
+      "scripture": "Luke 24:36-53",
+      "speaker": "Joshua Lee",
+      "youtubeId": "JZUtkUxd4Hc"
+    },
+    {
+      "title": "Keep Your Eyes on the Road",
+      "date": "2011/07/24",
+      "scripture": "Luke 24:1-35",
+      "speaker": "Joshua Lee",
+      "youtubeId": "RIUDBEjpQsc"
+    },
+    {
+      "title": "Drive (Why We Do What We Do)",
+      "date": "2011/07/17",
+      "scripture": "Summer Retreat",
+      "speaker": "Patrick Lee"
+    },
+    {
+      "title": "A Simple Plan",
+      "date": "2011/07/10",
+      "scripture": "Luke 23:26-49",
+      "speaker": "Joshua Lee",
+      "youtubeId": "GPN2SC9xc58"
+    },
+    {
+      "title": "The Great Substitute",
+      "date": "2011/07/03",
+      "scripture": "Luke 23:13-25",
+      "speaker": "Dennis Lee",
+      "youtubeId": "W-8TpDqbm_A"
+    },
+    {
+      "title": "Don't Fall Apart",
+      "date": "2011/06/26",
+      "scripture": "Luke 22:31-46",
+      "speaker": "Joshua Lee",
+      "youtubeId": "FFb0vJnk-PU"
+    },
+    {
+      "title": "At the Table",
+      "date": "2011/06/19",
+      "scripture": "Luke 22:1-30",
+      "speaker": "Joshua Lee",
+      "youtubeId": "xY01Q92sXkg"
+    },
+    {
+      "title": "Stay Awake!",
+      "date": "2011/06/12",
+      "scripture": "Luke 21:5-36",
+      "speaker": "Joshua Lee",
+      "youtubeId": "KIsBRFvGXQ0"
+    },
+    {
+      "title": "On Good Authority (part 2)",
+      "date": "2011/06/05",
+      "scripture": "Luke 20:19-26",
+      "speaker": "Dennis Lee",
+      "youtubeId": "GuJeWAYbr5g"
+    },
+    {
+      "title": "On Good Authority",
+      "date": "2011/05/29",
+      "scripture": "Luke 20:9-19",
+      "speaker": "Joshua Lee",
+      "youtubeId": "YZ67SZfdEMw"
+    },
+    {
+      "title": "The Wrong Agenda",
+      "date": "2011/05/22",
+      "scripture": "Luke 19:41-46",
+      "speaker": "Joshua Lee",
+      "youtubeId": "8QVQxaQm5uw"
+    },
+    {
+      "title": "Redeeming Work",
+      "date": "2011/05/15",
+      "scripture": "Luke 19:11-27",
+      "speaker": "Joshua Lee",
+      "youtubeId": "GKDbdUMLgH0"
+    },
+    {
+      "title": "Don't Raise \"Good\" People",
+      "date": "2011/05/08",
+      "scripture": "Luke 18:18-30",
+      "speaker": "Joshua Lee",
+      "youtubeId": "7k6jWq67BRw"
+    },
+    {
+      "title": "Like a Child",
+      "date": "2011/05/01",
+      "scripture": "Luke 18:15-17",
+      "speaker": "Dennis Lee",
+      "youtubeId": "F7M-0yQ4X_M"
+    },
+    {
+      "title": "The Chain",
+      "date": "2011/04/24",
+      "scripture": "Various Passages",
+      "speaker": "Joshua Lee",
+      "youtubeId": "O-bKvURww74"
+    },
+    {
+      "title": "The Substitute",
+      "date": "2011/04/22",
+      "scripture": "Heb 10:11-14",
+      "speaker": "Joshua Lee (English & Mandarin)"
+    },
+    {
+      "title": "Kingdom Come",
+      "date": "2011/04/17",
+      "scripture": "Luke 17:20-37",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Sin, Faith & Humility",
+      "date": "2011/04/10",
+      "scripture": "Luke 17:1-10",
+      "speaker": "Dennis Lee"
+    },
+    {
+      "title": "The Great Divide",
+      "date": "2011/04/03",
+      "scripture": "Luke 16:19-31",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Invest Wisely Now",
+      "date": "2011/03/27",
+      "scripture": "Luke 16:1-13",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Christ in the Passover",
+      "date": "2011/03/20",
+      "scripture": "Luke 22:7-13",
+      "speaker": "Aaron Abramson (Jews for Jesus)"
+    },
+    {
+      "title": "Dinner Parties & Discipleship",
+      "date": "2011/03/13",
+      "scripture": "Luke 14:7-24",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "The Growing Kingdom & Closing Door",
+      "date": "2011/03/06",
+      "scripture": "Luke 13:18-30",
+      "speaker": "Dennis Lee"
+    },
+    {
+      "title": "Overcome Fear about Money",
+      "date": "2011/02/27",
+      "scripture": "Luke 12:13-34",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Overcome Fear of Men",
+      "date": "2011/02/20",
+      "scripture": "Luke 12:1-12",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Stronger than Demons",
+      "date": "2011/02/13",
+      "scripture": "Luke 11:14-28",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Talk to Your Dad",
+      "date": "2011/02/06",
+      "scripture": "Luke 11:1-13",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "First Things First",
+      "date": "2011/01/30",
+      "scripture": "Luke 9:51-62",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "A King's Ransom",
+      "date": "2011/01/23",
+      "scripture": "Luke 9:18-27",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Sent",
+      "date": "2011/01/16",
+      "scripture": "Luke 9:1-17",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Will You Be My Neighbor?",
+      "date": "2011/01/09",
+      "scripture": "Luke 10:25-37",
+      "speaker": "Christopher Yen"
+    },
+    {
+      "title": "Let Them Hear",
+      "date": "2011/01/02",
+      "scripture": "Luke 8:4-21",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Do You See What I See?",
+      "date": "2010/12/26",
+      "scripture": "Luke 7:36-50",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Season of Hope",
+      "date": "2010/12/19",
+      "scripture": "Luke 7:1-17",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Counter-Cultural",
+      "date": "2010/12/12",
+      "scripture": "Luke 6:20-36",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "The Great Set-Up",
+      "date": "2010/12/05",
+      "scripture": "Heb 13:15-17",
+      "speaker": "Steve Korch"
+    },
+    {
+      "title": "Forgiveness Has Come",
+      "date": "2010/11/28",
+      "scripture": "Luke 5:12-26",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Are You All In?",
+      "date": "2010/11/21",
+      "scripture": "Luke 4:42-5:11",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "The Two Sons",
+      "date": "2010/11/14",
+      "scripture": "Luke 15:11-32",
+      "speaker": "David Eckman"
+    },
+    {
+      "title": "Fresh Starts Found Here",
+      "date": "2010/11/07",
+      "scripture": "Luke 4:14-21",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Round One: Fight!",
+      "date": "2010/10/31",
+      "scripture": "Luke 4:1-13",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Son of God",
+      "date": "2010/10/24",
+      "scripture": "Luke 3:15-22",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Religion Is a Lie",
+      "date": "2010/10/17",
+      "scripture": "Luke 3:1-14",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Family Traditions",
+      "date": "2010/10/10",
+      "scripture": "Luke 2:21-40",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "(Advent)urous",
+      "date": "2010/10/03",
+      "scripture": "Luke 2:1-20",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Worshipers of God",
+      "date": "2010/09/26",
+      "scripture": "Luke 1:39-56",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Lovers of God",
+      "date": "2010/09/19",
+      "scripture": "Luke 1:1-38",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Resonate",
+      "date": "2010/09/12",
+      "scripture": "Luke 24:44-49",
+      "speaker": "Joshua Lee"
+    }
+  ]
+}

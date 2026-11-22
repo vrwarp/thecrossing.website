@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
 
 const values = [
   {
@@ -31,16 +32,22 @@ const values = [
   />
 
   <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
-    <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-3">
-      <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Fridays • 7:30 – 9:30 PM</p>
-      <h2 class="font-display text-2xl font-bold text-stone-900">Room 107, Worship Center</h2>
-      <p class="text-sm leading-relaxed text-stone-700">
-        Each Friday, we meet in discussion groups at church to study the Bible. Afterward, we break into men's and women's groups for sharing and prayer. Newcomers are always welcome to drop in—or email{' '}
-        <a href="mailto:church.office@cfcchayward.org?subject=Mature%20Adults%20Group" class="font-semibold text-accent-hover underline">
-          church.office@cfcchayward.org
-        </a>{' '}
-        for more details.
-      </p>
+    <div class="grid gap-6 md:grid-cols-12 md:items-center rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 shadow-xs">
+      <div class="md:col-span-7 overflow-hidden rounded-xl aspect-[16/10]">
+        <img
+          src={url('/images/community/cross-gen-redwoods.webp')}
+          alt="Cross-generational adults and families smiling together under the redwoods"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div class="md:col-span-5 space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Fridays • 7:30 – 9:30 PM</p>
+        <h2 class="font-display text-2xl font-bold text-stone-900">Room 107, Worship Center</h2>
+        <p class="text-sm leading-relaxed text-stone-600">
+          Each Friday, we meet in discussion groups at church to study the Bible, then break into men's and women's groups for sharing and prayer. Newcomers are always welcome—or email{' '}
+          <a href="mailto:church.office@cfcchayward.org?subject=Mature%20Adults%20Group" class="font-semibold text-accent-hover underline">church.office@cfcchayward.org</a>.
+        </p>
+      </div>
     </div>
 
     <div>

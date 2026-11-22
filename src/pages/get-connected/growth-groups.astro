@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
 ---
 
 <BaseLayout title="Growth Groups" description="Cross-generational weekly home Bible studies at The Crossing.">
@@ -13,6 +14,30 @@ import PageHeader from '../../components/PageHeader.astro';
   />
 
   <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <!-- Photo Showcase -->
+    <div class="grid gap-5 sm:grid-cols-2">
+      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img
+            src={url('/images/community/growth-group-home.webp')}
+            alt="Growth Group celebrating together around a home dining table"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <p class="p-4 text-xs font-medium text-stone-600">Sharing meals, Scripture, and life across generations in East Bay homes.</p>
+      </div>
+      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img
+            src={url('/images/community/growth-group-lobby.webp')}
+            alt="Smiling Growth Group friends at church"
+            class="h-full w-full object-cover object-top"
+          />
+        </div>
+        <p class="p-4 text-xs font-medium text-stone-600">Building encouraging, authentic, and accountable friendships.</p>
+      </div>
+    </div>
+
     <div class="grid gap-6 md:grid-cols-3">
       <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
         <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">01</p>

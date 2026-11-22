@@ -1,0 +1,125 @@
+{
+  "title": "Original Design",
+  "book": "Genesis",
+  "dateRange": "2008",
+  "description": "Original Design (2008) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/original-design.webp",
+  "featured": false,
+  "order": 52,
+  "episodes": [
+    {
+      "title": "Crossing into New Territory",
+      "date": "2009/01/18",
+      "scripture": "Gen 11:37-12:5",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Proof of Who You Love",
+      "date": "2009/01/11",
+      "scripture": "1 John 2:15-17",
+      "speaker": "Christopher Yen"
+    },
+    {
+      "title": "The Mark of a Healthy Family",
+      "date": "2009/01/04",
+      "scripture": "Rom 12:1-16",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Shelter in the Midst of Storms",
+      "date": "2008/12/28",
+      "scripture": "Gen 6:5-14",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Finding What You're Looking For",
+      "date": "2008/12/21",
+      "scripture": "Christmas Service",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "How to Connect with God",
+      "date": "2008/12/14",
+      "scripture": "Gen 4:1-16",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "God's Plan for Success",
+      "date": "2008/12/07",
+      "scripture": "Psa 127",
+      "speaker": "Sam Tsang"
+    },
+    {
+      "title": "Find Hope in the Midst of Wreckage",
+      "date": "2008/11/30",
+      "scripture": "Gen 3:14-24",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "How to Ruin a Relationship",
+      "date": "2008/11/23",
+      "scripture": "Gen 2:25-3:13",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "In Search of a Bride",
+      "date": "2008/11/16",
+      "scripture": "John 4",
+      "speaker": "Fred Mok"
+    },
+    {
+      "title": "How to Dance: Our Story",
+      "date": "2008/11/09",
+      "scripture": "Gen 2:20-25",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "What's Good for Us",
+      "date": "2008/11/02",
+      "scripture": "Titus 3:1-9",
+      "speaker": "Scott Chiang"
+    },
+    {
+      "title": "Kingdom Voting",
+      "date": "2008/10/26",
+      "scripture": "Various Passages",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "How to Dance: Her Story",
+      "date": "2008/10/19",
+      "scripture": "Gen 2:18-23",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "How to Dance: His Story",
+      "date": "2008/10/12",
+      "scripture": "Gen 2:4-20",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "The Most Lucky Person",
+      "date": "2008/10/05",
+      "scripture": "1 Tim 1:12-17",
+      "speaker": "Jay Huang"
+    },
+    {
+      "title": "Out of the Rat Race",
+      "date": "2008/09/28",
+      "scripture": "Gen 1:28 - 2:4",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Partnership",
+      "date": "2008/09/21",
+      "scripture": "Phil 1:1-6",
+      "speaker": "Greg Ng"
+    },
+    {
+      "title": "Beloved of Creation",
+      "date": "2008/09/14",
+      "scripture": "Gen 1:1-27",
+      "speaker": "Joshua Lee"
+    }
+  ]
+}

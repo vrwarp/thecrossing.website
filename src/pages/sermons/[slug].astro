@@ -14,13 +14,15 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { title, book, description, coverImage, episodes } = entry.data;
+const { title, book, dateRange, description, coverImage, episodes } = entry.data;
+const videoEpisodes = episodes.filter((ep): ep is typeof ep & { youtubeId: string } => Boolean(ep.youtubeId));
+const archiveEpisodes = episodes.filter((ep) => !ep.youtubeId);
 ---
 
 <BaseLayout title={title} description={description || `Watch ${title} sermon series.`}>
   <PageHeader
     title={title}
-    eyebrow={book ? `Sermon Series • ${book}` : 'Sermon Series'}
+    eyebrow={[book, dateRange].filter(Boolean).join(' • ') || 'Sermon Series'}
     subtitle={description}
     backgroundImage={coverImage}
     breadcrumbs={[
@@ -29,8 +31,8 @@ const { title, book, description, coverImage, episodes } = entry.data;
     ]}
   />
 
-  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-    <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
+  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
+    <div class="flex flex-wrap items-center justify-between gap-4">
       <p class="text-sm font-semibold text-stone-600">
         {episodes.length} {episodes.length === 1 ? 'message' : 'messages'} in this series
       </p>
@@ -42,9 +44,9 @@ const { title, book, description, coverImage, episodes } = entry.data;
       </a>
     </div>
 
-    {episodes.length > 0 ? (
+    {videoEpisodes.length > 0 && (
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {episodes.map((ep) => (
+        {videoEpisodes.map((ep) => (
           <YouTubeEmbed
             youtubeId={ep.youtubeId}
             title={ep.title}
@@ -54,7 +56,27 @@ const { title, book, description, coverImage, episodes } = entry.data;
           />
         ))}
       </div>
-    ) : (
+    )}
+
+    {archiveEpisodes.length > 0 && (
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs">
+        <h2 class="font-display text-xl font-bold text-stone-900">
+          {videoEpisodes.length > 0 ? 'Additional Messages in This Series' : 'Messages in This Series'}
+        </h2>
+        <div class="mt-4 divide-y divide-stone-200">
+          {archiveEpisodes.map((ep) => (
+            <div class="flex flex-col gap-1 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+              <div class="font-semibold text-stone-900 text-sm">{ep.title}</div>
+              <div class="text-xs text-stone-500">
+                {[ep.speaker, ep.scripture, ep.date].filter(Boolean).join(' • ')}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {episodes.length === 0 && (
       <div class="rounded-2xl border border-stone-200 bg-white p-8 text-center">
         <p class="text-base text-stone-700">
           Video recordings for this series are available on our{' '}

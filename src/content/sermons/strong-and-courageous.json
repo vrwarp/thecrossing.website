@@ -1,0 +1,311 @@
+{
+  "title": "Strong and Courageous",
+  "book": "Joshua",
+  "dateRange": "2014\u20132015",
+  "description": "Strong and Courageous (2014\u20132015) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/strong-and-courageous.webp",
+  "featured": false,
+  "order": 38,
+  "episodes": [
+    {
+      "title": "What's Your Legacy?",
+      "date": "2015/06/28",
+      "scripture": "Josh 24:28-33",
+      "speaker": "Joshua Lee",
+      "youtubeId": "_8OgIJUQixc"
+    },
+    {
+      "title": "Whom Will You Serve?",
+      "date": "2015/06/21",
+      "scripture": "Josh 24:14-28",
+      "speaker": "Joshua Lee",
+      "youtubeId": "EHOt-Kpi8bc"
+    },
+    {
+      "title": "It's Not You, It's Me",
+      "date": "2015/06/14",
+      "scripture": "Josh 24:1-13",
+      "speaker": "Dennis Lee",
+      "youtubeId": "oHCsTeuhxzQ"
+    },
+    {
+      "title": "Encouraged to Obey",
+      "date": "2015/06/07",
+      "scripture": "Josh 23:1-16",
+      "speaker": "Dennis Lee",
+      "youtubeId": "y0xy-cDe0kU"
+    },
+    {
+      "title": "Worldview Discipleship",
+      "date": "2015/05/31",
+      "scripture": "John 4:31-42",
+      "speaker": "Dennis Reed"
+    },
+    {
+      "title": "The Burn of Anger",
+      "date": "2015/05/24",
+      "scripture": "Jas 1:19-27",
+      "speaker": "Joshua Lee",
+      "youtubeId": "L9_G1vaBTMk"
+    },
+    {
+      "title": "United We Stand, Divided We Fall",
+      "date": "2015/05/17",
+      "scripture": "Josh 22:10-34",
+      "speaker": "Dennis Lee",
+      "youtubeId": "waJp6ts-c08"
+    },
+    {
+      "title": "Faithful Family",
+      "date": "2015/05/10",
+      "scripture": "Josh 22:1-9",
+      "speaker": "Joshua Lee",
+      "youtubeId": "Krsdoix03xE"
+    },
+    {
+      "title": "Roots",
+      "date": "2015/05/03",
+      "scripture": "Josh 21:1-45",
+      "speaker": "Dennis Lee",
+      "youtubeId": "5M9iEJejGSk"
+    },
+    {
+      "title": "Cities of Refuge",
+      "date": "2015/04/26",
+      "scripture": "Josh 20:1-9",
+      "speaker": "Joshua Lee",
+      "youtubeId": "WYO1KCBKSb4"
+    },
+    {
+      "title": "Destroyed Lots",
+      "date": "2015/04/19",
+      "scripture": "Jer 29:1-11",
+      "speaker": "Steve Hong",
+      "youtubeId": "6mFbwvyS5TY"
+    },
+    {
+      "title": "The Cursed, The Blessed, The Faithful",
+      "date": "2015/04/12",
+      "scripture": "Josh 19:1-51",
+      "speaker": "Dennis Lee",
+      "youtubeId": "BG0u4OBH2F4"
+    },
+    {
+      "title": "Table of (Dis)Contents",
+      "date": "2015/04/05",
+      "scripture": "Easter Service",
+      "speaker": "Joshua Lee",
+      "youtubeId": "9RCl0bZ74lc"
+    },
+    {
+      "title": "Small Lots",
+      "date": "2015/03/29",
+      "scripture": "Josh 18:11-28",
+      "speaker": "Joshua Lee",
+      "youtubeId": "4HpEB6yRu6U"
+    },
+    {
+      "title": "Take the Land",
+      "date": "2015/03/22",
+      "scripture": "Josh 18:1-10",
+      "speaker": "Joshua Lee",
+      "youtubeId": "2RZ1dG9Sjnw"
+    },
+    {
+      "title": "How Do You See Your Lot?",
+      "date": "2015/03/15",
+      "scripture": "Josh 17:1-18",
+      "speaker": "Joshua Lee",
+      "youtubeId": "6g73gp9gdkA"
+    },
+    {
+      "title": "Amazing Grace // Active Obedience",
+      "date": "2015/03/08",
+      "scripture": "Josh 16:1-10",
+      "speaker": "Dennis Lee",
+      "youtubeId": "t8mFda3ffJQ"
+    },
+    {
+      "title": "A Legacy of Faith",
+      "date": "2015/03/01",
+      "scripture": "Josh 15:1-63",
+      "speaker": "Dennis Lee",
+      "youtubeId": "37q8OGBm6Dg"
+    },
+    {
+      "title": "Fight in Faith",
+      "date": "2015/02/22",
+      "scripture": "Josh 14:1-15",
+      "speaker": "Joshua Lee",
+      "youtubeId": "xSNxcemMjdY"
+    },
+    {
+      "title": "Our True Inheritance",
+      "date": "2015/02/15",
+      "scripture": "Josh 13:8-32",
+      "speaker": "Dennis Lee",
+      "youtubeId": "V3xwnD5vyB4"
+    },
+    {
+      "title": "Possess Your Land",
+      "date": "2015/02/08",
+      "scripture": "Josh 12:1 - 13:7",
+      "speaker": "Joshua Lee",
+      "youtubeId": "_KZ-TA7FNbs"
+    },
+    {
+      "title": "The Gift of Rest",
+      "date": "2015/02/01",
+      "scripture": "Josh 11:1-23",
+      "speaker": "Dennis Lee",
+      "youtubeId": "hSzTMmRaeJo"
+    },
+    {
+      "title": "Courageous Battle",
+      "date": "2015/01/25",
+      "scripture": "Josh 10:28-43",
+      "speaker": "Joshua Lee",
+      "youtubeId": "VyK3_ZNzrNQ"
+    },
+    {
+      "title": "Signs of Victory",
+      "date": "2015/01/18",
+      "scripture": "Josh 10:16-27",
+      "speaker": "Joshua Lee",
+      "youtubeId": "i7ObE9Wevck"
+    },
+    {
+      "title": "Sun Stand Still",
+      "date": "2015/01/11",
+      "scripture": "Josh 10:1-15",
+      "speaker": "Joshua Lee",
+      "youtubeId": "H8iuWQls9p4"
+    },
+    {
+      "title": "Grace that Repairs",
+      "date": "2015/01/04",
+      "scripture": "Josh 9:1-27",
+      "speaker": "Dennis Lee",
+      "youtubeId": "ygtr64u8-Po"
+    },
+    {
+      "title": "A New Way of Relating",
+      "date": "2014/12/28",
+      "scripture": "Col 3:9-17",
+      "speaker": "Joshua Lee",
+      "youtubeId": "nftgh44OTWE"
+    },
+    {
+      "title": "Humble",
+      "date": "2014/12/21",
+      "scripture": "Luke 2:8-20",
+      "speaker": "Joshua Lee",
+      "youtubeId": "DP5V-7Ndyug"
+    },
+    {
+      "title": "Renewed Commitment",
+      "date": "2014/12/14",
+      "scripture": "Josh 8:30-35",
+      "speaker": "Joshua Lee",
+      "youtubeId": "XPHoS_3D9Hw"
+    },
+    {
+      "title": "Let's Start Over",
+      "date": "2014/12/07",
+      "scripture": "Josh 8:1-29",
+      "speaker": "Dennis Lee",
+      "youtubeId": "JT9gL1sd0TQ"
+    },
+    {
+      "title": "Thankful in Every Season",
+      "date": "2014/11/30",
+      "scripture": "Thanksgiving Service",
+      "speaker": "Joshua Lee",
+      "youtubeId": "ggNpoSD7ke8"
+    },
+    {
+      "title": "The Disastrous Consequence of Sin",
+      "date": "2014/11/23",
+      "scripture": "Josh 7:13-26",
+      "speaker": "Dennis Lee",
+      "youtubeId": "431VCbQTnbI"
+    },
+    {
+      "title": "Set Back",
+      "date": "2014/11/16",
+      "scripture": "Josh 7:1-13",
+      "speaker": "Joshua Lee",
+      "youtubeId": "yHxHEgVOLkc"
+    },
+    {
+      "title": "Courageous Holiness",
+      "date": "2014/11/09",
+      "scripture": "Josh 6:17-25",
+      "speaker": "Joshua Lee",
+      "youtubeId": "OVtsEyBYO3g"
+    },
+    {
+      "title": "The Ridiculous Request",
+      "date": "2014/11/02",
+      "scripture": "Josh 6:3-16,20",
+      "speaker": "Dennis Lee",
+      "youtubeId": "6UXLjAPfpQA"
+    },
+    {
+      "title": "Who's in Charge?",
+      "date": "2014/10/26",
+      "scripture": "Josh 5:13 - 6:2",
+      "speaker": "Joshua Lee",
+      "youtubeId": "ODC1SCvTegw"
+    },
+    {
+      "title": "Fresh Start",
+      "date": "2014/10/19",
+      "scripture": "Josh 5:2-12",
+      "speaker": "Dennis Lee",
+      "youtubeId": "kvesQUu4EvA"
+    },
+    {
+      "title": "Memorial Stones",
+      "date": "2014/10/12",
+      "scripture": "Josh 4:1 - 5:1",
+      "speaker": "Joshua Lee",
+      "youtubeId": "h_NCOUR_5S4"
+    },
+    {
+      "title": "The Crossing",
+      "date": "2014/10/05",
+      "scripture": "Josh 3:1-17",
+      "speaker": "Joshua Lee",
+      "youtubeId": "WG7-ByIingk"
+    },
+    {
+      "title": "The Unlikely Hero",
+      "date": "2014/09/28",
+      "scripture": "Josh 2:1-24",
+      "speaker": "Dennis Lee",
+      "youtubeId": "YQhSZ2U-25w"
+    },
+    {
+      "title": "Strong and Courageous Together",
+      "date": "2014/09/21",
+      "scripture": "Josh 1:10-18",
+      "speaker": "Joshua Lee",
+      "youtubeId": "5YsZb5snQ3s"
+    },
+    {
+      "title": "The Lost Generation",
+      "date": "2014/09/14",
+      "scripture": "Num 13:25 - 14:35",
+      "speaker": "Joshua Lee",
+      "youtubeId": "rviRsoPkN2U"
+    },
+    {
+      "title": "Strong and Courageous",
+      "date": "2014/09/07",
+      "scripture": "Josh 1:1-9",
+      "speaker": "Joshua Lee",
+      "youtubeId": "IM78MQhxcHQ"
+    }
+  ]
+}

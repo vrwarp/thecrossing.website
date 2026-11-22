@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
 ---
 
 <BaseLayout title="Discipleship" description="One-on-one discipleship pairs at The Crossing.">
@@ -11,30 +12,39 @@ import PageHeader from '../../components/PageHeader.astro';
     breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Discipleship' }]}
   />
 
-  <section class="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8 space-y-8">
-    <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-4">
-      <h2 class="font-display text-2xl font-bold text-stone-900">What to Expect in Discipleship Pairs</h2>
-      <ul class="space-y-2.5 text-sm leading-relaxed text-stone-700 list-disc pl-5">
-        <li>You can be a disciple, a discipler, or both.</li>
-        <li>Spiritual growth through learning, sharing, and prayer with another brother or sister.</li>
-        <li>Discipleship pairs meet once or twice a month for 10 months (with the first 2 months as a trial period).</li>
-        <li>We do our best to match pairs based on your preferences and availability.</li>
-      </ul>
-      <div class="pt-4 flex flex-wrap gap-3">
-        <a
-          href="https://docs.google.com/document/d/1QfNd2dUCSaBthhhCvDQxgGF9ytHmN5v4RyPIdn6ffzY/view"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded-xl bg-obsidian px-5 py-3 text-sm font-bold text-white hover:bg-slate-dark transition-colors"
-        >
-          View Format &amp; Details &nearr;
-        </a>
-        <a
-          href="mailto:church.office@cfcchayward.org?subject=Discipleship%20Interest%20(Attn%3A%20Derrick%20Tao)"
-          class="rounded-xl bg-accent px-5 py-3 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
-        >
-          Express Interest (Email Discipleship Team)
-        </a>
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-8">
+    <div class="grid gap-8 md:grid-cols-12 md:items-center rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs">
+      <div class="md:col-span-5 overflow-hidden rounded-xl aspect-[4/3]">
+        <img
+          src={url('/images/community/discipleship-bible.webp')}
+          alt="Hands clasped in prayer over an open Bible"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div class="md:col-span-7 space-y-4">
+        <h2 class="font-display text-2xl font-bold text-stone-900">What to Expect in Discipleship Pairs</h2>
+        <ul class="space-y-2.5 text-sm leading-relaxed text-stone-700 list-disc pl-5">
+          <li>You can be a disciple, a discipler, or both.</li>
+          <li>Spiritual growth through learning, sharing, and prayer with another brother or sister.</li>
+          <li>Discipleship pairs meet once or twice a month for 10 months (with the first 2 months as a trial period).</li>
+          <li>We do our best to match pairs based on your preferences and availability.</li>
+        </ul>
+        <div class="pt-3 flex flex-wrap gap-3">
+          <a
+            href="https://docs.google.com/document/d/1QfNd2dUCSaBthhhCvDQxgGF9ytHmN5v4RyPIdn6ffzY/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-xl bg-obsidian px-5 py-3 text-sm font-bold text-white hover:bg-slate-dark transition-colors"
+          >
+            View Format &amp; Details &nearr;
+          </a>
+          <a
+            href="mailto:church.office@cfcchayward.org?subject=Discipleship%20Interest%20(Attn%3A%20Derrick%20Tao)"
+            class="rounded-xl bg-accent px-5 py-3 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+          >
+            Express Interest (Email Discipleship Team)
+          </a>
+        </div>
       </div>
     </div>
   </section>

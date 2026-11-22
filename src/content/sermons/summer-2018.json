@@ -1,0 +1,17 @@
+{
+  "title": "Summer 2018",
+  "book": "Topical",
+  "dateRange": "Aug 2018",
+  "description": "Summer 2018 (Aug 2018) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/summer-2018.webp",
+  "featured": false,
+  "order": 30,
+  "episodes": [
+    {
+      "title": "Confidence in the Power of the Cross *",
+      "date": "2018/09/02",
+      "scripture": "1 Corinthians 2:1-5",
+      "speaker": "Dennis Lee"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Summer 2011",
+  "book": "Topical",
+  "dateRange": "Aug 2011",
+  "description": "Summer 2011 (Aug 2011) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/summer-2011.webp",
+  "featured": false,
+  "order": 45,
+  "episodes": [
+    {
+      "title": "Generation W",
+      "date": "2011/09/04",
+      "scripture": "Deut 6:1-9",
+      "speaker": "Steve Korch",
+      "youtubeId": "N3cCDWA3iFs"
+    },
+    {
+      "title": "Like a Father",
+      "date": "2011/08/28",
+      "scripture": "Prov 3:11-12",
+      "speaker": "Eddie Cheng",
+      "youtubeId": "8a6PE4EAAIQ"
+    },
+    {
+      "title": "God's Will for You (part 2)",
+      "date": "2011/08/21",
+      "scripture": "1 Thess 5:12-18",
+      "speaker": "Steve Korch",
+      "youtubeId": "jw4X2ym-G5Q"
+    },
+    {
+      "title": "God's Will for You (part 1)",
+      "date": "2011/08/14",
+      "scripture": "1 Thess 4:1-10",
+      "speaker": "Steve Korch",
+      "youtubeId": "J5NHxoMNmpg"
+    },
+    {
+      "title": "The Sufficient & the Dependent",
+      "date": "2011/08/07",
+      "scripture": "Gen 32:24-32",
+      "speaker": "Dennis Lee",
+      "youtubeId": "TECPBwvIjBU"
+    }
+  ]
+}

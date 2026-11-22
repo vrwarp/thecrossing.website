@@ -1,0 +1,101 @@
+{
+  "title": "A Lifestyle of Worship",
+  "book": "Topical",
+  "dateRange": "2007",
+  "description": "A Lifestyle of Worship (2007) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/lifestyle-of-worship.webp",
+  "featured": false,
+  "order": 55,
+  "episodes": [
+    {
+      "title": "Win by Giving Up (Gen 22)",
+      "date": "2007/12/30",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "O Come All Ye Faithful",
+      "date": "2007/12/23",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Reclaiming Work (pt.2)",
+      "date": "2007/12/16",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "The Story of Mary",
+      "date": "2007/12/09",
+      "speaker": "Steve Korch"
+    },
+    {
+      "title": "Kingdom Business: South Africa",
+      "date": "2007/12/02",
+      "speaker": "Greg Yu"
+    },
+    {
+      "title": "Reclaiming Work (pt.1)",
+      "date": "2007/11/25",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "50-Hour a Week Worship",
+      "date": "2007/11/18",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "A Lifestyle of Worship (pt.2)",
+      "date": "2007/11/11",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Ready for Trouble (Psa 121)",
+      "date": "2007/11/04",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "A Lifestyle of Worship (pt.1)",
+      "date": "2007/10/28",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Forgiveness",
+      "date": "2007/10/21",
+      "speaker": "Steve Diehl"
+    },
+    {
+      "title": "Worship: The Natural Response",
+      "date": "2007/10/14",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Meet Jesus at the Tent",
+      "date": "2007/10/07",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Turning Truth into Fruit",
+      "date": "2007/09/30",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Living God's Story",
+      "date": "2007/09/23",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Out of the Wreckage (Lam 3)",
+      "date": "2007/09/16",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Culinary Art of The Word",
+      "date": "2007/09/09",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Eat the Word",
+      "date": "2007/09/02",
+      "speaker": "Tim Lee"
+    }
+  ]
+}

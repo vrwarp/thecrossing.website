@@ -1,0 +1,107 @@
+{
+  "title": "Ephesians",
+  "book": "Ephesians",
+  "dateRange": "2008",
+  "description": "Ephesians (2008) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/ephesians-2008.webp",
+  "featured": false,
+  "order": 54,
+  "episodes": [
+    {
+      "title": "Ready for Reality",
+      "date": "2008/04/20",
+      "scripture": "Eph 6:10-20",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Crossing Generations & Cultures",
+      "date": "2008/04/13",
+      "scripture": "Eph 6:1-9",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Submission: Wives & Husbands",
+      "date": "2008/04/06",
+      "scripture": "Eph 5:21-33",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Be an Agent of Impact",
+      "date": "2008/03/30",
+      "scripture": "Eph 5:8-20",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Imitating God",
+      "date": "2008/03/23",
+      "scripture": "Eph 5:1-7",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "The Pursuit of the New Man",
+      "date": "2008/03/16",
+      "scripture": "Eph 4:25-32",
+      "speaker": "Jay Huang"
+    },
+    {
+      "title": "The Key to Transformation",
+      "date": "2008/03/09",
+      "scripture": "Eph 4:14-24",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Unity in The Body of Christ",
+      "date": "2008/03/02",
+      "scripture": "Eph 4:1-13",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "May We Be Filled",
+      "date": "2008/02/24",
+      "scripture": "Eph 3:14-21",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "Be God's Change Agent",
+      "date": "2008/02/17",
+      "scripture": "Eph 3:7-13",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "The Mystery Revealed",
+      "date": "2008/02/10",
+      "scripture": "Eph 3:1-9",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "Citizens of God's Kingdom",
+      "date": "2008/02/03",
+      "scripture": "Eph 2:19-22",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "The Secret of Peace",
+      "date": "2008/01/27",
+      "scripture": "Eph 2:11-18",
+      "speaker": "Jay Huang"
+    },
+    {
+      "title": "Saved for a Purpose",
+      "date": "2008/01/20",
+      "scripture": "Eph 2:1-10",
+      "speaker": "Joshua Lee"
+    },
+    {
+      "title": "The Power of a Child of God",
+      "date": "2008/01/13",
+      "scripture": "Eph 1:15-23",
+      "speaker": "Tim Lee"
+    },
+    {
+      "title": "The New Rich",
+      "date": "2008/01/06",
+      "scripture": "Eph 1:1-14",
+      "speaker": "Tim Lee"
+    }
+  ]
+}

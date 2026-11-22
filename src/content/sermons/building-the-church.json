@@ -1,0 +1,18 @@
+{
+  "title": "Building the Church",
+  "book": "Topical",
+  "dateRange": "Sep 2016",
+  "description": "Building the Church (Sep 2016) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/building-the-church.webp",
+  "featured": false,
+  "order": 34,
+  "episodes": [
+    {
+      "title": "Transformational Church",
+      "date": "2019/009/11",
+      "scripture": "Romans 11:36 - 12:2",
+      "speaker": "Joshua Lee",
+      "youtubeId": "_CLCPXMQOdY"
+    }
+  ]
+}

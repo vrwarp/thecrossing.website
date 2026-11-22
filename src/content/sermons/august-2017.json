@@ -1,0 +1,36 @@
+{
+  "title": "August 2017",
+  "book": "Topical",
+  "dateRange": "Aug 2017",
+  "description": "August 2017 (Aug 2017) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/august-2017.webp",
+  "featured": false,
+  "order": 31,
+  "episodes": [
+    {
+      "title": "Miserable Comforters",
+      "date": "2017/09/03",
+      "youtubeId": "anaaodz5yK8"
+    },
+    {
+      "title": "The Key to Composure",
+      "date": "2017/08/27",
+      "youtubeId": "58c9OTzwyMY"
+    },
+    {
+      "title": "The Key to Competence",
+      "date": "2017/08/20",
+      "youtubeId": "meGDIkLFG1M"
+    },
+    {
+      "title": "The Key to Contentment",
+      "date": "2017/08/13",
+      "youtubeId": "CQ5JoSOhv04"
+    },
+    {
+      "title": "The Key to Confidence",
+      "date": "2017/08/06",
+      "youtubeId": "XX-z1tF5ksU"
+    }
+  ]
+}

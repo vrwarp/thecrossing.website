@@ -1,0 +1,50 @@
+{
+  "title": "Summer 2013",
+  "book": "Topical",
+  "dateRange": "Aug 2013",
+  "description": "Summer 2013 (Aug 2013) sermon series from The Crossing archive.",
+  "coverImage": "/images/sermons/summer-2013.webp",
+  "featured": false,
+  "order": 41,
+  "episodes": [
+    {
+      "title": "How People Really Change",
+      "date": "2013/09/01",
+      "youtubeId": "NDTWA4BVut8"
+    },
+    {
+      "title": "Praying with Our Eyes Open",
+      "date": "2013/08/25",
+      "scripture": "Matt 6:11-13",
+      "speaker": "Steve Korch",
+      "youtubeId": "2_XfSvzidLA"
+    },
+    {
+      "title": "Praying with Our Eyes Open",
+      "date": "2013/08/18",
+      "scripture": "Matt 6:9-10",
+      "speaker": "Steve Korch",
+      "youtubeId": "KMV2su9XCQE"
+    },
+    {
+      "title": "Praying with Our Eyes Open",
+      "date": "2013/08/11",
+      "scripture": "Matt 6:5-8",
+      "speaker": "Steve Korch",
+      "youtubeId": "0bKFpv4Nco8"
+    },
+    {
+      "title": "Counterfeit Joy",
+      "date": "2013/08/04",
+      "youtubeId": "yQCzmrolKR0"
+    },
+    {
+      "title": "Looking for People of Peace",
+      "date": "2013/07/28"
+    },
+    {
+      "title": "Living in a World of Expectation",
+      "date": "2013/07/21"
+    }
+  ]
+}
