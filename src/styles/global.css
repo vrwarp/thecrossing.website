@@ -21,11 +21,8 @@
 }
 
 @layer base {
-  html, body {
-    overflow-x: clip;
-  }
-
   html {
+    overflow-x: clip;
     scroll-behavior: smooth;
     background-color: var(--color-obsidian);
     color: var(--color-stone-900);
@@ -44,13 +41,15 @@
   }
 }
 
-/* Subtle pure-CSS scroll-driven parallax (GPU transform only, no JS) */
+/* Subtle pure-CSS scroll-driven parallax (GPU transform only, no JS).
+   Note: Ancestors must use overflow-clip (not overflow-hidden), because
+   overflow: hidden creates a scroll container that traps view(). */
 @keyframes subtle-parallax {
   from {
-    transform: translateY(-14%) scale(1.3);
+    transform: translateY(-10%) scale(1.22);
   }
   to {
-    transform: translateY(14%) scale(1.3);
+    transform: translateY(10%) scale(1.22);
   }
 }
 
