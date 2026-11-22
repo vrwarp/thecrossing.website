@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type-check Astro & content schemas
+        run: npm run check
+
+      - name: Build static site & Pagefind index
+        run: npm run build
+
+      - name: Verify sermon cover images & subpath link hygiene
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+
+            // 1. Verify every sermon coverImage exists in public/
+            const sermonsDir = "src/content/sermons";
+            for (const file of fs.readdirSync(sermonsDir)) {
+              if (!file.endsWith(".json")) continue;
+              const data = JSON.parse(fs.readFileSync(path.join(sermonsDir, file), "utf8"));
+              const imgPath = path.join("public", data.coverImage.replace(/^\/+/, ""));
+              if (!fs.existsSync(imgPath)) {
+                console.error(`Missing coverImage for ${file}: ${imgPath}`);
+                process.exit(1);
+              }
+            }
+
+            // 2. Verify no hardcoded root-relative href="/..." or src="/..." in .astro files (must use url())
+            function walk(dir) {
+              for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+                const full = path.join(dir, entry.name);
+                if (entry.isDirectory()) walk(full);
+                else if (entry.name.endsWith(".astro")) {
+                  const content = fs.readFileSync(full, "utf8");
+                  const bad = content.match(/(?:href|src)=["'\'']\/(?!\/)[^"'\'']*["'\'']/g);
+                  if (bad) {
+                    console.error(`Hardcoded root-relative path in ${full}: ${bad.join(", ")}. Use url() instead.`);
+                    process.exit(1);
+                  }
+                }
+              }
+            }
+            walk("src");
+            console.log("All sermon assets and subpath link checks passed!");
+          '
+
+      - name: Ensure reference backup is not tracked
+        run: |
+          if git ls-files --error-unmatch thecrossing-website-original >/dev/null 2>&1; then
+            echo "ERROR: thecrossing-website-original must not be committed to git"
+            exit 1
+          fi

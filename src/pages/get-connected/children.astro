@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import EmbedFrame from '../../components/EmbedFrame.astro';
+import { url } from '../../lib/url';
 
 const regFormSrc =
   'https://docs.google.com/forms/d/e/1FAIpQLSfQE-rVlIx37P6zeN1sfXtozFcQC-cuFCYk9IzwVc75_tEe_w/viewform?embedded=true';
@@ -18,29 +19,59 @@ const regFormView =
   />
 
   <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
-    <div class="grid gap-6 sm:grid-cols-2">
+    <!-- First-Time Parent Reassurance -->
+    <div class="rounded-2xl border border-amber-200 bg-amber-50/70 p-6 space-y-2">
+      <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Visiting for the First Time?</p>
+      <p class="text-sm leading-relaxed text-stone-800">
+        <strong>No advance registration is required for a first Sunday visit.</strong> Simply arrive 10–15 minutes before the 9:30 AM service and head to the <strong>1st Floor Children’s Center</strong> (our greeters will gladly walk you there).
+      </p>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
         <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Sundays • 9:30 AM</p>
         <h2 class="font-display text-xl font-bold text-stone-900">The Rock Children's Church</h2>
         <p class="text-sm leading-relaxed text-stone-600">
-          For preschool through 5th grade during the 9:30 AM service (plus nursery care). Children learn about God and His amazing love through worship, Bible stories, and age-appropriate small groups.
+          For <strong>Nursery, Preschool, and K–5th Grade</strong> on the 1st Floor Children's Center during the 9:30 AM service. Kids experience worship, Bible stories, and age-appropriate small groups.
         </p>
       </div>
 
       <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Contact</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Fridays &amp; 11:15 AM Sundays</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Additional Programs</h2>
+        <p class="text-sm leading-relaxed text-stone-600">
+          Friday evening children's programs run alongside adult/youth gatherings during the academic year (covered by the annual registration below). Contact Min. Lisa Ko for current Friday room/age details and 11:15 AM childcare availability.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Contact &amp; Weekdays</p>
         <h2 class="font-display text-xl font-bold text-stone-900">Min. Lisa Ko</h2>
         <p class="text-sm text-stone-600">
-          Questions about Sunday or Friday night children's programs? Contact our Children's Minister at{' '}
+          Questions? Email{' '}
           <a href="mailto:lisa.ko@cfcchayward.org" class="font-semibold text-accent-hover underline">
             lisa.ko@cfcchayward.org
+          </a>. Looking for weekday tutoring? Check our free{' '}
+          <a href={url('/resources/after-school-program')} class="font-semibold text-accent-hover underline">
+            Kids Homework Club (K–7th)
           </a>.
         </p>
       </div>
     </div>
 
+    <!-- Safety & Check-In -->
+    <div class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs space-y-4">
+      <h2 class="font-display text-xl font-bold text-stone-900">Check-In, Pick-Up &amp; Child Safety</h2>
+      <ul class="grid gap-3 sm:grid-cols-2 text-sm text-stone-700 list-disc pl-5">
+        <li><strong>Check-In &amp; Pick-Up:</strong> Parents check children in and out directly at the 1st Floor Children’s Center with our volunteer team.</li>
+        <li><strong>Allergies &amp; Medical Notes:</strong> Please note any food allergies or special needs at check-in and on the annual registration form.</li>
+        <li><strong>Screened Volunteers:</strong> All children's ministry teachers and helpers are screened and trained to provide a safe, caring environment.</li>
+        <li><strong>Youth Siblings (Grades 6–12):</strong> Older siblings join Main Sanctuary worship at 9:30 AM and can check out <a href={url('/get-connected/youth')} class="font-semibold text-accent-hover underline">Footprints Youth</a>.</li>
+      </ul>
+    </div>
+
     <div>
-      <h2 class="mb-4 font-display text-2xl font-extrabold text-stone-900">2026–2027 Registration</h2>
+      <h2 class="mb-4 font-display text-2xl font-extrabold text-stone-900">2026–2027 Annual Registration</h2>
       <EmbedFrame
         src={regFormSrc}
         title="Children's Ministry Annual Registration"

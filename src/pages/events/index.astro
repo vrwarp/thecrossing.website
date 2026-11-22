@@ -71,10 +71,8 @@ const announcements = [
         <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Weekly Worship</p>
         <h3 class="font-display text-xl font-bold text-stone-900">Join Us Sundays at 9:30 AM</h3>
         <p class="text-sm leading-relaxed text-stone-600">
-          Worship together with us every Sunday at 157 Smalley Ave, Hayward. We also livestream from our{' '}
-          <a href={SITE.social.youtube} target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">
-            YouTube Channel
-          </a>.
+          Worship together with us every Sunday at 157 Smalley Ave, Hayward. We also livestream on our{' '}
+          <a href={SITE.social.youtubeStreams} target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">YouTube Channel</a>.
         </p>
       </div>
       <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
@@ -93,7 +91,12 @@ const announcements = [
 
     <!-- Announcements -->
     <div>
-      <h2 class="font-display text-2xl font-extrabold text-stone-900">Announcements</h2>
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <h2 class="font-display text-2xl font-extrabold text-stone-900">Announcements</h2>
+        <a href={url('/contact-us')} class="text-sm font-bold text-accent-hover hover:underline">
+          Questions or RSVP? Contact us &rarr;
+        </a>
+      </div>
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {announcements.map((item) => (
           <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">

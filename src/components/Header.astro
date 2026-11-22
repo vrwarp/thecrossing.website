@@ -91,9 +91,16 @@ const isActive = (href: string) => {
 
       <a
         href={url('/give')}
-        class="hidden sm:inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+        class="hidden sm:inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-stone-200 hover:bg-white/10 hover:text-white transition-colors"
       >
         Give
+      </a>
+
+      <a
+        href={url('/im-new')}
+        class="hidden sm:inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+      >
+        Plan Your Visit
       </a>
 
       <!-- Mobile Menu Toggle -->
@@ -168,8 +175,14 @@ const isActive = (href: string) => {
 
     <div class="mt-6 border-t border-white/10 pt-6 space-y-3">
       <a
-        href={url('/give')}
+        href={url('/im-new')}
         class="block w-full rounded-lg bg-accent px-4 py-3 text-center text-sm font-bold text-obsidian hover:bg-accent-hover"
+      >
+        Plan Your Visit
+      </a>
+      <a
+        href={url('/give')}
+        class="block w-full rounded-lg border border-white/20 px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-white/10"
       >
         Give Online
       </a>

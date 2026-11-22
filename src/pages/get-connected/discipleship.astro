@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import { url } from '../../lib/url';
 ---
 
 <BaseLayout title="Discipleship" description="One-on-one discipleship pairs at The Crossing.">
@@ -23,7 +22,7 @@ import { url } from '../../lib/url';
       </ul>
       <div class="pt-4 flex flex-wrap gap-3">
         <a
-          href="https://docs.google.com/document/d/1QfNd2dUCSaBthhhCvDQxgGF9ytHmN5v4RyPIdn6ffzY/edit"
+          href="https://docs.google.com/document/d/1QfNd2dUCSaBthhhCvDQxgGF9ytHmN5v4RyPIdn6ffzY/view"
           target="_blank"
           rel="noopener noreferrer"
           class="rounded-xl bg-obsidian px-5 py-3 text-sm font-bold text-white hover:bg-slate-dark transition-colors"
@@ -31,10 +30,10 @@ import { url } from '../../lib/url';
           View Format &amp; Details &nearr;
         </a>
         <a
-          href={url('/contact-us')}
+          href="mailto:church.office@cfcchayward.org?subject=Discipleship%20Interest%20(Attn%3A%20Derrick%20Tao)"
           class="rounded-xl bg-accent px-5 py-3 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
         >
-          Express Interest
+          Express Interest (Email Discipleship Team)
         </a>
       </div>
     </div>

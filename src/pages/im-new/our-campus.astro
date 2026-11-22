@@ -4,13 +4,23 @@ import PageHeader from '../../components/PageHeader.astro';
 import EmbedFrame from '../../components/EmbedFrame.astro';
 import { SITE } from '../../data/site';
 import { url } from '../../lib/url';
+
+const rooms = [
+  { name: 'Main Sanctuary', location: 'Worship Center (Main Floor)', use: 'Sunday 9:30 AM Worship Service' },
+  { name: 'Children’s Center (The Rock)', location: '1st Floor', use: 'Sunday 9:30 AM Kids Check-In & Mon–Thu Homework Club' },
+  { name: 'Room 107', location: 'Worship Center (1st Floor)', use: 'Transparent Young Adults (Thu) & Mature Adults (Fri)' },
+  { name: 'Youth Center', location: '2nd Floor', use: 'Footprints Youth Group (Fridays 7:30 PM)' },
+  { name: 'Room 201', location: '2nd Floor', use: 'Middle School Christian Education (Sundays 11:15 AM)' },
+  { name: 'Room 202', location: '2nd Floor', use: 'Adult Christian Education (Sundays 11:15 AM)' },
+  { name: 'Room 204', location: '2nd Floor', use: 'High School Christian Education (Sundays 11:15 AM)' },
+];
 ---
 
-<BaseLayout title="Our Campus" description="Campus map, parking lots, and directions to The Crossing at 157 Smalley Ave, Hayward, CA.">
+<BaseLayout title="Our Campus" description="Campus map, parking lots, room directory, and directions to The Crossing at 157 Smalley Ave, Hayward, CA.">
   <PageHeader
     title="Our Campus & Parking"
     eyebrow="Directions"
-    subtitle="157 Smalley Ave, Hayward, CA 94541 — find where to park and where to go on Sunday morning."
+    subtitle="157 Smalley Ave, Hayward, CA 94541 — campus signage reads Chinese For Christ Church of Hayward (CFCC)."
     breadcrumbs={[{ label: "I'm New", href: '/im-new' }, { label: 'Our Campus' }]}
   />
 
@@ -20,14 +30,14 @@ import { url } from '../../lib/url';
         <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">First-Time Visitors</p>
         <h2 class="font-display text-xl font-bold text-stone-900">Main Campus Lots (Smalley Ave)</h2>
         <p class="text-sm leading-relaxed text-stone-600">
-          We have spots reserved specifically for first-time visitors, elderly members, and families with young children in the main campus lots at 157 Smalley Ave. Greeters will be ready to welcome you and point you toward the Main Sanctuary or The Rock Children's Center.
+          We have spots reserved specifically for first-time visitors, elderly members, and families with young children in the main campus lots at 157 Smalley Ave. Greeters at the main entrance will guide you to the Main Sanctuary or the 1st Floor Children's Center.
         </p>
       </div>
       <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
         <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Regular Attendees</p>
         <h2 class="font-display text-xl font-bold text-stone-900">Parking Lot C (Auxiliary Lot)</h2>
         <p class="text-sm leading-relaxed text-stone-600">
-          For regular attendees, please park in Parking Lot C (the auxiliary lot) so main campus spaces remain open for guests. Due to limited parking, please carpool when possible.
+          For regular attendees, please park in Parking Lot C (the auxiliary lot shown on the campus map below) so main campus spaces remain open for visitors and families. Due to limited parking, please carpool when possible.
         </p>
       </div>
     </div>
@@ -40,6 +50,19 @@ import { url } from '../../lib/url';
         decoding="async"
         class="w-full h-auto"
       />
+    </div>
+
+    <div class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs">
+      <h2 class="font-display text-2xl font-bold text-stone-900">Campus Room Directory</h2>
+      <div class="mt-4 divide-y divide-stone-200">
+        {rooms.map((r) => (
+          <div class="grid gap-1 py-3 sm:grid-cols-3 sm:gap-4 text-sm">
+            <div class="font-bold text-stone-900">{r.name}</div>
+            <div class="text-stone-600">{r.location}</div>
+            <div class="text-stone-600">{r.use}</div>
+          </div>
+        ))}
+      </div>
     </div>
 
     <EmbedFrame

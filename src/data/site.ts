@@ -24,9 +24,18 @@ export const SITE = {
   email: 'church.office@cfcchayward.org',
   social: {
     youtube: 'https://www.youtube.com/@cfccofhayward',
+    youtubeStreams: 'https://www.youtube.com/@cfccofhayward/streams',
     facebook: 'https://www.facebook.com/TheCrossingCFCC',
     instagram: 'https://www.instagram.com/thecrossingcfcc/',
   },
+  podcasts: [
+    { name: 'Apple Podcasts', href: 'https://podcasts.apple.com/us/podcast/the-crossing-at-cfcc-hayward/id1483717891', primary: true },
+    { name: 'Spotify', href: 'https://open.spotify.com/show/3YKYaEkeAwBN1XFQ9yfVx8?si=NRVcy05LTdSeRAh12f2brQ', primary: true },
+    { name: 'Google Podcasts', href: 'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3RoZWNyb3NzaW5nYXRjZmNjL2ZlZWQueG1s', primary: true },
+    { name: 'Pocket Casts', href: 'https://pca.st/l6ozyis9', primary: false },
+    { name: 'Stitcher', href: 'https://www.stitcher.com/s?fid=474332&refid=stpr', primary: false },
+    { name: 'RSS Feed', href: 'https://feed.podbean.com/thecrossingatcfcc/feed.xml', primary: false },
+  ],
   archiveLinks: {
     oldSite: 'http://old.thecrossing.website/',
     chineseSite: 'https://www.cfcchayward.org/',
@@ -68,6 +77,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Young Adults (Transparent)', href: '/get-connected/young-adults', description: 'College & career community' },
       { label: 'Mature Adults', href: '/get-connected/mature-adults', description: 'Fellowship and Bible study' },
       { label: 'Discipleship', href: '/get-connected/discipleship', description: 'Growing deeper in Christ' },
+      { label: 'Serve & Volunteer', href: '/get-connected/serve', description: 'Join a Sunday or outreach team' },
     ],
   },
   {
