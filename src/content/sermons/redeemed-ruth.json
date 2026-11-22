@@ -7,36 +7,52 @@
   "order": 13,
   "episodes": [
     {
-      "title": "Redeemed \u2014 Message 1",
-      "youtubeId": "YZyHwccRLI4"
+      "title": "Overcoming Setbacks",
+      "youtubeId": "YZyHwccRLI4",
+      "scripture": "Ruth 4",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Redeemed \u2014 Message 2",
-      "youtubeId": "GaWOiBjFSMw"
+      "title": "Jesus, and the Faith, Don’t Change",
+      "youtubeId": "GaWOiBjFSMw",
+      "scripture": "Hebrews 13:8",
+      "speaker": "Pastor Eddie Cheng"
     },
     {
-      "title": "Redeemed \u2014 Message 3",
-      "youtubeId": "ZEWLEq8Ktg8"
+      "title": "Risking for Redemption",
+      "youtubeId": "ZEWLEq8Ktg8",
+      "scripture": "Ruth 3",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Redeemed \u2014 Message 4",
-      "youtubeId": "pmkkVEMy60Q"
+      "title": "Dressed by the Father",
+      "youtubeId": "pmkkVEMy60Q",
+      "scripture": "Colossians 3",
+      "speaker": "Pastor Anthony Miller"
     },
     {
-      "title": "Redeemed \u2014 Message 5",
-      "youtubeId": "1gF2q6il57Y"
+      "title": "Stand Firm Against the Sway",
+      "youtubeId": "1gF2q6il57Y",
+      "scripture": "Psalm 19",
+      "speaker": "Pastor Alan Leung"
     },
     {
-      "title": "Redeemed \u2014 Message 6",
-      "youtubeId": "2rpshFShRdU"
+      "title": "Discovering Kindness",
+      "youtubeId": "2rpshFShRdU",
+      "scripture": "Ruth 2:14-23",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Redeemed \u2014 Message 7",
-      "youtubeId": "1yLo-T-q6vc"
+      "title": "Finding Favor",
+      "youtubeId": "1yLo-T-q6vc",
+      "scripture": "Ruth 2:1-13",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Redeemed \u2014 Message 8",
-      "youtubeId": "CjZKJAIoaXc"
+      "title": "Redeemed",
+      "youtubeId": "CjZKJAIoaXc",
+      "scripture": "Ruth 1",
+      "speaker": "Rev. Joshua Lee"
     }
   ]
 }

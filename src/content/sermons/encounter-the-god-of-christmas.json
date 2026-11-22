@@ -7,28 +7,40 @@
   "order": 5,
   "episodes": [
     {
-      "title": "Encounter the God of Christmas \u2014 Message 1",
-      "youtubeId": "7meQXDTmy64"
+      "title": "Waiting for God",
+      "youtubeId": "7meQXDTmy64",
+      "scripture": "Luke 2:25-35",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Encounter the God of Christmas \u2014 Message 2",
-      "youtubeId": "bf-UiJ4nUv4"
+      "title": "Humble Before God",
+      "youtubeId": "bf-UiJ4nUv4",
+      "scripture": "Luke 2:8-20",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Encounter the God of Christmas \u2014 Message 3",
-      "youtubeId": "w626xuyf_Og"
+      "title": "Peace of God",
+      "youtubeId": "w626xuyf_Og",
+      "scripture": "Luke 2:10-14, Matthew 1:18-21",
+      "speaker": "Rev. Daniel Tai"
     },
     {
-      "title": "Encounter the God of Christmas \u2014 Message 4",
-      "youtubeId": "6vqedajNQBU"
+      "title": "Worshipers of God",
+      "youtubeId": "6vqedajNQBU",
+      "scripture": "Luke 1:39-56",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Encounter the God of Christmas \u2014 Message 5",
-      "youtubeId": "IDTrbCv787I"
+      "title": "High Priest of God",
+      "youtubeId": "IDTrbCv787I",
+      "speaker": "Rev. Daniel Tai",
+      "scripture": "Hebrews 4:16"
     },
     {
-      "title": "Encounter the God of Christmas \u2014 Message 6",
-      "youtubeId": "wsHecC7d_4A"
+      "title": "Lovers of God",
+      "youtubeId": "wsHecC7d_4A",
+      "scripture": "Luke 1:1-38",
+      "speaker": "Rev. Joshua Lee"
     }
   ]
 }

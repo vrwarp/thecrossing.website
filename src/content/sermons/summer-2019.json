@@ -7,24 +7,34 @@
   "order": 22,
   "episodes": [
     {
-      "title": "Summer 2019 \u2014 Message 1",
-      "youtubeId": "9dav03DPxPA"
+      "title": "Command to Rest Exodus 20:8-11;",
+      "youtubeId": "9dav03DPxPA",
+      "scripture": "Deuteronomy 5:15",
+      "speaker": "Rev. Dennis Lee"
     },
     {
-      "title": "Summer 2019 \u2014 Message 2",
-      "youtubeId": "gAxGVEEArmI"
+      "title": "The Way Home",
+      "youtubeId": "gAxGVEEArmI",
+      "scripture": "John 14:1-11",
+      "speaker": "Robert Wang"
     },
     {
-      "title": "Summer 2019 \u2014 Message 3",
-      "youtubeId": "RY-EJ3pzR7U"
+      "title": "Prayer Changes Things",
+      "youtubeId": "RY-EJ3pzR7U",
+      "scripture": "Acts 12:1-12",
+      "speaker": "Leedah Wong"
     },
     {
-      "title": "Summer 2019 \u2014 Message 4",
-      "youtubeId": "pCvEryBbo-M"
+      "title": "Recovering From Failure",
+      "youtubeId": "pCvEryBbo-M",
+      "scripture": "Exodus 33:11-17",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Summer 2019 \u2014 Message 5",
-      "youtubeId": "SVaKm_2u5QY"
+      "title": "A Pattern of Rest",
+      "youtubeId": "SVaKm_2u5QY",
+      "scripture": "Genesis 2:1-3",
+      "speaker": "Rev. Dennis Lee"
     }
   ]
 }

@@ -7,36 +7,51 @@
   "order": 10,
   "episodes": [
     {
-      "title": "Summer 2023 \u2014 Message 1",
-      "youtubeId": "Ez02LI7ACLU"
+      "title": "Josiah",
+      "youtubeId": "Ez02LI7ACLU",
+      "scripture": "2 Chronicles 34:1-33",
+      "speaker": "Rev. Daniel Tai"
     },
     {
-      "title": "Summer 2023 \u2014 Message 2",
-      "youtubeId": "k2J6eoNO9kM"
+      "title": "Kingdom Killers",
+      "youtubeId": "k2J6eoNO9kM",
+      "scripture": "Colossians 3:5-8",
+      "speaker": "Pastor Matty Blevins"
     },
     {
-      "title": "Summer 2023 \u2014 Message 3",
-      "youtubeId": "rEIBmEr8Rtk"
+      "title": "God's Response to the Dedication Ceremony",
+      "youtubeId": "rEIBmEr8Rtk",
+      "scripture": "1 Kings 9:1-9",
+      "speaker": "Rev. Roy Yeh"
     },
     {
-      "title": "Summer 2023 \u2014 Message 4",
-      "youtubeId": "1EyrJhqm3cs"
+      "title": "Godly Discontent",
+      "youtubeId": "1EyrJhqm3cs",
+      "scripture": "1 Timothy 6:17-21",
+      "speaker": "Rev Gabriel Tseng"
     },
     {
-      "title": "Summer 2023 \u2014 Message 5",
-      "youtubeId": "JsD8trhQ8fA"
+      "title": "Contentment",
+      "youtubeId": "JsD8trhQ8fA",
+      "scripture": "Philippians 4:10-13",
+      "speaker": "Pastor David Huynh"
     },
     {
-      "title": "Summer 2023 \u2014 Message 6",
-      "youtubeId": "KY5OJv8-IMc"
+      "title": "Our Story, God's Glory",
+      "youtubeId": "KY5OJv8-IMc",
+      "scripture": "Jeremiah 29:11-14",
+      "speaker": "Rica Ruiz"
     },
     {
-      "title": "Summer 2023 \u2014 Message 7",
-      "youtubeId": "MhEzkVrsX_M"
+      "title": "Contend For Your Faith",
+      "youtubeId": "MhEzkVrsX_M",
+      "scripture": "Jude",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Summer 2023 \u2014 Message 8",
-      "youtubeId": "oL5UDmi6WbI"
+      "title": "When It Is Difficult To Love, Be Patient And Kind, 1 Corinthians 13:4a",
+      "youtubeId": "oL5UDmi6WbI",
+      "speaker": "Daniel Tai"
     }
   ]
 }

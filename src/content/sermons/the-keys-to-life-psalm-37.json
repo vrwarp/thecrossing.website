@@ -7,24 +7,29 @@
   "order": 28,
   "episodes": [
     {
-      "title": "The Keys to Life \u2014 Message 1",
-      "youtubeId": "anaaodz5yK8"
+      "title": "Miserable Comforters",
+      "youtubeId": "anaaodz5yK8",
+      "scripture": "Job 2-31"
     },
     {
-      "title": "The Keys to Life \u2014 Message 2",
-      "youtubeId": "58c9OTzwyMY"
+      "title": "The Key to Composure",
+      "youtubeId": "58c9OTzwyMY",
+      "scripture": "Psalms 37:7-11"
     },
     {
-      "title": "The Keys to Life \u2014 Message 3",
-      "youtubeId": "meGDIkLFG1M"
+      "title": "The Key to Competence",
+      "youtubeId": "meGDIkLFG1M",
+      "scripture": "Psalms 37:5-6"
     },
     {
-      "title": "The Keys to Life \u2014 Message 4",
-      "youtubeId": "CQ5JoSOhv04"
+      "title": "The Key to Contentment",
+      "youtubeId": "CQ5JoSOhv04",
+      "scripture": "Psalms 37:4"
     },
     {
-      "title": "The Keys to Life \u2014 Message 5",
-      "youtubeId": "XX-z1tF5ksU"
+      "title": "The Key to Confidence",
+      "youtubeId": "XX-z1tF5ksU",
+      "scripture": "Psalms 37:1-3"
     }
   ]
 }

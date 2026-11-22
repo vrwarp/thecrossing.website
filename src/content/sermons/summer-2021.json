@@ -7,32 +7,46 @@
   "order": 15,
   "episodes": [
     {
-      "title": "Summer 2021 \u2014 Message 1",
-      "youtubeId": "k6_SGPAGjCA"
+      "title": "The Disciple's Journey",
+      "youtubeId": "k6_SGPAGjCA",
+      "scripture": "Matthew 16:24-28",
+      "speaker": "Pastor Joey Wang"
     },
     {
-      "title": "Summer 2021 \u2014 Message 2",
-      "youtubeId": "OL0n6W_g3Ws"
+      "title": "The Gospel Changes Everything: Marriage",
+      "youtubeId": "OL0n6W_g3Ws",
+      "scripture": "Genesis 2:18-25",
+      "speaker": "Will Medel"
     },
     {
-      "title": "Summer 2021 \u2014 Message 3",
-      "youtubeId": "nofYWnCXt90"
+      "title": "The Gospel Changes Everything: Church Family",
+      "youtubeId": "nofYWnCXt90",
+      "scripture": "1 Corinthians 1:26-31",
+      "speaker": "Will Medel"
     },
     {
-      "title": "Summer 2021 \u2014 Message 4",
-      "youtubeId": "BCDSybKZQ4g"
+      "title": "The Gospel Changes Everything: Joy",
+      "youtubeId": "BCDSybKZQ4g",
+      "scripture": "Philippians 3:1-11",
+      "speaker": "Will Medel"
     },
     {
-      "title": "Summer 2021 \u2014 Message 5",
-      "youtubeId": "UJfAjcX3AwM"
+      "title": "The Gospel Changes Everything Part 1",
+      "youtubeId": "UJfAjcX3AwM",
+      "scripture": "Jeremiah 17:5-10",
+      "speaker": "Will Medel"
     },
     {
-      "title": "Summer 2021 \u2014 Message 6",
-      "youtubeId": "aGrvwrYUTu0"
+      "title": "Gotta Leave Sin to Follow Christ",
+      "youtubeId": "aGrvwrYUTu0",
+      "scripture": "1 John 1:5-10",
+      "speaker": "Dennis Lee"
     },
     {
-      "title": "Summer 2021 \u2014 Message 7",
-      "youtubeId": "9HCXCK4so5I"
+      "title": "When Everything Means Nothing",
+      "youtubeId": "9HCXCK4so5I",
+      "scripture": "Mark 10:17-27",
+      "speaker": "David Nguyen"
     }
   ]
 }

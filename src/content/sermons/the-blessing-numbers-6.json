@@ -7,24 +7,34 @@
   "order": 24,
   "episodes": [
     {
-      "title": "The Blessing \u2014 Message 1",
-      "youtubeId": "9r_X755mt5g"
+      "title": "Confidence In The Power Of The Cross",
+      "youtubeId": "9r_X755mt5g",
+      "scripture": "1 Corinthians 2:1-5",
+      "speaker": "Rev. Dennis Lee"
     },
     {
-      "title": "The Blessing \u2014 Message 2",
-      "youtubeId": "pDztZHCwdR4"
+      "title": "The Assurance of Shalom",
+      "youtubeId": "pDztZHCwdR4",
+      "scripture": "Numbers 6:26",
+      "speaker": "Rev. Steve Korch"
     },
     {
-      "title": "The Blessing \u2014 Message 3",
-      "youtubeId": "NiM2mvvxhMU"
+      "title": "The Great Turnaround",
+      "youtubeId": "NiM2mvvxhMU",
+      "scripture": "Numbers 6:25",
+      "speaker": "Rev. Steve Korch"
     },
     {
-      "title": "The Blessing \u2014 Message 4",
-      "youtubeId": "AsWEG4PY0RY"
+      "title": "The Power of the Blessing",
+      "youtubeId": "AsWEG4PY0RY",
+      "scripture": "Numbers 6:24",
+      "speaker": "Rev. Steve Korch"
     },
     {
-      "title": "The Blessing \u2014 Message 5",
-      "youtubeId": "SPlueNC7j48"
+      "title": "Beginning with The End",
+      "youtubeId": "SPlueNC7j48",
+      "scripture": "Numbers 6:22-23,27",
+      "speaker": "Rev. Steve Korch"
     }
   ]
 }

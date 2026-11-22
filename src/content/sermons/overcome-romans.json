@@ -1,8 +1,8 @@
 {
   "title": "Overcome",
   "book": "Romans",
-  "dateRange": "2016\u20132017",
-  "description": "Overcome (2016\u20132017) sermon series from The Crossing archive.",
+  "dateRange": "2016–2017",
+  "description": "Overcome (2016–2017) sermon series from The Crossing archive.",
   "coverImage": "/images/sermons/overcome-romans.webp",
   "featured": false,
   "order": 33,
@@ -211,7 +211,7 @@
       "youtubeId": "U2kz0PgSkBU"
     },
     {
-      "title": "\"Mary\" Christmas *",
+      "title": "Mary\" Christmas *",
       "date": "2016/12/04",
       "scripture": "Luke 1:26-56",
       "speaker": "Steve Korch",

@@ -7,24 +7,34 @@
   "order": 20,
   "episodes": [
     {
-      "title": "Knowing God \u2014 Message 1",
-      "youtubeId": "41HnelyMbv0"
+      "title": "Following & Flourishing",
+      "youtubeId": "41HnelyMbv0",
+      "scripture": "John 6:1-15",
+      "speaker": "Rev. Leedah Wong"
     },
     {
-      "title": "Knowing God \u2014 Message 2",
-      "youtubeId": "muxV3nDVF54"
+      "title": "Knowing The Power of God",
+      "youtubeId": "muxV3nDVF54",
+      "scripture": "Psalm 46:8-11",
+      "speaker": "Rev. Steve Korch"
     },
     {
-      "title": "Knowing God \u2014 Message 3",
-      "youtubeId": "fN-NhqxXwto"
+      "title": "Go Where He Sends",
+      "youtubeId": "fN-NhqxXwto",
+      "scripture": "Acts 21:16",
+      "speaker": "Rev. Dennis Lee"
     },
     {
-      "title": "Knowing God \u2014 Message 4",
-      "youtubeId": "W1bQAqwRDzw"
+      "title": "Knowing The Presence of God",
+      "youtubeId": "W1bQAqwRDzw",
+      "scripture": "Psalm 46:4-7",
+      "speaker": "Rev. Steve Korch"
     },
     {
-      "title": "Knowing God \u2014 Message 5",
-      "youtubeId": "ZufzFA6dqEI"
+      "title": "Knowing the Person of God",
+      "youtubeId": "ZufzFA6dqEI",
+      "scripture": "Psalm 46:1-3",
+      "speaker": "Steve Korch"
     }
   ]
 }

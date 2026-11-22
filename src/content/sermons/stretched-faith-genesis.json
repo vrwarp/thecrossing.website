@@ -7,40 +7,57 @@
   "order": 2,
   "episodes": [
     {
-      "title": "Stretched Faith \u2014 Message 1",
-      "youtubeId": "Ed7MeLZYi58"
+      "title": "Missing the Gospel in the Church",
+      "youtubeId": "Ed7MeLZYi58",
+      "scripture": "1 Timothy 1:1-11",
+      "speaker": "Rev. Daniel Tai"
     },
     {
-      "title": "Stretched Faith \u2014 Message 2",
-      "youtubeId": "BRsXMzk3bkY"
+      "title": "A Promise is a Promise",
+      "youtubeId": "BRsXMzk3bkY",
+      "scripture": "Genesis 21:1-21",
+      "speaker": "Elijah Liao"
     },
     {
-      "title": "Stretched Faith \u2014 Message 3",
-      "youtubeId": "l-24njsjmJM"
+      "title": "Covenants, Convictions, and Compromise, Genesis 18: 1-28; 19:1-29",
+      "youtubeId": "l-24njsjmJM",
+      "speaker": "Rev. Daniel Tai"
     },
     {
-      "title": "Stretched Faith \u2014 Message 4",
-      "youtubeId": "BhMh_Jam8Rs"
+      "title": "When God Writes Your Story",
+      "youtubeId": "BhMh_Jam8Rs",
+      "scripture": "Genesis 17:1-21",
+      "speaker": "Daniel Bo"
     },
     {
-      "title": "Stretched Faith \u2014 Message 5",
-      "youtubeId": "-AvFrYepU54"
+      "title": "Wise Waiting",
+      "youtubeId": "-AvFrYepU54",
+      "scripture": "Genesis 16:1-16",
+      "speaker": "Rev. Daniel Tai"
     },
     {
-      "title": "Stretched Faith \u2014 Message 6",
-      "youtubeId": "j8CS56l8gu0"
+      "title": "The Faith Playbook",
+      "youtubeId": "j8CS56l8gu0",
+      "scripture": "Genesis 15:1-18",
+      "speaker": "Melissa Lee"
     },
     {
-      "title": "Stretched Faith \u2014 Message 7",
-      "youtubeId": "laNMEI75l6Y"
+      "title": "Integrity to Temptation",
+      "youtubeId": "laNMEI75l6Y",
+      "scripture": "Genesis 14: 1-24",
+      "speaker": "Albert Siu"
     },
     {
-      "title": "Stretched Faith \u2014 Message 8",
-      "youtubeId": "EpQfY-4ahuU"
+      "title": "God's Plan A For Us",
+      "youtubeId": "EpQfY-4ahuU",
+      "scripture": "Genesis 13: 1-18",
+      "speaker": "Alan Wan"
     },
     {
-      "title": "Stretched Faith \u2014 Message 9",
-      "youtubeId": "l0jxIR5vYE8"
+      "title": "Faith: We All Start At Zero",
+      "youtubeId": "l0jxIR5vYE8",
+      "scripture": "Genesis 12:1-20",
+      "speaker": "Rev. Daniel Tai"
     }
   ]
 }

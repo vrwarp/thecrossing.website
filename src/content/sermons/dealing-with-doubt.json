@@ -7,20 +7,27 @@
   "order": 21,
   "episodes": [
     {
-      "title": "Dealing with Doubt \u2014 Message 1",
-      "youtubeId": "4nPNI7irCKY"
+      "title": "Doubt and Friendship",
+      "youtubeId": "4nPNI7irCKY",
+      "speaker": "Rev. Fred Mok"
     },
     {
-      "title": "Dealing with Doubt \u2014 Message 2",
-      "youtubeId": "_CKtO47rEGA"
+      "title": "Doubt and Honesty",
+      "youtubeId": "_CKtO47rEGA",
+      "scripture": "Matthew 27:45-56, Psalm 22",
+      "speaker": "Rev Fred Mok"
     },
     {
-      "title": "Dealing with Doubt \u2014 Message 3",
-      "youtubeId": "Cp7Z5lDulck"
+      "title": "Doubt and Suffering",
+      "youtubeId": "Cp7Z5lDulck",
+      "scripture": "Job",
+      "speaker": "Rev. Fred Mok"
     },
     {
-      "title": "Dealing with Doubt \u2014 Message 4",
-      "youtubeId": "0dP7QdVs06c"
+      "title": "Doubt and Humility",
+      "youtubeId": "0dP7QdVs06c",
+      "scripture": "Job",
+      "speaker": "Rev. Fred Mok"
     }
   ]
 }

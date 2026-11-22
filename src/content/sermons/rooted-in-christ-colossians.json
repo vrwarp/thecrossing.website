@@ -7,20 +7,28 @@
   "order": 6,
   "episodes": [
     {
-      "title": "Rooted in Christ \u2014 Message 1",
-      "youtubeId": "0zbE03hP9s0"
+      "title": "Assertive Humility",
+      "youtubeId": "0zbE03hP9s0",
+      "scripture": "Colossians 3:18-4:1",
+      "speaker": "Elijah Liao"
     },
     {
-      "title": "Rooted in Christ \u2014 Message 2",
-      "youtubeId": "Zr8EshE7AaQ"
+      "title": "Rebrand",
+      "youtubeId": "Zr8EshE7AaQ",
+      "scripture": "Colossians 3:1-17",
+      "speaker": "Melissa Lee"
     },
     {
-      "title": "Rooted in Christ \u2014 Message 3",
-      "youtubeId": "WfW-5DmtD3A"
+      "title": "Jesus Is It",
+      "youtubeId": "WfW-5DmtD3A",
+      "scripture": "Colossians 2:16-23",
+      "speaker": "Daniel Bo"
     },
     {
-      "title": "Rooted in Christ \u2014 Message 4",
-      "youtubeId": "wSIK7AoNJIA"
+      "title": "Not Just Another Influencer",
+      "youtubeId": "wSIK7AoNJIA",
+      "scripture": "Colossians 2:6-15",
+      "speaker": "Albert Siu"
     }
   ]
 }

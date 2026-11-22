@@ -7,40 +7,56 @@
   "order": 18,
   "episodes": [
     {
-      "title": "Summer 2020 \u2014 Message 1",
-      "youtubeId": "tvSgnvDszAk"
+      "title": "Imagination: Maintaining the Conscience",
+      "youtubeId": "tvSgnvDszAk",
+      "speaker": "Dr. Steve Korch",
+      "scripture": "Philippians 4:8"
     },
     {
-      "title": "Summer 2020 \u2014 Message 2",
-      "youtubeId": "DXX_a9b6z8Y"
+      "title": "Meditation: Programming the Conscience",
+      "youtubeId": "DXX_a9b6z8Y",
+      "speaker": "Dr. Steve Korch",
+      "scripture": "Joshua 1:8 & Hebrews 5:14"
     },
     {
-      "title": "Summer 2020 \u2014 Message 3",
-      "youtubeId": "TbMtn_XLVCo"
+      "title": "Confession: Clearing the Conscience",
+      "youtubeId": "TbMtn_XLVCo",
+      "speaker": "Dr. Steve Korch"
     },
     {
-      "title": "Summer 2020 \u2014 Message 4",
-      "youtubeId": "SJZ6Rnf6LDs"
+      "title": "The Little Things",
+      "youtubeId": "SJZ6Rnf6LDs",
+      "scripture": "1 Kings 19:1-18",
+      "speaker": "Pastor Gabriel Tseng"
     },
     {
-      "title": "Summer 2020 \u2014 Message 5",
-      "youtubeId": "aAUcALdV6U8"
+      "title": "Temptation: Testing the Conscience",
+      "youtubeId": "aAUcALdV6U8",
+      "scripture": "James 1:14-15",
+      "speaker": "Dr. Steve Korch"
     },
     {
-      "title": "Summer 2020 \u2014 Message 6",
-      "youtubeId": "FCnwaQjy-AY"
+      "title": "Conscience: Discovering a Hidden Asset",
+      "youtubeId": "FCnwaQjy-AY",
+      "speaker": "Dr. Steve Korch",
+      "scripture": "Romans 2:14-15 & 1 Timothy 1:5"
     },
     {
-      "title": "Summer 2020 \u2014 Message 7",
-      "youtubeId": "kDed-LoVsK8"
+      "title": "Won't You Be My Neighbor?",
+      "youtubeId": "kDed-LoVsK8",
+      "scripture": "Luke 10:25-37",
+      "speaker": "Rev. Joshua Lee"
     },
     {
-      "title": "Summer 2020 \u2014 Message 8",
-      "youtubeId": "HPL6oh5dRII"
+      "title": "Wisdom, The Path to Joy, Proverbs 1:1-5a",
+      "youtubeId": "HPL6oh5dRII",
+      "speaker": "Felicia Larson"
     },
     {
-      "title": "Summer 2020 \u2014 Message 9",
-      "youtubeId": "a11P49nCGMg"
+      "title": "What's In A Name?",
+      "youtubeId": "a11P49nCGMg",
+      "scripture": "Exodus 1",
+      "speaker": "Pastor Ed Ahn"
     }
   ]
 }

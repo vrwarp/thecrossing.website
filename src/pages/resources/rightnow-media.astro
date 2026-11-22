@@ -8,6 +8,7 @@ const series = [
     title: 'You and Me Forever',
     speaker: 'Francis & Lisa Chan',
     subtitle: "Marriage is Great, But it's not Forever",
+    image: '/images/resources/rightnow/you-and-me-forever.webp',
     desc: 'This seven-session Bible study series, based on the book You and Me Forever from best-selling authors Francis Chan and Lisa Chan, will challenge you to view your marriage like never before and help you dive deeper into pursuing Christ first.',
     href: 'https://app.rightnowmedia.org/en/content/details/1213',
   },
@@ -15,6 +16,7 @@ const series = [
     title: 'Crazy Love',
     speaker: 'Francis Chan',
     subtitle: '',
+    image: '/images/resources/rightnow/crazy-love.webp',
     desc: "It's crazy, if you think about it. The God of the universe loves us with a radical, unconditional, self-sacrificing love. And what is our typical response? We go to church, sing songs, and try not to cuss. God is calling you to a passionate love relationship with Himself.",
     href: 'https://app.rightnowmedia.org/en/content/details/144',
   },
@@ -22,6 +24,7 @@ const series = [
     title: 'Culture Shock',
     speaker: 'Chip Ingram',
     subtitle: '',
+    image: '/images/resources/rightnow/culture-shock.webp',
     desc: 'Where do you stand on issues like Truth, Sex, Homosexuality, Abortion, the Environment, and the Church and Politics? More importantly, what does God say? Believers must develop convictions based on research, reason, and biblical truth.',
     href: 'https://app.rightnowmedia.org/en/content/details/344196',
   },
@@ -29,6 +32,7 @@ const series = [
     title: 'The Reason for God',
     speaker: 'Timothy Keller',
     subtitle: 'Conversations on Faith and Life',
+    image: '/images/resources/rightnow/reason-for-god.webp',
     desc: 'This six-session small group Bible study captures live and unscripted conversations between Tim Keller and a group of people to address their doubts and objections to Christianity using literature, philosophy, and Scripture.',
     href: 'https://app.rightnowmedia.org/en/content/details/213',
   },
@@ -65,22 +69,42 @@ const series = [
       <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Featured on RightNow Media</h2>
       <div class="mt-6 divide-y divide-stone-300 border-y border-stone-300">
         {series.map((s, idx) => (
-          <article class="grid gap-4 py-7 sm:grid-cols-12 sm:items-baseline">
-            <div class="sm:col-span-4 space-y-1">
-              <p class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover">0{idx + 1} / {s.speaker}</p>
-              <h3 class="font-display text-xl font-bold text-stone-900">{s.title}</h3>
-              {s.subtitle && <p class="text-xs font-medium italic text-stone-600">{s.subtitle}</p>}
-            </div>
-            <p class="sm:col-span-6 text-sm leading-relaxed text-stone-600">{s.desc}</p>
-            <div class="sm:col-span-2 sm:text-right">
+          <article class="grid gap-6 py-8 sm:grid-cols-12 sm:items-start">
+            <div class="sm:col-span-3">
               <a
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center font-mono text-xs font-semibold uppercase tracking-wider text-stone-900 hover:text-accent-hover transition-colors"
+                class="block w-32 sm:w-40 overflow-hidden rounded-lg border border-stone-300 bg-white transition-transform hover:-translate-y-0.5"
               >
-                Watch &nearr;
+                <img
+                  src={url(s.image)}
+                  alt={`${s.title} series cover`}
+                  loading="eager"
+                  decoding="sync"
+                  class="aspect-[3/4] w-full object-cover"
+                />
               </a>
+            </div>
+            <div class="sm:col-span-9 space-y-2.5">
+              <p class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover">0{idx + 1} / {s.speaker}</p>
+              <h3 class="font-display text-xl font-bold text-stone-900">
+                <a href={s.href} target="_blank" rel="noopener noreferrer" class="hover:text-accent-hover transition-colors">
+                  {s.title}
+                </a>
+              </h3>
+              {s.subtitle && <p class="text-xs font-medium italic text-stone-600">{s.subtitle}</p>}
+              <p class="text-sm leading-relaxed text-stone-600">{s.desc}</p>
+              <div class="pt-1">
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center rounded-lg border border-stone-300 bg-white px-4 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-stone-900 hover:border-stone-900 hover:text-accent-hover transition-colors"
+                >
+                  Available Here &nearr;
+                </a>
+              </div>
             </div>
           </article>
         ))}

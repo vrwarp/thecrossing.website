@@ -7,24 +7,33 @@
   "order": 7,
   "episodes": [
     {
-      "title": "Summer 2024 \u2014 Message 1",
-      "youtubeId": "FxPvSn_dnx0"
+      "title": "A Heart  For Eternity",
+      "youtubeId": "FxPvSn_dnx0",
+      "scripture": "John 4:1-24",
+      "speaker": "Rev. Eddie Cheng"
     },
     {
-      "title": "Summer 2024 \u2014 Message 2",
-      "youtubeId": "jpQfHz9Bkxs"
+      "title": "Denying Yourself as a Path to Life",
+      "youtubeId": "jpQfHz9Bkxs",
+      "scripture": "Luke 9:18-27",
+      "speaker": "Pastor Leedah Wong"
     },
     {
-      "title": "Summer 2024 \u2014 Message 3",
-      "youtubeId": "UKAYh6c6dQM"
+      "title": "You are a Piece of the Puzzle",
+      "youtubeId": "UKAYh6c6dQM",
+      "speaker": "Pastor Felicia Larson"
     },
     {
-      "title": "Summer 2024 \u2014 Message 4",
-      "youtubeId": "Hn0EctWxZ5g"
+      "title": "No Time To Waste",
+      "youtubeId": "Hn0EctWxZ5g",
+      "scripture": "1 Timothy 2:1-4",
+      "speaker": "Rev. Daniel Tai"
     },
     {
-      "title": "Summer 2024 \u2014 Message 5",
-      "youtubeId": "h5C3lJ-6Xas"
+      "title": "The Banquet",
+      "youtubeId": "h5C3lJ-6Xas",
+      "scripture": "Luke 14:12-24",
+      "speaker": "Pastor Leedah Wong"
     }
   ]
 }

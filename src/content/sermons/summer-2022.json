@@ -7,24 +7,33 @@
   "order": 12,
   "episodes": [
     {
-      "title": "Summer 2022 \u2014 Message 1",
-      "youtubeId": "Es6dyWVPZow"
+      "title": "Fighting a Good Fight",
+      "youtubeId": "Es6dyWVPZow",
+      "speaker": "Pastor Felicia Larson"
     },
     {
-      "title": "Summer 2022 \u2014 Message 2",
-      "youtubeId": "1ANCbpjTBRo"
+      "title": "Combating the Lies We Believe",
+      "youtubeId": "1ANCbpjTBRo",
+      "scripture": "Philippians 4:8-9",
+      "speaker": "Rica Ruiz"
     },
     {
-      "title": "Summer 2022 \u2014 Message 3",
-      "youtubeId": "z0nl_tFlm_0"
+      "title": "Oh, Oh, Jesus is Calling",
+      "youtubeId": "z0nl_tFlm_0",
+      "scripture": "Luke 14:25-33",
+      "speaker": "Dr. Tim Tseng"
     },
     {
-      "title": "Summer 2022 \u2014 Message 4",
-      "youtubeId": "6gFMVUvpNX8"
+      "title": "Surprising Hope",
+      "youtubeId": "6gFMVUvpNX8",
+      "scripture": "Revelation 5:1-14",
+      "speaker": "Pastor David Nguyen"
     },
     {
-      "title": "Summer 2022 \u2014 Message 5",
-      "youtubeId": "oqKMJlA066k"
+      "title": "The Blessing",
+      "youtubeId": "oqKMJlA066k",
+      "scripture": "Numbers 6:22-27",
+      "speaker": "Pastor Will Medel"
     }
   ]
 }
