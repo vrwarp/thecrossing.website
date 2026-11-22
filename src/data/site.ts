@@ -31,9 +31,7 @@ export const SITE = {
   podcasts: [
     { name: 'Apple Podcasts', href: 'https://podcasts.apple.com/us/podcast/the-crossing-at-cfcc-hayward/id1483717891', primary: true },
     { name: 'Spotify', href: 'https://open.spotify.com/show/3YKYaEkeAwBN1XFQ9yfVx8?si=NRVcy05LTdSeRAh12f2brQ', primary: true },
-    { name: 'Google Podcasts', href: 'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3RoZWNyb3NzaW5nYXRjZmNjL2ZlZWQueG1s', primary: true },
     { name: 'Pocket Casts', href: 'https://pca.st/l6ozyis9', primary: false },
-    { name: 'Stitcher', href: 'https://www.stitcher.com/s?fid=474332&refid=stpr', primary: false },
     { name: 'RSS Feed', href: 'https://feed.podbean.com/thecrossingatcfcc/feed.xml', primary: false },
   ],
   archiveLinks: {

@@ -14,7 +14,7 @@ const ministries = [
   {
     title: 'Children (The Rock)',
     badge: 'Nursery – 5th Grade',
-    desc: 'Fun, safe, gospel-centered Sunday morning (9:30 AM) and Friday night programs so every child can encounter and know Jesus.',
+    desc: 'Fun, safe, gospel-centered Sunday morning (9:30 AM) and Shining Stars (Fridays 7:30 PM) programs so every child can encounter and know Jesus.',
     href: '/get-connected/children',
     image: '/images/community/children-class.webp',
   },
@@ -44,16 +44,18 @@ const ministries = [
     badge: '1-on-1 Mentoring',
     desc: 'Intentional 10-month discipleship pairs growing together in learning, sharing, and prayer.',
     href: '/get-connected/discipleship',
-    image: '/images/site/community.webp',
-  },
-  {
-    title: 'Serve & Volunteer',
-    badge: 'Sunday & Outreach Teams',
-    desc: 'Use your gifts on Hospitality, Kids, Youth, Worship/AV, Homework Club, or Bridging Grace teams.',
-    href: '/get-connected/serve',
-    image: '/images/community/moms-and-toddler.webp',
+    image: '/images/community/discipleship-bible.webp',
+    crop: 'object-center',
   },
 ];
+
+const crops: Record<string, string> = {
+  'Mature Adults': 'object-[50%_45%]',
+  'Youth (Footprints)': 'object-top',
+  'Children (The Rock)': 'object-top',
+  'Young Adults (Transparent)': 'object-center',
+  'Growth Groups': 'object-center',
+};
 ---
 
 <BaseLayout title="Get Connected" description="Ministries and weekly small groups at The Crossing.">
@@ -65,35 +67,62 @@ const ministries = [
     breadcrumbs={[{ label: 'Get Connected' }]}
   />
 
-  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {ministries.map((m) => (
         <a
           href={url(m.href)}
-          class="group flex flex-col justify-between overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+          class="group flex flex-col justify-between overflow-hidden rounded-xl border border-stone-300 bg-white transition-colors duration-200 hover:border-stone-900"
         >
           <div>
             <div class="aspect-[16/10] w-full overflow-hidden bg-stone-100">
               <img
                 src={url(m.image)}
                 alt={m.title}
-                decoding="async"
-                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                decoding="sync"
+                class={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${crops[m.title] || m.crop || 'object-center'}`}
               />
             </div>
             <div class="p-6 pb-2">
-              <span class="text-xs font-bold uppercase tracking-wider text-accent-hover">{m.badge}</span>
+              <span class="font-mono text-[11px] font-medium uppercase tracking-wider text-accent-hover">{m.badge}</span>
               <h2 class="mt-2 font-display text-2xl font-bold text-stone-900 group-hover:text-accent-hover transition-colors">
                 {m.title}
               </h2>
               <p class="mt-3 text-sm leading-relaxed text-stone-600">{m.desc}</p>
             </div>
           </div>
-          <p class="px-6 pb-6 pt-4 text-xs font-bold uppercase tracking-wider text-stone-900 group-hover:text-accent-hover">
+          <p class="px-6 pb-6 pt-4 font-mono text-xs font-medium uppercase tracking-wider text-stone-900 group-hover:text-accent-hover">
             Learn more &rarr;
           </p>
         </a>
       ))}
     </div>
+
+    <!-- Serve & Volunteer Full-Width Editorial Callout (eliminates 7-card orphan) -->
+    <a
+      href={url('/get-connected/serve')}
+      class="group grid overflow-hidden rounded-xl border border-stone-300 bg-obsidian text-white transition-colors hover:border-stone-900 md:grid-cols-12"
+    >
+      <div class="aspect-[16/10] overflow-hidden md:col-span-5 md:aspect-auto">
+        <img
+          src={url('/images/community/moms-and-toddler.webp')}
+          alt="Serve and volunteer with The Crossing community"
+          decoding="async"
+          class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+      <div class="flex flex-col justify-center p-8 md:col-span-7 md:p-10">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">Sunday &amp; Outreach Teams</p>
+        <h2 class="mt-2 font-display text-2xl font-extrabold sm:text-3xl">
+          Serve &amp; <span class="font-serif italic font-normal text-amber-300">Volunteer</span>
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-stone-300 max-w-xl">
+          Use your gifts on Hospitality, The Rock Kids, Footprints Youth, Worship &amp; AV, Homework Club, or Bridging Grace teams.
+        </p>
+        <p class="mt-5 font-mono text-xs font-medium uppercase tracking-wider text-amber-300 group-hover:text-white">
+          Explore serving teams &rarr;
+        </p>
+      </div>
+    </a>
   </section>
 </BaseLayout>

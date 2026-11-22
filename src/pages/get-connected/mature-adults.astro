@@ -28,20 +28,21 @@ const values = [
     title="Mature Adults Group"
     eyebrow="Get Connected"
     subtitle="Mutual support, encouragement, Bible study, and accountability for married or single adults and parents."
+    backgroundImage="/images/community/cross-gen-redwoods.webp"
     breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Mature Adults' }]}
   />
 
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
-    <div class="grid gap-6 md:grid-cols-12 md:items-center rounded-2xl border border-stone-200 bg-white p-5 sm:p-6 shadow-xs">
-      <div class="md:col-span-7 overflow-hidden rounded-xl aspect-[16/10]">
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
+    <div class="grid gap-6 md:grid-cols-12 md:items-center rounded-xl border border-stone-300 bg-white p-5 sm:p-6">
+      <div class="md:col-span-7 overflow-hidden rounded-lg aspect-[16/10]">
         <img
           src={url('/images/community/cross-gen-redwoods.webp')}
           alt="Cross-generational adults and families smiling together under the redwoods"
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover object-[50%_45%]"
         />
       </div>
       <div class="md:col-span-5 space-y-3">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Fridays • 7:30 – 9:30 PM</p>
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Fridays • 7:30 – 9:30 PM</p>
         <h2 class="font-display text-2xl font-bold text-stone-900">Room 107, Worship Center</h2>
         <p class="text-sm leading-relaxed text-stone-600">
           Each Friday, we meet in discussion groups at church to study the Bible, then break into men's and women's groups for sharing and prayer. Newcomers are always welcome—or email{' '}
@@ -51,11 +52,13 @@ const values = [
     </div>
 
     <div>
-      <h2 class="font-display text-2xl font-extrabold text-stone-900">What We Value</h2>
-      <div class="mt-6 grid gap-5 sm:grid-cols-2">
-        {values.map((v) => (
-          <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
-            <h3 class="font-display text-lg font-bold text-stone-900">{v.name}</h3>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Core Commitments</p>
+      <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">What We Value</h2>
+      <div class="mt-6 grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-2 sm:divide-y-0">
+        {values.map((v, idx) => (
+          <div class="border-stone-300 py-6 sm:p-6 sm:odd:border-r sm:[&:nth-child(-n+2)]:border-b">
+            <p class="font-mono text-xs text-stone-400">0{idx + 1}</p>
+            <h3 class="mt-1 font-display text-lg font-bold text-stone-900">{v.name}</h3>
             <p class="mt-2 text-sm text-stone-600">{v.desc}</p>
           </div>
         ))}

@@ -13,6 +13,8 @@ const announcements = [
     title: 'Membership Class',
     date: 'Sundays (through Nov 22)',
     desc: 'For those learning to follow Jesus, applying for church membership, or preparing to be baptized on Thanksgiving Sunday.',
+    actionLabel: 'Email Church Office',
+    actionHref: 'mailto:church.office@cfcchayward.org?subject=Membership%20Class',
   },
   {
     title: 'Thanksgiving Celebration Dinner & Fellowship',
@@ -23,16 +25,22 @@ const announcements = [
     title: 'Bridging Grace Thanksgiving Delivery',
     date: 'Sunday, Nov 22',
     desc: 'Share Jesus’ love through food and grocery deliveries for families in need across the East Bay.',
+    actionLabel: 'Email Bridging Grace',
+    actionHref: 'mailto:bridginggrace@gmail.com?subject=Bridging%20Grace%20Delivery',
   },
   {
     title: 'Alameda County Community Food Bank Drive',
     date: 'Nov 29 – Jan 3',
     desc: 'Donate canned or dried pantry goods in the red collection barrels located in the Lobby and Fellowship Hall.',
+    actionLabel: 'See Serving Teams',
+    actionHref: url('/get-connected/serve'),
   },
   {
     title: 'Hospitality Team Meeting',
     date: 'Sunday, Dec 6 • 11:15 AM – 12:15 PM',
     desc: 'Training and appreciation gathering for all hospitality team members in Room 107.',
+    actionLabel: 'Join Hospitality Team',
+    actionHref: url('/get-connected/serve'),
   },
 ];
 ---
@@ -48,13 +56,13 @@ const announcements = [
 
   <section class="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 space-y-14">
     <!-- Featured Event Banner -->
-    <div class="rounded-3xl bg-obsidian p-8 text-white sm:p-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+    <div class="rounded-xl border border-stone-800 bg-obsidian p-8 text-white sm:p-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
       <div class="max-w-2xl">
-        <span class="inline-block rounded-full bg-accent/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent">
-          Featured Retreat
+        <span class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">
+          Featured Retreat &bull; Nov 6–8, 2026
         </span>
         <h2 class="mt-3 font-display text-2xl font-extrabold sm:text-3xl">
-          Men's Retreat: On Point — Kingdom Manhood
+          Men's Retreat: <span class="font-serif italic font-normal text-amber-300">On Point — Kingdom Manhood</span>
         </h2>
         <p class="mt-2 text-sm text-stone-300 sm:text-base">
           Redwood Glen Conference Center, Loma Mar CA &bull; Guest Speaker: Pastor Matthew "Matty" Blevins.
@@ -71,24 +79,24 @@ const announcements = [
     </div>
 
     <!-- Weekly Schedule -->
-    <div class="grid gap-6 md:grid-cols-2">
-      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Weekly Worship</p>
+    <div class="grid divide-y divide-stone-300 border-y border-stone-300 md:grid-cols-2 md:divide-x md:divide-y-0">
+      <div class="py-8 md:pr-8 space-y-3">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / Weekly Worship</p>
         <h3 class="font-display text-xl font-bold text-stone-900">Join Us Sundays at 9:30 AM</h3>
         <p class="text-sm leading-relaxed text-stone-600">
           Worship together with us every Sunday at 157 Smalley Ave, Hayward. We also livestream on our{' '}
           <a href={SITE.social.youtubeStreams} target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">YouTube Channel</a>.
         </p>
       </div>
-      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Sundays at 11:15 AM</p>
+      <div class="py-8 md:pl-8 space-y-3">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Sundays at 11:15 AM</p>
         <h3 class="font-display text-xl font-bold text-stone-900">Christian Education Classes</h3>
         <ul class="space-y-1 text-sm text-stone-600">
           <li><strong>Adult CE Class:</strong> 11:15 AM &bull; Room 202</li>
           <li><strong>High School CE Class:</strong> 11:15 AM &bull; Room 204</li>
           <li><strong>Middle School CE Class:</strong> 11:15 AM &bull; Room 201</li>
         </ul>
-        <a href={url('/resources/ce')} class="inline-block text-xs font-bold uppercase tracking-wider text-accent-hover hover:underline pt-1">
+        <a href={url('/resources/ce')} class="inline-block font-mono text-xs font-medium uppercase tracking-wider text-accent-hover hover:underline pt-1">
           View CE Schedule &rarr;
         </a>
       </div>
@@ -96,18 +104,28 @@ const announcements = [
 
     <!-- Announcements -->
     <div>
-      <div class="flex flex-wrap items-center justify-between gap-4">
-        <h2 class="font-display text-2xl font-extrabold text-stone-900">Announcements</h2>
-        <a href={url('/contact-us')} class="text-sm font-bold text-accent-hover hover:underline">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Church News</p>
+          <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Announcements</h2>
+        </div>
+        <a href={url('/contact-us')} class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover hover:underline">
           Questions or RSVP? Contact us &rarr;
         </a>
       </div>
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {announcements.map((item) => (
-          <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
-            <p class="text-xs font-bold uppercase tracking-wider text-accent-hover">{item.date}</p>
-            <h3 class="mt-2 font-display text-lg font-bold text-stone-900">{item.title}</h3>
-            <p class="mt-2 text-sm leading-relaxed text-stone-600">{item.desc}</p>
+          <article class="flex flex-col justify-between rounded-xl border border-stone-300 bg-white p-6">
+            <div>
+              <p class="font-mono text-[11px] font-medium uppercase tracking-wider text-accent-hover">{item.date}</p>
+              <h3 class="mt-2 font-display text-lg font-bold text-stone-900">{item.title}</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">{item.desc}</p>
+            </div>
+            {item.actionHref && item.actionLabel && (
+              <a href={item.actionHref} class="mt-4 inline-block font-mono text-xs font-medium uppercase tracking-wider text-stone-900 hover:text-accent-hover">
+                {item.actionLabel} &rarr;
+              </a>
+            )}
           </article>
         ))}
       </div>

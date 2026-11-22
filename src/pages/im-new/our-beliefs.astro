@@ -40,18 +40,14 @@ const beliefs = [
   />
 
   <section class="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
-    <div class="space-y-5">
+    <div class="divide-y divide-stone-300 border-y border-stone-300">
       {beliefs.map((b, idx) => (
-        <article class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs">
-          <div class="flex items-start gap-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-obsidian text-xs font-extrabold text-accent">
-              0{idx + 1}
-            </span>
-            <div>
-              <h2 class="font-display text-xl font-bold text-stone-900">{b.title}</h2>
-              <p class="mt-2 text-base leading-relaxed text-stone-700">{b.statement}</p>
-            </div>
+        <article class="grid gap-4 py-8 sm:grid-cols-12 sm:gap-8 sm:py-10">
+          <div class="sm:col-span-4 flex items-baseline gap-3">
+            <span class="font-mono text-xs font-medium text-accent-hover">0{idx + 1}</span>
+            <h2 class="font-display text-xl font-bold text-stone-900">{b.title}</h2>
           </div>
+          <p class="sm:col-span-8 text-base leading-relaxed text-stone-700">{b.statement}</p>
         </article>
       ))}
     </div>

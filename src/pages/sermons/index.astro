@@ -22,32 +22,40 @@ const archiveSeries = allSeries.filter((s) => s.data.order > 28);
   />
 
   <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 space-y-16">
+    <!-- Quick Section Jump Bar -->
+    <nav aria-label="Sermon sections" class="flex flex-wrap items-center gap-3 border-b border-stone-300 pb-5 font-mono text-xs uppercase tracking-wider">
+      <span class="text-stone-500">Jump to:</span>
+      <a href="#current-series" class="rounded-lg border border-stone-300 bg-white px-3 py-1.5 text-stone-800 hover:border-stone-900">Current Series</a>
+      <a href="#past-series" class="rounded-lg border border-stone-300 bg-white px-3 py-1.5 text-stone-800 hover:border-stone-900">Past Series ({pastSeries.length})</a>
+      <a href="#archive-series" class="rounded-lg border border-stone-300 bg-white px-3 py-1.5 text-stone-800 hover:border-stone-900">2006–2018 Archive ({archiveSeries.length})</a>
+    </nav>
+
     <!-- Current Series Spotlight -->
     {currentSeries && (
-      <div>
+      <div id="current-series">
         <div class="flex flex-wrap items-center justify-between gap-4">
           <h2 class="font-display text-2xl font-extrabold text-stone-900">Current Series</h2>
           <a
             href={SITE.social.youtubeStreams}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 rounded-xl bg-obsidian px-4 py-2 text-xs font-bold uppercase tracking-wider text-accent hover:bg-slate-dark transition-colors"
+            class="inline-flex items-center gap-2 rounded-xl bg-obsidian px-4 py-2 font-mono text-xs font-medium uppercase tracking-wider text-accent hover:bg-slate-dark transition-colors"
           >
             <span>Livestream on YouTube</span>
             <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
 
-        <div class="mt-5 overflow-hidden rounded-3xl bg-obsidian text-white shadow-xl lg:grid lg:grid-cols-12">
+        <div class="mt-5 overflow-hidden rounded-xl border border-stone-800 bg-obsidian text-white lg:grid lg:grid-cols-12">
           <div class="flex items-center justify-center bg-charcoal p-5 sm:p-8 lg:col-span-7">
             <img
               src={url(currentSeries.data.coverImage)}
               alt={currentSeries.data.title}
-              class="w-full rounded-2xl object-contain shadow-lg"
+              class="w-full rounded-lg object-contain"
             />
           </div>
           <div class="flex flex-col justify-center p-8 lg:col-span-5">
-            <span class="inline-block w-fit rounded-full bg-accent/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent">
+            <span class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">
               {currentSeries.data.book}
             </span>
             <h3 class="mt-3 font-display text-3xl font-extrabold">{currentSeries.data.title}</h3>
@@ -66,10 +74,10 @@ const archiveSeries = allSeries.filter((s) => s.data.order > 28);
     )}
 
     <!-- Podcast Links -->
-    <div class="rounded-3xl bg-obsidian p-8 text-white shadow-sm">
+    <div class="rounded-xl border border-stone-800 bg-obsidian p-8 text-white">
       <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <p class="text-xs font-bold uppercase tracking-widest text-accent">Audio Sermons</p>
+          <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">Audio Sermons</p>
           <h2 class="mt-1 font-display text-2xl font-extrabold text-white">Listen as a Podcast</h2>
           <p class="mt-1 text-sm text-stone-300">Subscribe to weekly Sunday messages on your favorite podcast app.</p>
         </div>
@@ -95,14 +103,14 @@ const archiveSeries = allSeries.filter((s) => s.data.order > 28);
     </div>
 
     <!-- Past Series Grid -->
-    <div>
+    <div id="past-series">
       <h2 class="font-display text-2xl font-extrabold text-stone-900">Past Series</h2>
       <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {pastSeries.map((series) => (
           <SeriesCard
             slug={series.id}
             title={series.data.title}
-            book={series.data.book}
+            book={[series.data.book, series.data.dateRange].filter(Boolean).join(' • ')}
             coverImage={series.data.coverImage}
             episodeCount={series.data.episodes.length}
           />
@@ -111,7 +119,7 @@ const archiveSeries = allSeries.filter((s) => s.data.order > 28);
     </div>
 
     <!-- Sermon Archive (2006–2018) -->
-    <div>
+    <div id="archive-series">
       <h2 class="font-display text-2xl font-extrabold text-stone-900">Sermon Archive (2006–2018)</h2>
       <p class="mt-1 text-sm text-stone-600">Earlier sermon series and message archives integrated from our church history.</p>
       <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
