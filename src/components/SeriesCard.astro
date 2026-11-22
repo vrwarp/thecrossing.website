@@ -8,9 +8,10 @@ export interface Props {
   coverImage: string;
   episodeCount?: number;
   externalHref?: string;
+  eager?: boolean;
 }
 
-const { slug, title, book, coverImage, episodeCount, externalHref } = Astro.props;
+const { slug, title, book, coverImage, episodeCount, externalHref, eager = false } = Astro.props;
 const href = externalHref || url(`/sermons/${slug}`);
 const isExternal = Boolean(externalHref);
 ---
@@ -25,8 +26,8 @@ const isExternal = Boolean(externalHref);
     <img
       src={url(coverImage)}
       alt={title}
-      loading="lazy"
-      decoding="async"
+      loading={eager ? 'eager' : 'lazy'}
+      decoding={eager ? 'sync' : 'async'}
       class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
     />
     {episodeCount !== undefined && episodeCount > 0 && (

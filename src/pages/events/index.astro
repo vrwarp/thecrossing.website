@@ -113,19 +113,21 @@ const announcements = [
           Questions or RSVP? Contact us &rarr;
         </a>
       </div>
-      <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-6 divide-y divide-stone-300 border-y border-stone-300">
         {announcements.map((item) => (
-          <article class="flex flex-col justify-between rounded-xl border border-stone-300 bg-white p-6">
-            <div>
-              <p class="font-mono text-[11px] font-medium uppercase tracking-wider text-accent-hover">{item.date}</p>
-              <h3 class="mt-2 font-display text-lg font-bold text-stone-900">{item.title}</h3>
-              <p class="mt-2 text-sm leading-relaxed text-stone-600">{item.desc}</p>
+          <article class="grid gap-3 py-6 sm:grid-cols-12 sm:items-baseline sm:gap-6">
+            <p class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover sm:col-span-3">{item.date}</p>
+            <div class="sm:col-span-6">
+              <h3 class="font-display text-lg font-bold text-stone-900">{item.title}</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-stone-600">{item.desc}</p>
             </div>
-            {item.actionHref && item.actionLabel && (
-              <a href={item.actionHref} class="mt-4 inline-block font-mono text-xs font-medium uppercase tracking-wider text-stone-900 hover:text-accent-hover">
-                {item.actionLabel} &rarr;
-              </a>
-            )}
+            <div class="sm:col-span-3 sm:text-right">
+              {item.actionHref && item.actionLabel && (
+                <a href={item.actionHref} class="inline-block font-mono text-xs font-medium uppercase tracking-wider text-stone-900 hover:text-accent-hover">
+                  {item.actionLabel} &rarr;
+                </a>
+              )}
+            </div>
           </article>
         ))}
       </div>

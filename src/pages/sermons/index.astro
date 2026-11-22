@@ -106,13 +106,14 @@ const archiveSeries = allSeries.filter((s) => s.data.order > 28);
     <div id="past-series">
       <h2 class="font-display text-2xl font-extrabold text-stone-900">Past Series</h2>
       <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {pastSeries.map((series) => (
+        {pastSeries.map((series, idx) => (
           <SeriesCard
             slug={series.id}
             title={series.data.title}
             book={[series.data.book, series.data.dateRange].filter(Boolean).join(' • ')}
             coverImage={series.data.coverImage}
             episodeCount={series.data.episodes.length}
+            eager={idx < 8}
           />
         ))}
       </div>

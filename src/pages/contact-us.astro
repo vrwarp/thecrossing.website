@@ -19,21 +19,21 @@ const formView =
   />
 
   <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
-    <div class="grid gap-6 sm:grid-cols-3">
-      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Phone</p>
+    <div class="grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+      <div class="py-7 sm:pr-6">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / Phone</p>
         <a href={SITE.phoneHref} class="mt-2 block font-display text-lg font-bold text-stone-900 hover:text-accent-hover">
           +1 {SITE.phone}
         </a>
       </div>
-      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Email</p>
+      <div class="py-7 sm:px-6">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Email</p>
         <a href={`mailto:${SITE.email}`} class="mt-2 block font-display text-base font-bold text-stone-900 hover:text-accent-hover break-all">
           {SITE.email}
         </a>
       </div>
-      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
-        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Address</p>
+      <div class="py-7 sm:pl-6">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">03 / Address</p>
         <p class="mt-2 font-display text-base font-bold text-stone-900">{SITE.address.full}</p>
       </div>
     </div>

@@ -52,41 +52,41 @@ const teams = [
     breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Serve & Volunteer' }]}
   />
 
-  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 space-y-14">
     <!-- Serving in Action Photo Strip -->
-    <div class="grid gap-5 sm:grid-cols-3">
-      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
-        <div class="aspect-[16/10] overflow-hidden">
+    <div class="grid gap-6 sm:grid-cols-3">
+      <figure>
+        <div class="aspect-[16/10] overflow-hidden rounded-xl">
           <img src={url('/images/community/moms-and-toddler.webp')} alt="Welcoming families at The Crossing" class="h-full w-full object-cover object-top" />
         </div>
-        <p class="p-3.5 text-xs font-medium text-stone-600">Welcoming families &amp; first-time guests every Sunday.</p>
-      </div>
-      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
-        <div class="aspect-[16/10] overflow-hidden">
-          <img src={url('/images/community/children-class.webp')} alt="Teaching kids in The Rock" class="h-full w-full object-cover" />
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Welcoming families &amp; first-time guests every Sunday.</figcaption>
+      </figure>
+      <figure>
+        <div class="aspect-[16/10] overflow-hidden rounded-xl">
+          <img src={url('/images/community/children-class.webp')} alt="Teaching kids in The Rock" class="h-full w-full object-cover object-top" />
         </div>
-        <p class="p-3.5 text-xs font-medium text-stone-600">Investing in the next generation in The Rock Kids.</p>
-      </div>
-      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
-        <div class="aspect-[16/10] overflow-hidden">
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Investing in the next generation in The Rock Kids.</figcaption>
+      </figure>
+      <figure>
+        <div class="aspect-[16/10] overflow-hidden rounded-xl">
           <img src={url('/images/community/youth-group-cross.webp')} alt="Footprints youth leaders and students" class="h-full w-full object-cover object-top" />
         </div>
-        <p class="p-3.5 text-xs font-medium text-stone-600">Mentoring middle &amp; high school students in Footprints.</p>
-      </div>
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Mentoring middle &amp; high school students in Footprints.</figcaption>
+      </figure>
     </div>
 
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="divide-y divide-stone-300 border-y border-stone-300">
       {teams.map((t) => (
-        <article class="flex flex-col justify-between rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
-          <div>
-            <p class="text-xs font-bold uppercase tracking-wider text-accent-hover">{t.cadence}</p>
-            <h2 class="mt-2 font-display text-xl font-bold text-stone-900">{t.name}</h2>
-            <p class="mt-2 text-sm leading-relaxed text-stone-600">{t.desc}</p>
+        <article class="grid gap-3 py-6 sm:grid-cols-12 sm:items-baseline sm:gap-6">
+          <p class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover sm:col-span-3">{t.cadence}</p>
+          <div class="sm:col-span-6">
+            <h2 class="font-display text-xl font-bold text-stone-900">{t.name}</h2>
+            <p class="mt-1.5 text-sm leading-relaxed text-stone-600">{t.desc}</p>
           </div>
-          <div class="mt-5 pt-4 border-t border-stone-100">
+          <div class="sm:col-span-3 sm:text-right">
             <a
               href={`mailto:${t.contact}?subject=${encodeURIComponent(`Interested in serving: ${t.name}`)}`}
-              class="text-xs font-bold uppercase tracking-wider text-accent-hover hover:underline"
+              class="inline-block font-mono text-xs font-semibold uppercase tracking-wider text-stone-900 hover:text-accent-hover"
             >
               Email Team Lead &rarr;
             </a>

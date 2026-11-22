@@ -27,7 +27,7 @@
 
   html {
     scroll-behavior: smooth;
-    background-color: var(--color-stone-50);
+    background-color: var(--color-obsidian);
     color: var(--color-stone-900);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -41,5 +41,31 @@
   :focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
+  }
+}
+
+/* Subtle pure-CSS scroll-driven parallax (GPU transform only, no JS) */
+@keyframes subtle-parallax {
+  from {
+    transform: translateY(-4%) scale(1.08);
+  }
+  to {
+    transform: translateY(4%) scale(1.08);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .parallax-media {
+    animation: subtle-parallax linear both;
+    animation-timeline: view();
+    animation-range: cover;
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-media {
+    animation: none !important;
+    transform: none !important;
   }
 }

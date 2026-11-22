@@ -31,6 +31,7 @@ const pageTitle = title === SITE.name ? `${SITE.name} | Hayward, CA` : `${title}
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0B0D10" />
     <link rel="icon" type="image/x-icon" href={url('/favicon.ico')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +40,7 @@ const pageTitle = title === SITE.name ? `${SITE.name} | Hayward, CA` : `${title}
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen flex flex-col bg-stone-50 text-stone-900">
+  <body class="min-h-screen flex flex-col bg-obsidian text-stone-900">
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-obsidian"
@@ -49,7 +50,7 @@ const pageTitle = title === SITE.name ? `${SITE.name} | Hayward, CA` : `${title}
 
     <Header />
 
-    <main id="main-content" class="flex-1" data-pagefind-body={indexable ? '' : undefined}>
+    <main id="main-content" class="flex-1 bg-stone-50" data-pagefind-body={indexable ? '' : undefined}>
       <slot />
     </main>
 

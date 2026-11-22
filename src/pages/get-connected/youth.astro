@@ -17,47 +17,47 @@ const calSrc =
     breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Youth' }]}
   />
 
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
     <!-- Youth Photo Strip -->
-    <div class="grid gap-5 sm:grid-cols-2">
-      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
-        <div class="aspect-[16/10] overflow-hidden">
+    <div class="grid gap-6 sm:grid-cols-2">
+      <figure>
+        <div class="aspect-[16/10] overflow-hidden rounded-xl">
           <img
             src={url('/images/community/youth-group-cross.webp')}
             alt="Footprints Youth Group and leaders smiling together in front of the redwood cross"
             class="h-full w-full object-cover object-top"
           />
         </div>
-        <p class="p-4 text-xs font-medium text-stone-600">Middle &amp; High School students growing alongside dedicated youth leaders.</p>
-      </div>
-      <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
-        <div class="aspect-[16/10] overflow-hidden">
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Middle &amp; High School students growing alongside dedicated youth leaders.</figcaption>
+      </figure>
+      <figure>
+        <div class="aspect-[16/10] overflow-hidden rounded-xl">
           <img
             src={url('/images/community/youth-hangout.webp')}
             alt="Students hanging out and smiling at Footprints Youth"
             class="h-full w-full object-cover object-top"
           />
         </div>
-        <p class="p-4 text-xs font-medium text-stone-600">Friday nights filled with wild games, real friendship, and honest conversations.</p>
-      </div>
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Friday nights filled with wild games, real friendship, and honest conversations.</figcaption>
+      </figure>
     </div>
 
-    <div class="grid gap-6 sm:grid-cols-3">
-      <div class="rounded-xl border border-stone-300 bg-white p-6 space-y-2">
+    <div class="grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+      <div class="py-7 sm:pr-6 space-y-2">
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / Friday Nights</p>
         <h2 class="font-display text-xl font-bold text-stone-900">7:30 PM – 9:15 PM</h2>
         <p class="text-sm text-stone-600">
           2nd floor Youth Center for games, real friendship, and honest discussion about life and God. First-time students are always welcome—just show up and sign in!
         </p>
       </div>
-      <div class="rounded-xl border border-stone-300 bg-white p-6 space-y-2">
+      <div class="py-7 sm:px-6 space-y-2">
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Sundays</p>
         <h2 class="font-display text-xl font-bold text-stone-900">9:30 AM &amp; 11:15 AM</h2>
         <p class="text-sm text-stone-600">
           At <strong>9:30 AM</strong>, students join the Main Sanctuary worship service with family. At <strong>11:15 AM</strong>, Middle School CE meets in <strong>Room 201</strong> and High School CE meets in <strong>Room 204</strong>.
         </p>
       </div>
-      <div class="rounded-xl border border-stone-300 bg-white p-6 space-y-2">
+      <div class="py-7 sm:pl-6 space-y-2">
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">03 / Contact &amp; Tutoring</p>
         <h2 class="font-display text-xl font-bold text-stone-900">Pastor Daniel Tai</h2>
         <p class="text-sm text-stone-600">
@@ -71,7 +71,7 @@ const calSrc =
       </div>
     </div>
 
-    <div class="rounded-xl border border-stone-300 bg-white p-6 sm:p-8 space-y-3">
+    <div class="border-l-2 border-stone-900 pl-6 space-y-3">
       <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">For Parents</p>
       <h2 class="font-display text-xl font-bold text-stone-900">Safety, Pick-Up &amp; Consent</h2>
       <ul class="list-disc pl-5 text-sm text-stone-600 space-y-1.5">

@@ -15,27 +15,27 @@ import { url } from '../../lib/url';
 
   <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
     <!-- Photo Showcase -->
-    <div class="grid gap-5 sm:grid-cols-2">
-      <div class="overflow-hidden rounded-xl border border-stone-300 bg-white">
-        <div class="aspect-[4/3] overflow-hidden">
+    <div class="grid gap-6 sm:grid-cols-2">
+      <figure>
+        <div class="aspect-[4/3] overflow-hidden rounded-xl">
           <img
             src={url('/images/community/growth-group-home.webp')}
             alt="Growth Group celebrating together around a home dining table"
             class="h-full w-full object-cover"
           />
         </div>
-        <p class="p-4 text-xs font-medium text-stone-600">Sharing meals, Scripture, and life across generations in East Bay homes.</p>
-      </div>
-      <div class="overflow-hidden rounded-xl border border-stone-300 bg-white">
-        <div class="aspect-[4/3] overflow-hidden">
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Sharing meals, Scripture, and life across generations in East Bay homes.</figcaption>
+      </figure>
+      <figure>
+        <div class="aspect-[4/3] overflow-hidden rounded-xl">
           <img
             src={url('/images/community/growth-group-lobby.webp')}
             alt="Smiling Growth Group friends at church"
             class="h-full w-full object-cover object-top"
           />
         </div>
-        <p class="p-4 text-xs font-medium text-stone-600">Building encouraging, authentic, and accountable friendships.</p>
-      </div>
+        <figcaption class="mt-2.5 text-xs font-medium text-stone-600">Building encouraging, authentic, and accountable friendships.</figcaption>
+      </figure>
     </div>
 
     <div class="grid divide-y divide-stone-300 border-y border-stone-300 md:grid-cols-3 md:divide-x md:divide-y-0">
@@ -56,7 +56,7 @@ import { url } from '../../lib/url';
       </div>
     </div>
 
-    <div class="rounded-xl border border-stone-300 bg-white p-8 space-y-4">
+    <div class="border-l-2 border-accent pl-6 space-y-4">
       <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Schedule &amp; Format</p>
       <h2 class="font-display text-2xl font-bold text-stone-900">What to Expect &amp; How to Join</h2>
       <p class="text-sm leading-relaxed text-stone-700">
@@ -71,7 +71,7 @@ import { url } from '../../lib/url';
         </a>
         <a
           href="mailto:church.office@cfcchayward.org?subject=Growth%20Group%20Inquiry"
-          class="rounded-xl border border-stone-300 px-5 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-100 transition-colors"
+          class="rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-100 transition-colors"
         >
           Ask Church Office
         </a>
