@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<BaseLayout title="Give" description="Ways to support the ministry of The Crossing at CFCC Hayward.">
+  <PageHeader
+    title="Give"
+    eyebrow="Generosity"
+    subtitle="Thank you for partnering with us to love God, love people, and serve the East Bay and beyond."
+    breadcrumbs={[{ label: 'Give' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-6 md:grid-cols-3">
+      <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Zero Fee</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Online Banking (Bill Pay)</h2>
+        <p class="text-sm leading-relaxed text-stone-600">
+          Add <strong>"CFCC Hayward"</strong> as a payee through your bank's Bill Pay with our mailing address:
+        </p>
+        <p class="rounded-xl bg-stone-100 p-3 text-xs font-semibold text-stone-800">
+          157 Smalley Ave, Hayward, CA 94541
+        </p>
+        <p class="text-xs text-stone-500">
+          If your bank asks for an account number, enter your name or envelope number. PayPal is also accepted (note: PayPal charges a service fee).
+        </p>
+      </article>
+
+      <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">In Person or Mail</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Donate by Check</h2>
+        <p class="text-sm leading-relaxed text-stone-600">
+          Make checks payable to <strong>CFCC Hayward</strong> and mail to:
+        </p>
+        <p class="rounded-xl bg-stone-100 p-3 text-xs font-semibold text-stone-800">
+          157 Smalley Ave, Hayward, CA 94541
+        </p>
+        <p class="text-xs text-stone-500">
+          You may also drop your offering in the offering box during Sunday worship service.
+        </p>
+      </article>
+
+      <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Brokerage Transfer</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Donate Stock</h2>
+        <p class="text-sm leading-relaxed text-stone-600">
+          Transfer stocks directly to our church’s Wells Fargo brokerage account via your brokerage firm.
+        </p>
+        <p class="text-xs leading-relaxed text-stone-600">
+          Email our finance deacon at{' '}
+          <a href="mailto:financecfcch@gmail.com" class="font-semibold text-accent-hover underline">
+            financecfcch@gmail.com
+          </a>{' '}
+          for account info, and include your name, address, stock symbol, number of shares, and date of donation.
+        </p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

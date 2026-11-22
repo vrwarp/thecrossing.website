@@ -1,0 +1,30 @@
+{
+  "title": "The Blessing",
+  "book": "Numbers 6",
+  "description": "Sermon series: The Blessing (Numbers 6).",
+  "coverImage": "/images/sermons/the-blessing-numbers-6.webp",
+  "featured": false,
+  "order": 24,
+  "episodes": [
+    {
+      "title": "The Blessing \u2014 Message 1",
+      "youtubeId": "9r_X755mt5g"
+    },
+    {
+      "title": "The Blessing \u2014 Message 2",
+      "youtubeId": "pDztZHCwdR4"
+    },
+    {
+      "title": "The Blessing \u2014 Message 3",
+      "youtubeId": "NiM2mvvxhMU"
+    },
+    {
+      "title": "The Blessing \u2014 Message 4",
+      "youtubeId": "AsWEG4PY0RY"
+    },
+    {
+      "title": "The Blessing \u2014 Message 5",
+      "youtubeId": "SPlueNC7j48"
+    }
+  ]
+}

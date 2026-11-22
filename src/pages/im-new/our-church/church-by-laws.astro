@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import EmbedFrame from '../../../components/EmbedFrame.astro';
+
+const pdfPreview = 'https://drive.google.com/file/d/17-ex5wTVnb8LqWcNIUMbigftMcpe1aka/preview';
+const pdfView = 'https://drive.google.com/file/d/17-ex5wTVnb8LqWcNIUMbigftMcpe1aka/view';
+---
+
+<BaseLayout title="Church By-Laws" description="Church By-Laws of Chinese For Christ Church of Hayward.">
+  <PageHeader
+    title="Church By-Laws"
+    eyebrow="Governance"
+    subtitle="Official church by-laws and governance document for CFCC Hayward."
+    breadcrumbs={[
+      { label: "I'm New", href: '/im-new' },
+      { label: 'Our Church', href: '/im-new/our-church' },
+      { label: 'Church By-Laws' },
+    ]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+    <EmbedFrame
+      src={pdfPreview}
+      title="CFCC Hayward Church By-Laws"
+      heightClass="h-[780px]"
+      openLabel="Open PDF in Google Drive"
+      openHref={pdfView}
+    />
+  </section>
+</BaseLayout>

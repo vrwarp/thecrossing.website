@@ -1,0 +1,73 @@
+---
+export interface Props {
+  youtubeId: string;
+  title: string;
+  speaker?: string;
+  date?: string;
+  scripture?: string;
+}
+
+const { youtubeId, title, speaker, date, scripture } = Astro.props;
+const thumbUrl = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+---
+
+<article class="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs transition-shadow hover:shadow-md">
+  <div
+    class="yt-facade relative aspect-video w-full cursor-pointer overflow-hidden bg-obsidian"
+    data-yt-id={youtubeId}
+    data-yt-title={title}
+  >
+    <img
+      src={thumbUrl}
+      alt={title}
+      loading="lazy"
+      decoding="async"
+      width="480"
+      height="360"
+      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+    <div class="absolute inset-0 bg-obsidian/30 transition-colors group-hover:bg-obsidian/15" aria-hidden="true" />
+    <button
+      type="button"
+      aria-label={`Play sermon: ${title}`}
+      class="absolute inset-0 flex items-center justify-center"
+    >
+      <span class="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-obsidian shadow-lg transition-transform duration-200 group-hover:scale-110">
+        <svg class="ml-1 h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </span>
+    </button>
+  </div>
+
+  <div class="p-4">
+    <h3 class="font-display text-base font-bold leading-snug text-stone-900 line-clamp-2">
+      {title}
+    </h3>
+    {(speaker || date || scripture) && (
+      <p class="mt-1.5 text-xs text-stone-600">
+        {[speaker, scripture, date].filter(Boolean).join(' • ')}
+      </p>
+    )}
+  </div>
+</article>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.yt-facade').forEach((el) => {
+    if (el.dataset.bound) return;
+    el.dataset.bound = 'true';
+    el.addEventListener('click', () => {
+      const id = el.dataset.ytId;
+      const title = el.dataset.ytTitle || 'YouTube video';
+      if (!id) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      iframe.title = title;
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.className = 'h-full w-full border-0';
+      el.replaceChildren(iframe);
+      el.classList.remove('cursor-pointer');
+    });
+  });
+</script>

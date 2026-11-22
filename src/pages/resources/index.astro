@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
+
+const resources = [
+  {
+    title: 'Christian Education (CE)',
+    badge: 'Sundays • 11:15 AM • Room 202',
+    desc: 'Workshops and classes on a broad range of topics designed to equip believers for life and faith.',
+    href: '/resources/ce',
+  },
+  {
+    title: 'After-School Program',
+    badge: 'Mon–Thu • 3:30 – 5:30 PM • Free',
+    desc: 'Kids Homework Club for Kindergarten – 7th Grade with homework help, arts & crafts, games, and snacks.',
+    href: '/resources/after-school-program',
+  },
+  {
+    title: 'Groceries & Care',
+    badge: 'Community Support',
+    desc: 'Trusted local grocery and food assistance through Bridging Grace and Alameda County Community Food Bank.',
+    href: '/resources/groceries',
+  },
+  {
+    title: 'RightNow Media',
+    badge: 'Free Church Subscription',
+    desc: 'Access over 20,000 video Bible studies for small groups, families, and personal growth.',
+    href: '/resources/rightnow-media',
+  },
+  {
+    title: 'Audiobooks on Hoopla',
+    badge: 'Free with Library Card',
+    desc: 'Recommended Christian audiobooks available free through your local public library on Hoopla Digital.',
+    href: '/resources/audiobooks-on-hoopla',
+  },
+  {
+    title: 'How to Practice Lent',
+    badge: 'Devotional Guide',
+    desc: 'A practical seasonal guide to fasting, prayer, and reflection leading up to Easter.',
+    href: '/resources/how-to-practice-lent',
+  },
+];
+---
+
+<BaseLayout title="Resources" description="Spiritual growth, family, and community care resources at The Crossing.">
+  <PageHeader
+    title="Resources"
+    eyebrow="Equipping & Care"
+    subtitle="Classes, media libraries, youth programs, and community care resources for you and your family."
+    breadcrumbs={[{ label: 'Resources' }]}
+  />
+
+  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {resources.map((r) => (
+        <a
+          href={url(r.href)}
+          class="group flex flex-col justify-between rounded-2xl border border-stone-200 bg-white p-7 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+        >
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-accent-hover">{r.badge}</span>
+            <h2 class="mt-2 font-display text-xl font-bold text-stone-900 group-hover:text-accent-hover transition-colors">
+              {r.title}
+            </h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">{r.desc}</p>
+          </div>
+          <p class="mt-6 text-xs font-bold uppercase tracking-wider text-stone-900 group-hover:text-accent-hover">
+            Explore &rarr;
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,13 @@
+# Dependencies & build output
+node_modules/
+dist/
+.astro/
+
+# Original site backup (kept locally for reference only, never committed)
+thecrossing-website-original/
+
+# OS & editor files
+.DS_Store
+*.log
+.env
+.env.*

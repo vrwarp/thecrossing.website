@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import EmbedFrame from '../../../components/EmbedFrame.astro';
+
+const scheduleEmbed =
+  'https://docs.google.com/spreadsheets/d/1lsuomS3ifwFyo0NsKC6M33LbSWk8u-krvo3neEpscc8/htmlembed';
+---
+
+<BaseLayout title="You and Me Forever" description="You and Me Forever Christian Education class at The Crossing.">
+  <PageHeader
+    title="You and Me Forever"
+    eyebrow="Christian Education"
+    subtitle="Marriage is great, but it's not forever — pursuing Christ first in marriage and family."
+    breadcrumbs={[
+      { label: 'Resources', href: '/resources' },
+      { label: 'Christian Education', href: '/resources/ce' },
+      { label: 'You and Me Forever' },
+    ]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-8">
+    <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-4 text-sm leading-relaxed text-stone-700">
+      <p>
+        Based on the book and video series by Francis and Lisa Chan, this class explores how a jealous God asks us to pursue Him first and most — so that marriage, family, love, and laughter fall into their proper place with eternity in view.
+      </p>
+      <p><strong>Details:</strong> Room 202 &bull; Sundays, 11:15 AM – 12:15 PM.</p>
+    </div>
+
+    <EmbedFrame src={scheduleEmbed} title="CE Schedule" heightClass="h-[440px]" />
+  </section>
+</BaseLayout>

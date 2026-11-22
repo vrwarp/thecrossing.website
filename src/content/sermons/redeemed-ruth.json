@@ -1,0 +1,42 @@
+{
+  "title": "Redeemed",
+  "book": "Ruth",
+  "description": "Sermon series: Redeemed (Ruth).",
+  "coverImage": "/images/sermons/redeemed-ruth.webp",
+  "featured": false,
+  "order": 13,
+  "episodes": [
+    {
+      "title": "Redeemed \u2014 Message 1",
+      "youtubeId": "YZyHwccRLI4"
+    },
+    {
+      "title": "Redeemed \u2014 Message 2",
+      "youtubeId": "GaWOiBjFSMw"
+    },
+    {
+      "title": "Redeemed \u2014 Message 3",
+      "youtubeId": "ZEWLEq8Ktg8"
+    },
+    {
+      "title": "Redeemed \u2014 Message 4",
+      "youtubeId": "pmkkVEMy60Q"
+    },
+    {
+      "title": "Redeemed \u2014 Message 5",
+      "youtubeId": "1gF2q6il57Y"
+    },
+    {
+      "title": "Redeemed \u2014 Message 6",
+      "youtubeId": "2rpshFShRdU"
+    },
+    {
+      "title": "Redeemed \u2014 Message 7",
+      "youtubeId": "1yLo-T-q6vc"
+    },
+    {
+      "title": "Redeemed \u2014 Message 8",
+      "youtubeId": "CjZKJAIoaXc"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+---
+import { url } from '../lib/url';
+
+export interface Props {
+  slug: string;
+  title: string;
+  book?: string;
+  coverImage: string;
+  episodeCount?: number;
+  externalHref?: string;
+}
+
+const { slug, title, book, coverImage, episodeCount, externalHref } = Astro.props;
+const href = externalHref || url(`/sermons/${slug}`);
+const isExternal = Boolean(externalHref);
+---
+
+<a
+  href={href}
+  target={isExternal ? '_blank' : undefined}
+  rel={isExternal ? 'noopener noreferrer' : undefined}
+  class="group block overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+>
+  <div class="relative aspect-[16/11] w-full overflow-hidden bg-obsidian">
+    <img
+      src={url(coverImage)}
+      alt={title}
+      loading="lazy"
+      decoding="async"
+      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+    {episodeCount !== undefined && episodeCount > 0 && (
+      <span class="absolute bottom-2.5 right-2.5 rounded-full bg-obsidian/85 px-2.5 py-1 text-xs font-semibold text-white backdrop-blur-xs">
+        {episodeCount} {episodeCount === 1 ? 'message' : 'messages'}
+      </span>
+    )}
+  </div>
+  <div class="p-4">
+    <h3 class="font-display text-base font-bold text-stone-900 group-hover:text-accent-hover transition-colors">
+      {title}
+    </h3>
+    {book && (
+      <p class="mt-1 text-xs font-medium uppercase tracking-wider text-stone-500">
+        {book}
+      </p>
+    )}
+  </div>
+</a>

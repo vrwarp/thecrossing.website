@@ -1,0 +1,30 @@
+{
+  "title": "The Keys to Life",
+  "book": "Psalm 37",
+  "description": "Sermon series: The Keys to Life (Psalm 37).",
+  "coverImage": "/images/sermons/the-keys-to-life-psalm-37.webp",
+  "featured": false,
+  "order": 28,
+  "episodes": [
+    {
+      "title": "The Keys to Life \u2014 Message 1",
+      "youtubeId": "anaaodz5yK8"
+    },
+    {
+      "title": "The Keys to Life \u2014 Message 2",
+      "youtubeId": "58c9OTzwyMY"
+    },
+    {
+      "title": "The Keys to Life \u2014 Message 3",
+      "youtubeId": "meGDIkLFG1M"
+    },
+    {
+      "title": "The Keys to Life \u2014 Message 4",
+      "youtubeId": "CQ5JoSOhv04"
+    },
+    {
+      "title": "The Keys to Life \u2014 Message 5",
+      "youtubeId": "XX-z1tF5ksU"
+    }
+  ]
+}

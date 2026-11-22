@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+---
+
+<BaseLayout title="Growth Groups" description="Cross-generational weekly home Bible studies at The Crossing.">
+  <PageHeader
+    title="Growth Groups"
+    eyebrow="Get Connected"
+    subtitle="Smaller, intentional communities for adults to grow deeper in Christ, in His family, and in His mission together."
+    breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Growth Groups' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">01</p>
+        <h2 class="mt-2 font-display text-lg font-bold text-stone-900">Grow Transformationally</h2>
+        <p class="mt-2 text-sm text-stone-600">Deepen your walk with Jesus through Scripture study and practical life application.</p>
+      </div>
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">02</p>
+        <h2 class="mt-2 font-display text-lg font-bold text-stone-900">Grow Relationally</h2>
+        <p class="mt-2 text-sm text-stone-600">Build encouraging, authentic, and accountable friendships in His family.</p>
+      </div>
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">03</p>
+        <h2 class="mt-2 font-display text-lg font-bold text-stone-900">Grow Missionally</h2>
+        <p class="mt-2 text-sm text-stone-600">Love, serve, and reach people outside of church with the truth and grace of Jesus.</p>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-4">
+      <h2 class="font-display text-2xl font-bold text-stone-900">What to Expect &amp; How to Join</h2>
+      <p class="text-sm leading-relaxed text-stone-700">
+        Each group is unique, but generally we start with co-ed Bible study, then break into men's and women's groups for sharing and prayer.
+      </p>
+      <p class="text-sm leading-relaxed text-stone-700">
+        Ready to connect with a Growth Group for the 2026–2027 term? Email{' '}
+        <a href="mailto:growthgroupscore@gmail.com" class="font-semibold text-accent-hover underline">
+          growthgroupscore@gmail.com
+        </a>{' '}
+        with any questions or to get matched with a group near you.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

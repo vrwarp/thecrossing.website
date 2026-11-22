@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+---
+
+<BaseLayout title="Grocery Resources" description="Community grocery and food assistance resources in the East Bay.">
+  <PageHeader
+    title="Grocery Resources"
+    eyebrow="Community Care"
+    subtitle="Trusted local resources to provide groceries and home essentials if your family is in need this season."
+    breadcrumbs={[{ label: 'Resources', href: '/resources' }, { label: 'Groceries' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-4">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">East Bay Delivery</p>
+        <h2 class="font-display text-2xl font-bold text-stone-900">Bridging Grace</h2>
+        <p class="text-sm italic text-stone-600">"Bridging those in need with others who feel called to provide"</p>
+        <p class="text-sm leading-relaxed text-stone-700">
+          A Christian non-profit organization demonstrating the love of Jesus Christ by providing charitable supportive services. Volunteers deliver groceries and home essentials to families in need in Hayward, San Lorenzo, San Leandro, and Castro Valley.
+        </p>
+        <p class="text-sm text-stone-700">
+          <strong>Email:</strong>{' '}
+          <a href="mailto:bridginggrace@gmail.com" class="font-semibold text-accent-hover underline">
+            bridginggrace@gmail.com
+          </a>
+        </p>
+      </article>
+
+      <article class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-4">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">County Partner</p>
+        <h2 class="font-display text-2xl font-bold text-stone-900">Alameda County Community Food Bank</h2>
+        <p class="text-sm leading-relaxed text-stone-700">
+          Our church partners with Alameda County Community Food Bank every year during the holiday season to help provide groceries and hot meals to neighbors in need across Alameda County.
+        </p>
+        <a
+          href="https://www.accfb.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center rounded-xl bg-obsidian px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-dark transition-colors"
+        >
+          Visit Alameda County Food Bank &nearr;
+        </a>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

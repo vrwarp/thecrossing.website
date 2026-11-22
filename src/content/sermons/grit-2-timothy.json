@@ -1,0 +1,54 @@
+{
+  "title": "Grit",
+  "book": "2 Timothy",
+  "description": "Sermon series: Grit (2 Timothy).",
+  "coverImage": "/images/sermons/grit-2-timothy.webp",
+  "featured": false,
+  "order": 8,
+  "episodes": [
+    {
+      "title": "Grit \u2014 Message 1",
+      "youtubeId": "gFSCIpKTVRE"
+    },
+    {
+      "title": "Grit \u2014 Message 2",
+      "youtubeId": "bTnTNQGzKNM"
+    },
+    {
+      "title": "Grit \u2014 Message 3",
+      "youtubeId": "-anF8YQi2xI"
+    },
+    {
+      "title": "Grit \u2014 Message 4",
+      "youtubeId": "KgixBrOaEb4"
+    },
+    {
+      "title": "Grit \u2014 Message 5",
+      "youtubeId": "akRrF1UHRn4"
+    },
+    {
+      "title": "Grit \u2014 Message 6",
+      "youtubeId": "Y_yZ6PZqx0o"
+    },
+    {
+      "title": "Grit \u2014 Message 7",
+      "youtubeId": "ZduFi1u6ftg"
+    },
+    {
+      "title": "Grit \u2014 Message 8",
+      "youtubeId": "08P-J05GehA"
+    },
+    {
+      "title": "Grit \u2014 Message 9",
+      "youtubeId": "qircPNmSOIo"
+    },
+    {
+      "title": "Grit \u2014 Message 10",
+      "youtubeId": "mpbrDRSZNKM"
+    },
+    {
+      "title": "Grit \u2014 Message 11",
+      "youtubeId": "E4frcuIjjV4"
+    }
+  ]
+}

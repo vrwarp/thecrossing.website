@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
+
+const ministries = [
+  {
+    title: 'Growth Groups',
+    badge: 'Cross-Generational Adults',
+    desc: 'Weekly home Bible studies to grow transformationally in Christ, relationally in His family, and missionally in the East Bay.',
+    href: '/get-connected/growth-groups',
+  },
+  {
+    title: 'Children (The Rock)',
+    badge: 'Nursery – 5th Grade',
+    desc: 'Fun, safe, gospel-centered Sunday morning (9:30 AM) and Friday night programs so every child can encounter and know Jesus.',
+    href: '/get-connected/children',
+  },
+  {
+    title: 'Youth (Footprints)',
+    badge: 'Grades 6–12 • Fridays 7:30 PM',
+    desc: 'Wild games, real friendship, and honest conversations about life and God in the 2nd floor Youth Center.',
+    href: '/get-connected/youth',
+  },
+  {
+    title: 'Young Adults (Transparent)',
+    badge: 'College & Career • Thursdays 7:45 PM',
+    desc: 'Young adults and college students gathering in Room 107 to study, worship, pray, and live out a visible faith.',
+    href: '/get-connected/young-adults',
+  },
+  {
+    title: 'Mature Adults',
+    badge: 'Fridays 7:30 – 9:30 PM',
+    desc: 'Mutual support, encouragement, Bible study, and prayer for married or single adults and parents in Room 107.',
+    href: '/get-connected/mature-adults',
+  },
+  {
+    title: 'Discipleship',
+    badge: '1-on-1 Mentoring',
+    desc: 'Intentional 10-month discipleship pairs growing together in learning, sharing, and prayer.',
+    href: '/get-connected/discipleship',
+  },
+];
+---
+
+<BaseLayout title="Get Connected" description="Ministries and weekly small groups at The Crossing.">
+  <PageHeader
+    title="Get Connected"
+    eyebrow="Ministries"
+    subtitle="We offer a variety of ministries to meet your family's needs for spiritual connection and growth."
+    backgroundImage="/images/site/community.webp"
+    breadcrumbs={[{ label: 'Get Connected' }]}
+  />
+
+  <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {ministries.map((m) => (
+        <a
+          href={url(m.href)}
+          class="group flex flex-col justify-between rounded-2xl border border-stone-200 bg-white p-7 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+        >
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-accent-hover">{m.badge}</span>
+            <h2 class="mt-2 font-display text-2xl font-bold text-stone-900 group-hover:text-accent-hover transition-colors">
+              {m.title}
+            </h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">{m.desc}</p>
+          </div>
+          <p class="mt-6 text-xs font-bold uppercase tracking-wider text-stone-900 group-hover:text-accent-hover">
+            Learn more &rarr;
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,34 @@
+{
+  "title": "Encounter the God of Christmas",
+  "book": "Advent",
+  "description": "Sermon series: Encounter the God of Christmas (Advent).",
+  "coverImage": "/images/sermons/encounter-the-god-of-christmas.webp",
+  "featured": false,
+  "order": 5,
+  "episodes": [
+    {
+      "title": "Encounter the God of Christmas \u2014 Message 1",
+      "youtubeId": "7meQXDTmy64"
+    },
+    {
+      "title": "Encounter the God of Christmas \u2014 Message 2",
+      "youtubeId": "bf-UiJ4nUv4"
+    },
+    {
+      "title": "Encounter the God of Christmas \u2014 Message 3",
+      "youtubeId": "w626xuyf_Og"
+    },
+    {
+      "title": "Encounter the God of Christmas \u2014 Message 4",
+      "youtubeId": "6vqedajNQBU"
+    },
+    {
+      "title": "Encounter the God of Christmas \u2014 Message 5",
+      "youtubeId": "IDTrbCv787I"
+    },
+    {
+      "title": "Encounter the God of Christmas \u2014 Message 6",
+      "youtubeId": "wsHecC7d_4A"
+    }
+  ]
+}

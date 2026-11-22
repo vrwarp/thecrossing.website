@@ -1,0 +1,46 @@
+{
+  "title": "Summer 2020",
+  "book": "Topical",
+  "description": "Sermon series: Summer 2020 (Topical).",
+  "coverImage": "/images/sermons/summer-2020.webp",
+  "featured": false,
+  "order": 18,
+  "episodes": [
+    {
+      "title": "Summer 2020 \u2014 Message 1",
+      "youtubeId": "tvSgnvDszAk"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 2",
+      "youtubeId": "DXX_a9b6z8Y"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 3",
+      "youtubeId": "TbMtn_XLVCo"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 4",
+      "youtubeId": "SJZ6Rnf6LDs"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 5",
+      "youtubeId": "aAUcALdV6U8"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 6",
+      "youtubeId": "FCnwaQjy-AY"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 7",
+      "youtubeId": "kDed-LoVsK8"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 8",
+      "youtubeId": "HPL6oh5dRII"
+    },
+    {
+      "title": "Summer 2020 \u2014 Message 9",
+      "youtubeId": "a11P49nCGMg"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
+
+const books = [
+  { title: 'The Gospel Comes with a House Key (2018)', author: 'Rosaria Butterfield', note: 'Practicing Radically Ordinary Hospitality' },
+  { title: 'Surprised by Hope', author: 'N.T. Wright', note: 'Rethinking Heaven, the Resurrection, and the Mission of the Church' },
+  { title: 'Gentle and Lowly', author: 'Dane Ortlund', note: 'The Heart of Christ for Sinners and Sufferers' },
+  { title: 'The Ruthless Elimination of Hurry', author: 'John Mark Comer', note: 'How to Stay Emotionally Healthy and Spiritually Alive' },
+];
+---
+
+<BaseLayout title="Audiobooks on Hoopla" description="Free Christian audiobooks through your public library on Hoopla Digital.">
+  <PageHeader
+    title="Audiobooks on Hoopla"
+    eyebrow="Reading & Listening"
+    subtitle="Borrow and stream Christian audiobooks and eBooks for free using your local public library card."
+    breadcrumbs={[{ label: 'Resources', href: '/resources' }, { label: 'Audiobooks on Hoopla' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="grid gap-8 lg:grid-cols-12 lg:items-center">
+      <div class="lg:col-span-6 space-y-4">
+        <h2 class="font-display text-2xl font-bold text-stone-900">What is Hoopla?</h2>
+        <p class="text-sm leading-relaxed text-stone-700">
+          Hoopla Digital partners with public libraries across the US to provide free mobile and online access to audiobooks and eBooks with a valid library card at <strong>hoopladigital.com</strong>.
+        </p>
+        <p class="text-sm leading-relaxed text-stone-700">
+          Watch this quick tutorial from the San Francisco Public Library to get started on your phone.
+        </p>
+      </div>
+      <div class="lg:col-span-6">
+        <YouTubeEmbed youtubeId="fE5CGNQGaYo" title="How to Use Hoopla on Your Phone" speaker="SF Public Library" />
+      </div>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl font-extrabold text-stone-900">Recommended Audiobooks</h2>
+      <div class="mt-6 grid gap-5 sm:grid-cols-2">
+        {books.map((b) => (
+          <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
+            <h3 class="font-display text-lg font-bold text-stone-900">{b.title}</h3>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-accent-hover">{b.author}</p>
+            <p class="mt-2 text-sm text-stone-600">{b.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

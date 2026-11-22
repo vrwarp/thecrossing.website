@@ -1,0 +1,38 @@
+{
+  "title": "Summer 2021",
+  "book": "Topical",
+  "description": "Sermon series: Summer 2021 (Topical).",
+  "coverImage": "/images/sermons/summer-2021.webp",
+  "featured": false,
+  "order": 15,
+  "episodes": [
+    {
+      "title": "Summer 2021 \u2014 Message 1",
+      "youtubeId": "k6_SGPAGjCA"
+    },
+    {
+      "title": "Summer 2021 \u2014 Message 2",
+      "youtubeId": "OL0n6W_g3Ws"
+    },
+    {
+      "title": "Summer 2021 \u2014 Message 3",
+      "youtubeId": "nofYWnCXt90"
+    },
+    {
+      "title": "Summer 2021 \u2014 Message 4",
+      "youtubeId": "BCDSybKZQ4g"
+    },
+    {
+      "title": "Summer 2021 \u2014 Message 5",
+      "youtubeId": "UJfAjcX3AwM"
+    },
+    {
+      "title": "Summer 2021 \u2014 Message 6",
+      "youtubeId": "aGrvwrYUTu0"
+    },
+    {
+      "title": "Summer 2021 \u2014 Message 7",
+      "youtubeId": "9HCXCK4so5I"
+    }
+  ]
+}

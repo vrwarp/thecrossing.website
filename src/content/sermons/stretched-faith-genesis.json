@@ -1,0 +1,46 @@
+{
+  "title": "Stretched Faith",
+  "book": "Genesis",
+  "description": "Sermon series: Stretched Faith (Genesis).",
+  "coverImage": "/images/sermons/stretched-faith-genesis.webp",
+  "featured": false,
+  "order": 2,
+  "episodes": [
+    {
+      "title": "Stretched Faith \u2014 Message 1",
+      "youtubeId": "Ed7MeLZYi58"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 2",
+      "youtubeId": "BRsXMzk3bkY"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 3",
+      "youtubeId": "l-24njsjmJM"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 4",
+      "youtubeId": "BhMh_Jam8Rs"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 5",
+      "youtubeId": "-AvFrYepU54"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 6",
+      "youtubeId": "j8CS56l8gu0"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 7",
+      "youtubeId": "laNMEI75l6Y"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 8",
+      "youtubeId": "EpQfY-4ahuU"
+    },
+    {
+      "title": "Stretched Faith \u2014 Message 9",
+      "youtubeId": "l0jxIR5vYE8"
+    }
+  ]
+}

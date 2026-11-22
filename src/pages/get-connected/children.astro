@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import EmbedFrame from '../../components/EmbedFrame.astro';
+
+const regFormSrc =
+  'https://docs.google.com/forms/d/e/1FAIpQLSfQE-rVlIx37P6zeN1sfXtozFcQC-cuFCYk9IzwVc75_tEe_w/viewform?embedded=true';
+const regFormView =
+  'https://docs.google.com/forms/d/e/1FAIpQLSfQE-rVlIx37P6zeN1sfXtozFcQC-cuFCYk9IzwVc75_tEe_w/viewform';
+---
+
+<BaseLayout title="Children's Ministry" description="The Rock Children's Ministry (Nursery – 5th Grade) at The Crossing.">
+  <PageHeader
+    title="Children's Ministry"
+    eyebrow="Nursery – 5th Grade"
+    subtitle="Ministry to families is one of our highest priorities. We provide fun, safe programs so every child can encounter, experience, and know Jesus."
+    breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Children' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Sundays • 9:30 AM</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">The Rock Children's Church</h2>
+        <p class="text-sm leading-relaxed text-stone-600">
+          For preschool through 5th grade during the 9:30 AM service (plus nursery care). Children learn about God and His amazing love through worship, Bible stories, and age-appropriate small groups.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Contact</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Min. Lisa Ko</h2>
+        <p class="text-sm text-stone-600">
+          Questions about Sunday or Friday night children's programs? Contact our Children's Minister at{' '}
+          <a href="mailto:lisa.ko@cfcchayward.org" class="font-semibold text-accent-hover underline">
+            lisa.ko@cfcchayward.org
+          </a>.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="mb-4 font-display text-2xl font-extrabold text-stone-900">2026–2027 Registration</h2>
+      <EmbedFrame
+        src={regFormSrc}
+        title="Children's Ministry Annual Registration"
+        heightClass="h-[740px]"
+        openLabel="Open Registration Form"
+        openHref={regFormView}
+      />
+    </div>
+  </section>
+</BaseLayout>

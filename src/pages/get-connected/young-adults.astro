@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import EmbedFrame from '../../components/EmbedFrame.astro';
+
+const calSrc =
+  'https://calendar.google.com/calendar/embed?mode=agenda&showNav=0&showPrint=0&showTabs=0&showTitle=0&src=79bpk9dptkcanc5mgqo1peirik@group.calendar.google.com';
+---
+
+<BaseLayout title="Young Adults (Transparent)" description="Transparent Young Adults & College Fellowship at The Crossing.">
+  <PageHeader
+    title="Transparent Fellowship"
+    eyebrow="Young Adults & College"
+    subtitle="A community of young adult disciples transformed by God to live out a visible faith together."
+    breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Young Adults' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">When &amp; Where</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Thursdays at 7:45 PM</h2>
+        <p class="text-sm text-stone-600">
+          We meet at 7:45 PM on Thursdays in Room 107 of the Worship Center at CFCC Hayward to study, worship, and pray together. Please refer to the calendar below for exact dates.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Our Goals</p>
+        <ul class="space-y-1.5 text-sm text-stone-700 list-disc pl-4">
+          <li>Connect young adults with Christ (personal spiritual growth)</li>
+          <li>Connect young adults to His Family (spiritual community)</li>
+          <li>Connect young adults with His Mission (serving outside the church)</li>
+          <li>Grow intentionally in pursuit of living out a visible faith</li>
+        </ul>
+      </div>
+    </div>
+
+    <EmbedFrame
+      src={calSrc}
+      title="Transparent Young Adults Calendar"
+      heightClass="h-[520px]"
+    />
+  </section>
+</BaseLayout>

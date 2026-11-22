@@ -1,0 +1,30 @@
+{
+  "title": "Summer 2024",
+  "book": "Topical",
+  "description": "Sermon series: Summer 2024 (Topical).",
+  "coverImage": "/images/sermons/summer-2024.webp",
+  "featured": false,
+  "order": 7,
+  "episodes": [
+    {
+      "title": "Summer 2024 \u2014 Message 1",
+      "youtubeId": "FxPvSn_dnx0"
+    },
+    {
+      "title": "Summer 2024 \u2014 Message 2",
+      "youtubeId": "jpQfHz9Bkxs"
+    },
+    {
+      "title": "Summer 2024 \u2014 Message 3",
+      "youtubeId": "UKAYh6c6dQM"
+    },
+    {
+      "title": "Summer 2024 \u2014 Message 4",
+      "youtubeId": "Hn0EctWxZ5g"
+    },
+    {
+      "title": "Summer 2024 \u2014 Message 5",
+      "youtubeId": "h5C3lJ-6Xas"
+    }
+  ]
+}

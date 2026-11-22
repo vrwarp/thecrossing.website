@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const beliefs = [
+  {
+    title: 'God & The Trinity',
+    statement:
+      'We believe that all things are created by God. We believe that the Godhead eternally exists in three persons — the Father, the Son, and the Holy Spirit — and that these three are one God.',
+  },
+  {
+    title: 'Scripture',
+    statement:
+      'We believe that "all Scripture is given by the inspiration of God." We believe that the Bible is the supreme authority in all matters of faith and conduct.',
+  },
+  {
+    title: 'Jesus Christ',
+    statement:
+      'We believe that Jesus Christ, our Lord, is the only Son of God. We believe in His virgin birth, atoning death, and bodily resurrection, in His ascension to the Father, and in His personal return in power and glory.',
+  },
+  {
+    title: 'Salvation',
+    statement:
+      'We believe the truth of "justification by faith." We are saved by the grace of Jesus Christ through faith.',
+  },
+  {
+    title: 'The Church & Mission',
+    statement:
+      'We believe in the one Holy Universal Church, which is the Body of Christ and to which all believers belong, and in its mission to witness concerning its Head, Jesus Christ, preaching the Gospel among all nations.',
+  },
+];
+---
+
+<BaseLayout title="Our Beliefs" description="Core Christian beliefs of The Crossing at CFCC Hayward.">
+  <PageHeader
+    title="What We Believe"
+    eyebrow="Doctrine"
+    subtitle="As a non-denominational, evangelical Christian church, our faith is centered on the Gospel of Jesus Christ and the authority of Scripture."
+    breadcrumbs={[{ label: "I'm New", href: '/im-new' }, { label: 'Our Beliefs' }]}
+  />
+
+  <section class="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="space-y-5">
+      {beliefs.map((b, idx) => (
+        <article class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs">
+          <div class="flex items-start gap-4">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-obsidian text-xs font-extrabold text-accent">
+              0{idx + 1}
+            </span>
+            <div>
+              <h2 class="font-display text-xl font-bold text-stone-900">{b.title}</h2>
+              <p class="mt-2 text-base leading-relaxed text-stone-700">{b.statement}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

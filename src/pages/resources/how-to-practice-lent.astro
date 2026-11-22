@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import EmbedFrame from '../../components/EmbedFrame.astro';
+
+const pdfPreview = 'https://drive.google.com/file/d/1vX9enFWXOe46n8V03EWoQazhdkg5QBLu/preview';
+const pdfView = 'https://drive.google.com/file/d/1vX9enFWXOe46n8V03EWoQazhdkg5QBLu/view';
+---
+
+<BaseLayout title="How to Practice Lent" description="Devotional guide on practicing Lent at The Crossing.">
+  <PageHeader
+    title="How to Practice Lent"
+    eyebrow="Seasonal Guide"
+    subtitle="A practical devotional guide to fasting, prayer, and reflection during the season of Lent."
+    breadcrumbs={[{ label: 'Resources', href: '/resources' }, { label: 'How to Practice Lent' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
+    <EmbedFrame
+      src={pdfPreview}
+      title="How to Practice Lent Guide"
+      heightClass="h-[780px]"
+      openLabel="Open PDF in Google Drive"
+      openHref={pdfView}
+    />
+  </section>
+</BaseLayout>

@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const values = [
+  {
+    name: 'Safety',
+    desc: 'We pursue an environment and culture that is spiritually and emotionally safe for all group members.',
+  },
+  {
+    name: 'Authenticity',
+    desc: 'Growth takes place when followers of Christ are genuinely transparent with God and one another.',
+  },
+  {
+    name: 'Humility',
+    desc: 'Willingness to give and receive constructive feedback and support is essential to spiritual health.',
+  },
+  {
+    name: 'Growth',
+    desc: "God's desire and plan is that every believer continually grows in maturity in Christ.",
+  },
+];
+---
+
+<BaseLayout title="Mature Adults" description="Mature Adults Group at The Crossing — Fridays 7:30 PM.">
+  <PageHeader
+    title="Mature Adults Group"
+    eyebrow="Get Connected"
+    subtitle="Mutual support, encouragement, Bible study, and accountability for married or single adults and parents."
+    breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Mature Adults' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-3">
+      <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Fridays • 7:30 – 9:30 PM</p>
+      <h2 class="font-display text-2xl font-bold text-stone-900">Room 107, Worship Center</h2>
+      <p class="text-sm leading-relaxed text-stone-700">
+        Each Friday, we meet in discussion groups at church to study the Bible. Afterward, we break into men's and women's groups for sharing and prayer.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl font-extrabold text-stone-900">What We Value</h2>
+      <div class="mt-6 grid gap-5 sm:grid-cols-2">
+        {values.map((v) => (
+          <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs">
+            <h3 class="font-display text-lg font-bold text-stone-900">{v.name}</h3>
+            <p class="mt-2 text-sm text-stone-600">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

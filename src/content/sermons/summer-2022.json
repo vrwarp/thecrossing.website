@@ -1,0 +1,30 @@
+{
+  "title": "Summer 2022",
+  "book": "Topical",
+  "description": "Sermon series: Summer 2022 (Topical).",
+  "coverImage": "/images/sermons/summer-2022.webp",
+  "featured": false,
+  "order": 12,
+  "episodes": [
+    {
+      "title": "Summer 2022 \u2014 Message 1",
+      "youtubeId": "Es6dyWVPZow"
+    },
+    {
+      "title": "Summer 2022 \u2014 Message 2",
+      "youtubeId": "1ANCbpjTBRo"
+    },
+    {
+      "title": "Summer 2022 \u2014 Message 3",
+      "youtubeId": "z0nl_tFlm_0"
+    },
+    {
+      "title": "Summer 2022 \u2014 Message 4",
+      "youtubeId": "6gFMVUvpNX8"
+    },
+    {
+      "title": "Summer 2022 \u2014 Message 5",
+      "youtubeId": "oqKMJlA066k"
+    }
+  ]
+}

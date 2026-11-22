@@ -1,0 +1,26 @@
+{
+  "title": "Rooted in Christ",
+  "book": "Colossians",
+  "description": "Sermon series: Rooted in Christ (Colossians).",
+  "coverImage": "/images/sermons/rooted-in-christ-colossians.webp",
+  "featured": false,
+  "order": 6,
+  "episodes": [
+    {
+      "title": "Rooted in Christ \u2014 Message 1",
+      "youtubeId": "0zbE03hP9s0"
+    },
+    {
+      "title": "Rooted in Christ \u2014 Message 2",
+      "youtubeId": "Zr8EshE7AaQ"
+    },
+    {
+      "title": "Rooted in Christ \u2014 Message 3",
+      "youtubeId": "WfW-5DmtD3A"
+    },
+    {
+      "title": "Rooted in Christ \u2014 Message 4",
+      "youtubeId": "wSIK7AoNJIA"
+    }
+  ]
+}

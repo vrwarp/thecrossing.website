@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import EmbedFrame from '../../components/EmbedFrame.astro';
+
+const calSrc =
+  'https://calendar.google.com/calendar/embed?mode=agenda&showNav=0&showPrint=0&showTabs=0&showTitle=0&src=ukbuk9rds072469p64srcmie68@group.calendar.google.com';
+---
+
+<BaseLayout title="Youth (Footprints)" description="Footprints Youth Ministry (Grades 6–12) at The Crossing.">
+  <PageHeader
+    title="Footprints Youth"
+    eyebrow="Students • Grades 6–12"
+    subtitle="Cultivating the newest generation of disciples through knowing Jesus Christ and making Him known."
+    breadcrumbs={[{ label: 'Get Connected', href: '/get-connected' }, { label: 'Youth' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Friday Nights</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">7:30 PM – 9:15 PM</h2>
+        <p class="text-sm text-stone-600">
+          Hang out with us on Fridays at the 2nd floor Youth Center for wild games, real friendship, and honest discussion about life and God.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Sunday CE</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">11:15 AM Classes</h2>
+        <p class="text-sm text-stone-600">
+          Middle School CE meets in Room 201 and High School CE meets in Room 204 after Sunday worship. Contact{' '}
+          <a href="mailto:daniel.tai@cfcchayward.org" class="font-semibold text-accent-hover underline">
+            Pastor Daniel Tai
+          </a>{' '}
+          to learn more.
+        </p>
+      </div>
+    </div>
+
+    <EmbedFrame
+      src={calSrc}
+      title="Footprints Youth Calendar"
+      heightClass="h-[520px]"
+    />
+  </section>
+</BaseLayout>

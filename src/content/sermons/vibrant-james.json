@@ -1,0 +1,90 @@
+{
+  "title": "Vibrant",
+  "book": "James",
+  "description": "Sermon series: Vibrant (James).",
+  "coverImage": "/images/sermons/vibrant-james.webp",
+  "featured": false,
+  "order": 16,
+  "episodes": [
+    {
+      "title": "Vibrant \u2014 Message 1",
+      "youtubeId": "FSMa3M0Y8b4"
+    },
+    {
+      "title": "Vibrant \u2014 Message 2",
+      "youtubeId": "KS4HxuZ4po0"
+    },
+    {
+      "title": "Vibrant \u2014 Message 3",
+      "youtubeId": "4S3QrRYsXhg"
+    },
+    {
+      "title": "Vibrant \u2014 Message 4",
+      "youtubeId": "SaSdSiGivgo"
+    },
+    {
+      "title": "Vibrant \u2014 Message 5",
+      "youtubeId": "lLDXCuuW1-Q"
+    },
+    {
+      "title": "Vibrant \u2014 Message 6",
+      "youtubeId": "l0zlYSl4tO0"
+    },
+    {
+      "title": "Vibrant \u2014 Message 7",
+      "youtubeId": "4piKCFIEags"
+    },
+    {
+      "title": "Vibrant \u2014 Message 8",
+      "youtubeId": "SA-AYTyncS0"
+    },
+    {
+      "title": "Vibrant \u2014 Message 9",
+      "youtubeId": "chyIP9ppmSw"
+    },
+    {
+      "title": "Vibrant \u2014 Message 10",
+      "youtubeId": "l0de8tpZTVk"
+    },
+    {
+      "title": "Vibrant \u2014 Message 11",
+      "youtubeId": "zAIWq9Hp4FY"
+    },
+    {
+      "title": "Vibrant \u2014 Message 12",
+      "youtubeId": "4I6RhIFRnJc"
+    },
+    {
+      "title": "Vibrant \u2014 Message 13",
+      "youtubeId": "h5VY6BLFlXg"
+    },
+    {
+      "title": "Vibrant \u2014 Message 14",
+      "youtubeId": "OmiryFAqcqA"
+    },
+    {
+      "title": "Vibrant \u2014 Message 15",
+      "youtubeId": "87m2woHG_AY"
+    },
+    {
+      "title": "Vibrant \u2014 Message 16",
+      "youtubeId": "zbtp2Yijx84"
+    },
+    {
+      "title": "Vibrant \u2014 Message 17",
+      "youtubeId": "v9SPiaRipIU"
+    },
+    {
+      "title": "Vibrant \u2014 Message 18",
+      "youtubeId": "8Tx3ejxif4Q"
+    },
+    {
+      "title": "Vibrant \u2014 Message 19",
+      "youtubeId": "uv2z4mwyqDo"
+    },
+    {
+      "title": "Vibrant \u2014 Message 20",
+      "youtubeId": "45N_qVkZY_M"
+    }
+  ]
+}

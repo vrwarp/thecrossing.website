@@ -1,0 +1,30 @@
+{
+  "title": "Summer 2019",
+  "book": "Topical",
+  "description": "Sermon series: Summer 2019 (Topical).",
+  "coverImage": "/images/sermons/summer-2019.webp",
+  "featured": false,
+  "order": 22,
+  "episodes": [
+    {
+      "title": "Summer 2019 \u2014 Message 1",
+      "youtubeId": "9dav03DPxPA"
+    },
+    {
+      "title": "Summer 2019 \u2014 Message 2",
+      "youtubeId": "gAxGVEEArmI"
+    },
+    {
+      "title": "Summer 2019 \u2014 Message 3",
+      "youtubeId": "RY-EJ3pzR7U"
+    },
+    {
+      "title": "Summer 2019 \u2014 Message 4",
+      "youtubeId": "pCvEryBbo-M"
+    },
+    {
+      "title": "Summer 2019 \u2014 Message 5",
+      "youtubeId": "SVaKm_2u5QY"
+    }
+  ]
+}

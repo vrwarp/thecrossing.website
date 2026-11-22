@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+---
+
+<BaseLayout title="Men's Retreat" description="Men's Retreat at Redwood Glen: On Point — Kingdom Manhood in a Confusing Culture.">
+  <PageHeader
+    title="Men's Retreat"
+    eyebrow="Events • Nov 6–8, 2026"
+    subtitle='Theme: "On Point: Kingdom Manhood in a Confusing Culture" with Guest Speaker Pastor Matthew "Matty" Blevins.'
+    breadcrumbs={[{ label: 'Events', href: '/events' }, { label: "Men's Retreat" }]}
+  />
+
+  <section class="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">When &amp; Where</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Redwood Glen</h2>
+        <p class="text-sm text-stone-700">100 Wright Dr, Loma Mar, CA 94021 (Siden Conference Center — hotel-style rooms)</p>
+        <p class="text-sm text-stone-600">Friday 8:00 PM – Sunday 12:00 PM (~1.5 hr drive from Hayward in the Santa Cruz Mountains).</p>
+        <p class="text-xs text-stone-500 pt-1">Note: Dinner is not provided Friday night; Sunday lunch is provided.</p>
+      </div>
+
+      <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
+        <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Cost &amp; Payment</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">$150 Registration</h2>
+        <p class="text-sm text-stone-600">
+          Full cost is minimally $250; you may contribute more to help cover scholarships.
+        </p>
+        <ul class="space-y-1.5 pt-1 text-sm text-stone-700">
+          <li><strong>Zelle:</strong> <code>payments@cfcchayward.org</code> (CFCC Hayward, memo: "Men's Retreat - [Your Name]")</li>
+          <li><strong>Check:</strong> Payable to "CFCC Hayward" with "Men's Retreat - [Your Name]" in memo.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs space-y-4">
+      <h2 class="font-display text-2xl font-extrabold text-stone-900">What to Expect</h2>
+      <p class="text-sm leading-relaxed text-stone-700">
+        Our morning and evening sessions make up the heart of the weekend: worship music, biblical teaching from Pastor Matty Blevins, small group discussions, and intentional brotherhood in the redwoods.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

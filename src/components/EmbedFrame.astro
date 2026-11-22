@@ -1,0 +1,40 @@
+---
+export interface Props {
+  src: string;
+  title: string;
+  heightClass?: string;
+  openLabel?: string;
+  openHref?: string;
+}
+
+const {
+  src,
+  title,
+  heightClass = 'h-[620px]',
+  openLabel = 'Open in new tab',
+  openHref = src,
+} = Astro.props;
+---
+
+<div class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
+  <div class="flex items-center justify-between border-b border-stone-200 bg-stone-100/70 px-4 py-2.5">
+    <span class="text-xs font-semibold uppercase tracking-wider text-stone-600">{title}</span>
+    <a
+      href={openHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-1 text-xs font-semibold text-accent-hover hover:underline"
+    >
+      <span>{openLabel}</span>
+      <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+      </svg>
+    </a>
+  </div>
+  <iframe
+    src={src}
+    title={title}
+    loading="lazy"
+    class:list={['w-full border-0 bg-white', heightClass]}
+  ></iframe>
+</div>

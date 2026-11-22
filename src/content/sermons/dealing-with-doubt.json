@@ -1,0 +1,26 @@
+{
+  "title": "Dealing with Doubt",
+  "book": "Topical",
+  "description": "Sermon series: Dealing with Doubt (Topical).",
+  "coverImage": "/images/sermons/dealing-with-doubt.webp",
+  "featured": false,
+  "order": 21,
+  "episodes": [
+    {
+      "title": "Dealing with Doubt \u2014 Message 1",
+      "youtubeId": "4nPNI7irCKY"
+    },
+    {
+      "title": "Dealing with Doubt \u2014 Message 2",
+      "youtubeId": "_CKtO47rEGA"
+    },
+    {
+      "title": "Dealing with Doubt \u2014 Message 3",
+      "youtubeId": "Cp7Z5lDulck"
+    },
+    {
+      "title": "Dealing with Doubt \u2014 Message 4",
+      "youtubeId": "0dP7QdVs06c"
+    }
+  ]
+}

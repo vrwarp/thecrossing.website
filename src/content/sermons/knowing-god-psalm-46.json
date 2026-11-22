@@ -1,0 +1,30 @@
+{
+  "title": "Knowing God",
+  "book": "Psalm 46",
+  "description": "Sermon series: Knowing God (Psalm 46).",
+  "coverImage": "/images/sermons/knowing-god-psalm-46.webp",
+  "featured": false,
+  "order": 20,
+  "episodes": [
+    {
+      "title": "Knowing God \u2014 Message 1",
+      "youtubeId": "41HnelyMbv0"
+    },
+    {
+      "title": "Knowing God \u2014 Message 2",
+      "youtubeId": "muxV3nDVF54"
+    },
+    {
+      "title": "Knowing God \u2014 Message 3",
+      "youtubeId": "fN-NhqxXwto"
+    },
+    {
+      "title": "Knowing God \u2014 Message 4",
+      "youtubeId": "W1bQAqwRDzw"
+    },
+    {
+      "title": "Knowing God \u2014 Message 5",
+      "youtubeId": "ZufzFA6dqEI"
+    }
+  ]
+}

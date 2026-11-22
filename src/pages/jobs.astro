@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import EmbedFrame from '../components/EmbedFrame.astro';
+
+const jobDocPreview = 'https://drive.google.com/file/d/1Xg8-4oVWXMZnHXLRpnm9yYKrcp93x_ig/preview';
+const jobDocView = 'https://drive.google.com/file/d/1Xg8-4oVWXMZnHXLRpnm9yYKrcp93x_ig/view';
+---
+
+<BaseLayout title="Jobs" description="Employment opportunities at The Crossing at CFCC Hayward.">
+  <PageHeader
+    title="Jobs & Openings"
+    eyebrow="Careers"
+    subtitle="Thank you for your interest in serving on staff at The Crossing at CFCC of Hayward."
+    breadcrumbs={[{ label: 'Jobs' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-8">
+    <div class="rounded-2xl border border-stone-200 bg-white p-6 sm:p-8 shadow-xs space-y-3">
+      <p class="text-xs font-bold uppercase tracking-widest text-accent-hover">Open Position</p>
+      <h2 class="font-display text-2xl font-bold text-stone-900">Part-Time Administrative Assistant</h2>
+      <p class="text-sm leading-relaxed text-stone-600">
+        To apply, please submit a cover letter and resume to{' '}
+        <a href="mailto:josh.lee@cfcchayward.org" class="font-semibold text-accent-hover underline">
+          Pastor Joshua Lee (josh.lee@cfcchayward.org)
+        </a>.
+      </p>
+    </div>
+
+    <EmbedFrame
+      src={jobDocPreview}
+      title="Administrative Assistant Job Posting"
+      heightClass="h-[720px]"
+      openLabel="Open Document in Drive"
+      openHref={jobDocView}
+    />
+  </section>
+</BaseLayout>

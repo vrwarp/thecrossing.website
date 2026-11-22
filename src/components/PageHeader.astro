@@ -1,0 +1,76 @@
+---
+import { url } from '../lib/url';
+
+export interface Props {
+  title: string;
+  subtitle?: string;
+  eyebrow?: string;
+  backgroundImage?: string;
+  breadcrumbs?: { label: string; href?: string }[];
+}
+
+const {
+  title,
+  subtitle,
+  eyebrow,
+  backgroundImage,
+  breadcrumbs = [],
+} = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-obsidian text-white">
+  {backgroundImage && (
+    <img
+      src={url(backgroundImage)}
+      alt=""
+      aria-hidden="true"
+      fetchpriority="high"
+      decoding="sync"
+      class="absolute inset-0 h-full w-full object-cover opacity-30"
+    />
+  )}
+  <div
+    class="absolute inset-0 bg-gradient-to-b from-obsidian/70 via-obsidian/80 to-obsidian"
+    aria-hidden="true"
+  />
+  <div
+    class="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-accent/15 blur-3xl"
+    aria-hidden="true"
+  />
+
+  <div class="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+    {breadcrumbs.length > 0 && (
+      <nav aria-label="Breadcrumb" class="mb-4 flex flex-wrap items-center gap-2 text-xs font-medium text-stone-400">
+        <a href={url('/')} class="hover:text-accent transition-colors">Home</a>
+        {breadcrumbs.map((crumb) => (
+          <>
+            <span aria-hidden="true">/</span>
+            {crumb.href ? (
+              <a href={url(crumb.href)} class="hover:text-accent transition-colors">
+                {crumb.label}
+              </a>
+            ) : (
+              <span class="text-stone-200">{crumb.label}</span>
+            )}
+          </>
+        ))}
+      </nav>
+    )}
+
+    {eyebrow && (
+      <p class="mb-2 text-xs font-bold uppercase tracking-widest text-accent">
+        {eyebrow}
+      </p>
+    )}
+
+    <h1 class="font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
+      {title}
+    </h1>
+
+    {subtitle && (
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-stone-300 sm:text-lg">
+        {subtitle}
+      </p>
+    )}
+  </div>
+</section>
