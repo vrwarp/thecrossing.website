@@ -10,8 +10,8 @@ const scheduleEmbed =
 <BaseLayout title="Shepherding 101" description="Shepherding 101 Christian Education class at The Crossing.">
   <PageHeader
     title="Shepherding 101"
-    eyebrow="Christian Education"
-    subtitle="Equipping small group leaders and shepherds to care for God's people."
+    eyebrow="Christian Education • Sept 14 – Dec 14, 2025"
+    subtitle="Biblical care + counseling in the church — equipping believers to care for God's flock."
     breadcrumbs={[
       { label: 'Resources', href: '/resources' },
       { label: 'Christian Education', href: '/resources/ce' },
@@ -19,10 +19,43 @@ const scheduleEmbed =
     ]}
   />
 
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-8">
-    <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs text-sm text-stone-700">
-      <strong>Details:</strong> Room 202 &bull; Sundays, 11:15 AM – 12:15 PM.
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+    <div class="rounded-xl border border-stone-300 bg-obsidian p-8 text-white space-y-4">
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">1 Peter 5:1–4</p>
+      <blockquote class="font-serif italic text-xl leading-relaxed sm:text-2xl">
+        “So I exhort the elders among you, as a fellow elder and a witness of the sufferings of Christ, as well as a partaker in the glory that is going to be revealed: shepherd the flock of God that is among you, exercising oversight, not under compulsion, but willingly, as God would have you; not for shameful gain, but eagerly; not domineering over those in your charge, but being examples to the flock. And when the Chief Shepherd appears, you will receive the unfading crown of glory.”
+      </blockquote>
     </div>
-    <EmbedFrame src={scheduleEmbed} title="CE Schedule" heightClass="h-[460px]" />
+
+    <div class="grid gap-6 md:grid-cols-12">
+      <div class="md:col-span-7 rounded-xl border border-stone-300 bg-white p-6 space-y-4">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Course Objectives</p>
+        <ol class="space-y-3 text-sm text-stone-700 list-decimal pl-5">
+          <li>Identify &amp; nurture the biblical calling and spiritual gift of shepherding.</li>
+          <li>Equip with frameworks &amp; tools to care for the spiritual needs of the flock.</li>
+          <li>Call some to the ministry of biblically shepherding others in the church.</li>
+        </ol>
+      </div>
+      <div class="md:col-span-5 rounded-xl border border-stone-300 bg-white p-6 space-y-4">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Details &amp; Materials</p>
+        <p class="text-sm text-stone-700">
+          <strong>Where:</strong> Room 202 &bull; <strong>Time:</strong> Sundays, 11:15 AM – 12:15 PM.
+        </p>
+        <p class="text-xs text-stone-600">
+          If you would like to see past recordings, please reach out to Derrick Tao via{' '}
+          <a href="mailto:church.office@cfcchayward.org?subject=Shepherding%20101%20Recordings" class="underline text-accent-hover">church.office@cfcchayward.org</a>.
+        </p>
+        <a
+          href="https://drive.google.com/drive/folders/1OWMBYUc4jfj2ZtECoo0Jb3zj3Q7j3mL-?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center rounded-xl bg-accent px-4 py-2.5 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+        >
+          Open Class Handouts &nearr;
+        </a>
+      </div>
+    </div>
+
+    <EmbedFrame src={scheduleEmbed} title="The Crossing CE Schedule" heightClass="h-[460px]" />
   </section>
 </BaseLayout>

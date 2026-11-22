@@ -7,13 +7,36 @@ const scheduleEmbed =
   'https://docs.google.com/spreadsheets/d/1tEaGu8185S1rsjtRSDKSi-2yQyggU95Ephzbgf2tUlY/htmlembed';
 const formEmbed =
   'https://docs.google.com/forms/d/e/1FAIpQLSfWu51RaFr_1MJ0-LFQ3ghVaEvNjN2H-kySdqbq4NKjAfFQ7A/viewform?embedded=true';
+
+const announcements = [
+  {
+    date: '9/28/2023',
+    title: 'Class resuming on 10/22',
+    body: 'Thanks for joining for our second session of Why Believe? CE class. We will be resuming our last CE class on Sunday 10/22 with Pastor Josh teaching on The Gospel (Part 2) Christianity and Sin.',
+  },
+  {
+    date: '8/3/2023',
+    title: 'Class resuming on 8/13',
+    body: 'CE resumes August 13th at 11:15 AM. Please read through Chapter 4 of Why Believe? and go over the homework. Newcomers are always welcome—we can provide materials during class.',
+  },
+  {
+    date: '6/25/2023',
+    title: 'Break for July',
+    body: 'We took a break for July and resumed August 13, 2023 with Chapters 1–4. Anonymous feedback helped shape future sessions.',
+  },
+  {
+    date: '6/11/2023',
+    title: 'Week 1',
+    body: 'First CE class kickoff! Physical copies of the book were available in person for $10, along with Chapter 1 excerpt online and digital copies for class participants.',
+  },
+];
 ---
 
 <BaseLayout title="Why Believe? CE" description="Why Believe? Christian Education apologetics class at The Crossing.">
   <PageHeader
     title="Why Believe? CE"
-    eyebrow="Christian Education"
-    subtitle="Exploring honest questions about Christianity, Scripture, and faith."
+    eyebrow="Christian Education • CE 2023"
+    subtitle="Exploring honest questions about Christianity, Scripture, and faith — Room 202, Sundays 11:15 AM – 12:15 PM."
     breadcrumbs={[
       { label: 'Resources', href: '/resources' },
       { label: 'Christian Education', href: '/resources/ce' },
@@ -21,7 +44,70 @@ const formEmbed =
     ]}
   />
 
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
+    <div class="grid gap-6 md:grid-cols-12">
+      <div class="md:col-span-7 rounded-xl border border-stone-300 bg-white p-6 space-y-4">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Contents</p>
+        <p class="text-sm leading-relaxed text-stone-700">
+          We studied <strong><em>Why Believe?</em> by Neil Shenvi</strong>:
+        </p>
+        <blockquote class="border-l-2 border-accent pl-4 text-sm italic leading-relaxed text-stone-600">
+          “For centuries, skeptics have disputed the claims of Christianity—such as belief in an eternal God and the resurrection of Jesus Christ—arguing that they simply cannot be accepted by reasonable individuals. Furthermore, efforts to demonstrate the evidence and rational basis for Christianity through apologetics are often deemed too simplistic to be taken seriously in intellectual circles.”
+        </blockquote>
+        <p class="text-sm text-stone-700">
+          Each week, we went over homework assignments, reviewed chapter contents, and participated in group discussion and activities.
+        </p>
+      </div>
+
+      <div class="md:col-span-5 rounded-xl border border-stone-300 bg-white p-6 space-y-4">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Course Resources</p>
+        <ul class="space-y-2.5 text-sm text-stone-700">
+          <li>
+            <a href="https://www.amazon.com/Why-Believe-Reasoned-Approach-Christianity/dp/1433579383" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">
+              Purchase Book on Amazon &nearr;
+            </a>{' '}
+            (or $10 in person)
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Why-Believe-Reasoned-Approach-Christianity/dp/B0B4QNJGDJ/" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">
+              Audiobook Edition &nearr;
+            </a>
+          </li>
+          <li>
+            <a href="https://static.crossway.org/excerpts/media/90ad5bb4722f090364236b3918f44dbc2e792ef5/Why_Believe_excerpt.pdf" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">
+              Read Chapter 1 Excerpt (PDF) &nearr;
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/1VMozLPSrsQoYX1cotzysdbYWA7NFHdv8BTGhSyDweCE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">
+              Class Homework Guide &nearr;
+            </a>
+          </li>
+          <li>
+            <a href="https://forms.gle/tUFUTv8LvMuYKLqB9" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">
+              Anonymous Feedback Form &nearr;
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Class Archive</p>
+      <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Class Announcements</h2>
+      <div class="mt-4 divide-y divide-stone-300 border-y border-stone-300">
+        {announcements.map((a) => (
+          <div class="grid gap-2 py-4 sm:grid-cols-12">
+            <p class="font-mono text-xs text-accent-hover sm:col-span-2">{a.date}</p>
+            <div class="sm:col-span-10">
+              <h3 class="font-display text-base font-bold text-stone-900">{a.title}</h3>
+              <p class="mt-1 text-sm text-stone-600">{a.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
     <EmbedFrame src={scheduleEmbed} title="Why Believe? Schedule" heightClass="h-[440px]" />
     <EmbedFrame src={formEmbed} title="Why Believe? Sign-Up & Questions" heightClass="h-[640px]" />
   </section>

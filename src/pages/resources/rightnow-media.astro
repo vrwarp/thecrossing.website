@@ -1,50 +1,87 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
+
+const series = [
+  {
+    title: 'You and Me Forever',
+    speaker: 'Francis & Lisa Chan',
+    subtitle: "Marriage is Great, But it's not Forever",
+    desc: 'This seven-session Bible study series, based on the book You and Me Forever from best-selling authors Francis Chan and Lisa Chan, will challenge you to view your marriage like never before and help you dive deeper into pursuing Christ first.',
+    href: 'https://app.rightnowmedia.org/en/content/details/1213',
+  },
+  {
+    title: 'Crazy Love',
+    speaker: 'Francis Chan',
+    subtitle: '',
+    desc: "It's crazy, if you think about it. The God of the universe loves us with a radical, unconditional, self-sacrificing love. And what is our typical response? We go to church, sing songs, and try not to cuss. God is calling you to a passionate love relationship with Himself.",
+    href: 'https://app.rightnowmedia.org/en/content/details/144',
+  },
+  {
+    title: 'Culture Shock',
+    speaker: 'Chip Ingram',
+    subtitle: '',
+    desc: 'Where do you stand on issues like Truth, Sex, Homosexuality, Abortion, the Environment, and the Church and Politics? More importantly, what does God say? Believers must develop convictions based on research, reason, and biblical truth.',
+    href: 'https://app.rightnowmedia.org/en/content/details/344196',
+  },
+  {
+    title: 'The Reason for God',
+    speaker: 'Timothy Keller',
+    subtitle: 'Conversations on Faith and Life',
+    desc: 'This six-session small group Bible study captures live and unscripted conversations between Tim Keller and a group of people to address their doubts and objections to Christianity using literature, philosophy, and Scripture.',
+    href: 'https://app.rightnowmedia.org/en/content/details/213',
+  },
+];
 ---
 
 <BaseLayout title="RightNow Media" description="Free access to RightNow Media video Bible studies through The Crossing.">
   <PageHeader
     title="RightNow Media"
     eyebrow="Video Library"
-    subtitle='The "Netflix of video Bible studies" — over 20,000 videos, free through our church subscription.'
+    subtitle='Described as the "Netflix of video Bible studies" — over 20,000 videos, free through our church subscription.'
     breadcrumbs={[{ label: 'Resources', href: '/resources' }, { label: 'RightNow Media' }]}
   />
 
-  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-10">
-    <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-xs space-y-3">
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
+    <div class="rounded-xl border border-stone-300 bg-white p-8 space-y-4">
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Church Subscription</p>
       <h2 class="font-display text-2xl font-bold text-stone-900">How to Get Free Access</h2>
       <p class="text-sm leading-relaxed text-stone-700">
-        RightNow Media has an extensive library of more than 20,000 Bible study videos from leaders like Francis Chan, Tim Keller, and many more. It is free for you — request an invite through Derrick Tao (Discipleship Deacon) by emailing{' '}
-        <a href="mailto:church.office@cfcchayward.org?subject=RightNow%20Media%20Invite" class="font-semibold text-accent-hover underline">
-          church.office@cfcchayward.org
+        RightNow Media has an extensive library of more than 20,000 videos from leaders like Francis Chan, Jennie Allen, Matt Chandler, Dr. Tony Evans, and many more. There are videos for everyone in your family on marriage, parenting, personal finances, mental health, and more. We use many videos from RightNow Media for our{' '}
+        <a href={url('/get-connected/growth-groups')} class="font-semibold text-accent-hover underline">Bible studies</a> and{' '}
+        <a href={url('/resources/ce')} class="font-semibold text-accent-hover underline">Christian Education courses</a>!
+      </p>
+      <p class="text-sm leading-relaxed text-stone-700">
+        It is <strong>free</strong> for you—just sign up for our church’s online subscription through{' '}
+        <a href="mailto:church.office@cfcchayward.org?subject=RightNow%20Media%20Subscription" class="font-semibold text-accent-hover underline">
+          Derrick T. (Discipleship Deacon) via church.office@cfcchayward.org
         </a>.
       </p>
     </div>
 
     <div>
-      <h2 class="font-display text-2xl font-extrabold text-stone-900">Recommended Series</h2>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Recommended Series</p>
+      <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Featured on RightNow Media</h2>
       <div class="mt-6 grid gap-6 sm:grid-cols-2">
-        <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
-          <h3 class="font-display text-lg font-bold text-stone-900">You and Me Forever</h3>
-          <p class="text-xs font-semibold uppercase tracking-wider text-accent-hover">Francis &amp; Lisa Chan</p>
-          <p class="text-sm text-stone-600">Seven-session Bible study on marriage, eternity, and pursuing God first.</p>
-        </article>
-        <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
-          <h3 class="font-display text-lg font-bold text-stone-900">Crazy Love</h3>
-          <p class="text-xs font-semibold uppercase tracking-wider text-accent-hover">Francis Chan</p>
-          <p class="text-sm text-stone-600">Exploring the radical, unconditional, self-sacrificing love of God.</p>
-        </article>
-        <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
-          <h3 class="font-display text-lg font-bold text-stone-900">Culture Shock</h3>
-          <p class="text-xs font-semibold uppercase tracking-wider text-accent-hover">Chip Ingram</p>
-          <p class="text-sm text-stone-600">Applying biblical truth with grace to pressing cultural questions.</p>
-        </article>
-        <article class="rounded-2xl border border-stone-200 bg-white p-6 shadow-xs space-y-2">
-          <h3 class="font-display text-lg font-bold text-stone-900">The Reason for God</h3>
-          <p class="text-xs font-semibold uppercase tracking-wider text-accent-hover">Tim Keller</p>
-          <p class="text-sm text-stone-600">Six-session unscripted conversations addressing tough questions about Christianity.</p>
-        </article>
+        {series.map((s) => (
+          <article class="flex flex-col justify-between rounded-xl border border-stone-300 bg-white p-6 space-y-4">
+            <div class="space-y-2">
+              <p class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover">{s.speaker}</p>
+              <h3 class="font-display text-xl font-bold text-stone-900">{s.title}</h3>
+              {s.subtitle && <p class="text-xs font-medium italic text-stone-600">{s.subtitle}</p>}
+              <p class="text-sm leading-relaxed text-stone-600">{s.desc}</p>
+            </div>
+            <a
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex w-fit items-center font-mono text-xs font-semibold uppercase tracking-wider text-stone-900 hover:text-accent-hover transition-colors"
+            >
+              Available Here &nearr;
+            </a>
+          </article>
+        ))}
       </div>
     </div>
   </section>
