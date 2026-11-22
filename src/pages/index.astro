@@ -16,36 +16,42 @@ const ministries = [
     subtitle: 'Cross-Generational',
     description: 'Weekly home Bible studies to grow transformationally in Christ, relationally in His family, and missionally in the East Bay.',
     href: '/get-connected/growth-groups',
+    image: '/images/community/growth-group-home.webp',
   },
   {
     title: 'Children (The Rock)',
     subtitle: 'Nursery – 5th Grade',
     description: 'Fun, safe, gospel-centered Sunday morning and Friday night programs where kids encounter and know Jesus.',
     href: '/get-connected/children',
+    image: '/images/community/children-class.webp',
   },
   {
     title: 'Youth (Footprints)',
     subtitle: 'Grades 6–12 • Fridays 7:30 PM',
     description: 'Wild games, real friendship, and honest conversations about life and God on the 2nd floor Youth Center.',
     href: '/get-connected/youth',
+    image: '/images/community/youth-hangout.webp',
   },
   {
     title: 'Young Adults (Transparent)',
     subtitle: 'College & Career • Thursdays 7:45 PM',
     description: 'A community of young adults meeting in Room 107 to study, worship, pray, and live out a visible faith.',
     href: '/get-connected/young-adults',
+    image: '/images/community/young-adults-park.webp',
   },
   {
     title: 'Mature Adults',
     subtitle: 'Fridays 7:30 PM',
     description: 'Support, encouragement, Bible study, and prayer for married or single adults and parents in Room 107.',
     href: '/get-connected/mature-adults',
+    image: '/images/community/retreat-group.webp',
   },
   {
     title: 'Discipleship',
     subtitle: '1-on-1 Mentoring',
     description: 'Intentional 10-month discipleship pairs growing together in learning, sharing, and prayer.',
     href: '/get-connected/discipleship',
+    image: '/images/site/community.webp',
   },
 ];
 
@@ -135,6 +141,60 @@ const values = [
         <p class="mt-2 text-sm leading-relaxed text-stone-600">
           Safe, engaging nursery through 5th grade programs during Sunday worship at 9:30 AM.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Life Together Bento Gallery (Show, Don't Just Tell) -->
+  <section class="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
+    <div class="grid gap-4 md:grid-cols-12">
+      <div class="relative overflow-hidden rounded-3xl md:col-span-7 aspect-[16/11] md:aspect-auto md:min-h-[380px]">
+        <img
+          src={url('/images/community/retreat-group.webp')}
+          alt="Multi-generational, multiethnic church family together at The Crossing"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover object-center"
+        />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-obsidian/90 via-obsidian/50 to-transparent p-6">
+          <p class="text-xs font-bold uppercase tracking-widest text-accent">Family Across Generations</p>
+          <p class="mt-1 font-display text-lg font-bold text-white">From nursery to grandparents, growing together in Hayward.</p>
+        </div>
+      </div>
+
+      <div class="grid gap-4 md:col-span-5 grid-cols-2 md:grid-cols-1">
+        <div class="relative overflow-hidden rounded-3xl aspect-[16/10]">
+          <img
+            src={url('/images/community/growth-group-home.webp')}
+            alt="Cross-generational Growth Group celebrating together at home"
+            loading="lazy"
+            decoding="async"
+            class="h-full w-full object-cover object-center"
+          />
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-obsidian/80 to-transparent p-4">
+            <p class="font-display text-sm font-bold text-white">Authentic Home Community</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="relative overflow-hidden rounded-2xl aspect-square">
+            <img
+              src={url('/images/community/moms-and-toddler.webp')}
+              alt="Parents and young child smiling at church event"
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover object-top"
+            />
+          </div>
+          <div class="relative overflow-hidden rounded-2xl aspect-square">
+            <img
+              src={url('/images/community/young-adults-park.webp')}
+              alt="Young adults fellowshipping in the park"
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -301,16 +361,27 @@ const values = [
       {ministries.map((m) => (
         <a
           href={url(m.href)}
-          class="group flex flex-col justify-between rounded-2xl border border-stone-200 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+          class="group flex flex-col justify-between overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
         >
           <div>
-            <p class="text-xs font-bold uppercase tracking-wider text-accent-hover">{m.subtitle}</p>
-            <h3 class="mt-2 font-display text-xl font-bold text-stone-900 group-hover:text-accent-hover transition-colors">
-              {m.title}
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-stone-600">{m.description}</p>
+            <div class="aspect-[16/10] w-full overflow-hidden bg-stone-100">
+              <img
+                src={url(m.image)}
+                alt={m.title}
+                loading="lazy"
+                decoding="async"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6 pb-2">
+              <p class="text-xs font-bold uppercase tracking-wider text-accent-hover">{m.subtitle}</p>
+              <h3 class="mt-2 font-display text-xl font-bold text-stone-900 group-hover:text-accent-hover transition-colors">
+                {m.title}
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">{m.description}</p>
+            </div>
           </div>
-          <p class="mt-5 text-xs font-bold uppercase tracking-wider text-stone-900 group-hover:text-accent-hover">
+          <p class="px-6 pb-6 pt-3 text-xs font-bold uppercase tracking-wider text-stone-900 group-hover:text-accent-hover">
             Learn more &rarr;
           </p>
         </a>

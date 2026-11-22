@@ -41,14 +41,25 @@ const values = [
   />
 
   <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
-    <div class="rounded-3xl border border-stone-200 bg-white p-8 sm:p-10 shadow-xs space-y-4">
-      <h2 class="font-display text-2xl font-extrabold text-stone-900">About Us</h2>
-      <p class="text-base leading-relaxed text-stone-700">
-        The Crossing is the English-speaking, multiethnic ministry of Chinese For Christ Church of Hayward, a non-denominational, evangelical Christian church in the East Bay Area, CA.
-      </p>
-      <p class="text-base leading-relaxed text-stone-700">
-        Although we started as an Asian-American church, we've grown into a multicultural ministry serving Hayward, Castro Valley, San Leandro, San Lorenzo, Union City, and beyond.
-      </p>
+    <div class="grid gap-6 md:grid-cols-12 md:items-center rounded-3xl border border-stone-200 bg-white p-6 sm:p-10 shadow-xs">
+      <div class="md:col-span-6 space-y-4">
+        <h2 class="font-display text-2xl font-extrabold text-stone-900">About Us</h2>
+        <p class="text-base leading-relaxed text-stone-700">
+          The Crossing is the English-speaking, multiethnic ministry of Chinese For Christ Church of Hayward, a non-denominational, evangelical Christian church in the East Bay Area, CA.
+        </p>
+        <p class="text-base leading-relaxed text-stone-700">
+          Although we started as an Asian-American church, we've grown into a multicultural ministry serving Hayward, Castro Valley, San Leandro, San Lorenzo, Union City, and beyond.
+        </p>
+      </div>
+      <div class="md:col-span-6 overflow-hidden rounded-2xl aspect-[4/3]">
+        <img
+          src={url('/images/community/retreat-group.webp')}
+          alt="Multiethnic congregation of The Crossing together"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover"
+        />
+      </div>
     </div>
 
     <div class="rounded-3xl bg-obsidian p-8 sm:p-10 text-white space-y-4">

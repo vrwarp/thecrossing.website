@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import EmbedFrame from '../../components/EmbedFrame.astro';
 import { SITE } from '../../data/site';
 import { url } from '../../lib/url';
+
+const calendarEmbed =
+  'https://calendar.google.com/calendar/embed?color=%234986e7&color=%237bd148&color=%239fe1e7&color=%23b99aff&color=%23cabdbf&color=%23cca6ac&color=%23fbe983&deb=-&embed_style=WyJhdDplbWI6c3QiLCIjZTBlMGUwIiwiI2VkZWRlZCIsIiM0MTg0ZjMiLCJyb2JvdG8iLCIjNjM2MzYzIiw1MDAsIiNmZmYiXQo&eopt=0&mode=agenda&showCalendars=1&showPrint=0&showTabs=0&showTitle=0&showTz=0&src=79bpk9dptkcanc5mgqo1peirik@group.calendar.google.com&src=growthgroupscore@gmail.com&src=kacp3oilnt7pcnn9bchegc7jvo@group.calendar.google.com&src=kbotfggkikjs94n0snnfmc1blk@group.calendar.google.com&src=m6sf13an5t6t81nacfuno3b23k@group.calendar.google.com&src=r8disfa4um1mkg959bqsr3e0qg@group.calendar.google.com&src=ukbuk9rds072469p64srcmie68@group.calendar.google.com&ctz=America/Los_Angeles';
 
 const announcements = [
   {
@@ -38,6 +42,7 @@ const announcements = [
     title="Upcoming Events"
     eyebrow="Calendar & News"
     subtitle="Stay connected with what's happening across The Crossing — Sunday gatherings, classes, retreats, and community outreach."
+    backgroundImage="/images/community/church-family-picnic.webp"
     breadcrumbs={[{ label: 'Events' }]}
   />
 
@@ -106,6 +111,16 @@ const announcements = [
           </article>
         ))}
       </div>
+    </div>
+    <!-- Church Calendar -->
+    <div>
+      <h2 class="mb-4 font-display text-2xl font-extrabold text-stone-900">Church Calendar</h2>
+      <EmbedFrame
+        src={calendarEmbed}
+        title="The Crossing Church Calendar"
+        heightClass="h-[580px]"
+        openLabel="Open Calendar"
+      />
     </div>
   </section>
 </BaseLayout>
