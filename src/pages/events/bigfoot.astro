@@ -63,24 +63,22 @@ const faqs = [
         <p class="text-sm leading-relaxed text-stone-700">
           BIGFOOT is a camp sponsored by Footprints Christian Youth Group for students in grades 6–12. On top of the wild weekend fun, our program focuses on how believing Jesus' sacrifice for us is supposed to change our lives. Join us for 4 days and 3 nights of action-packed reality!
         </p>
-        <p class="font-serif italic text-base text-stone-600">
+        <blockquote class="border-l-2 border-stone-300 pl-4 font-serif italic text-base text-stone-600">
           “I just need to get away for a weekend • What if I could take off the mask I wear in public • Are there really people out there who’d accept me the way I am • I wonder what it’d be like to really meet God”
-        </p>
+        </blockquote>
       </div>
     </div>
 
     <!-- Registration Banner -->
-    <div class="border-l-2 border-accent pl-6 space-y-4">
-      <img
-        src={url('/images/events/bigfoot-cabin-banner.webp')}
-        alt="Cabin in the redwood hills banner"
-        class="w-full max-w-md rounded-xl border border-stone-200"
-      />
-      <div>
-        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">2027 Registration</p>
-        <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Join Us February 12–15, 2027</h2>
+    <div class="rounded-xl border border-stone-800 bg-obsidian p-8 text-white sm:p-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+      <div class="max-w-2xl space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">2027 Registration</p>
+        <h2 class="font-display text-2xl font-extrabold sm:text-3xl">Join Us February 12–15, 2027</h2>
+        <p class="text-sm text-stone-300">
+          Step 1: Submit the online registration form. Step 2: Send Zelle or check by the tier deadline to confirm your spot.
+        </p>
       </div>
-      <div class="flex flex-wrap gap-3">
+      <div class="mt-6 lg:mt-0 shrink-0">
         <a
           href={registerUrl}
           target="_blank"
@@ -115,10 +113,13 @@ const faqs = [
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Camp Cost &amp; Payment</p>
         <h2 class="font-display text-xl font-bold text-stone-900">Registration Tiers</h2>
         <ul class="space-y-1 text-sm text-stone-700">
-          <li><strong>$125</strong> — Early Bird (before 12/14)</li>
-          <li><strong>$175</strong> — Regular (before 1/11)</li>
-          <li><strong>$250</strong> — Late (before 1/25)</li>
+          <li><strong>$125</strong> — Early Bird (before 12/14/2026)</li>
+          <li><strong>$175</strong> — Regular (before 1/11/2027)</li>
+          <li><strong>$250</strong> — Late (before 1/25/2027)</li>
         </ul>
+        <p class="text-xs text-stone-600">
+          Includes round-trip bus transportation, 3 nights lodging, and camp meals. Financial aid is available—reach out to Pastor Daniel Tai or a coordinator.
+        </p>
         <div class="pt-1 space-y-1.5 text-xs leading-relaxed text-stone-600">
           <p>
             <strong>Zelle:</strong>{' '}
@@ -188,12 +189,22 @@ const faqs = [
       </div>
     </div>
 
-    <!-- Coordinators -->
-    <div class="border-l-2 border-stone-900 pl-6 space-y-1.5 text-sm text-stone-700">
-      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Questions?</p>
-      <p>
-        Reach out to Bigfoot Coordinator <strong>Benson Tsai</strong> (<a href="mailto:btsai@vrwarp.com" class="font-semibold text-accent-hover underline">btsai@vrwarp.com</a>) or Footprints Core Coordinator <strong>Bonnie Wu</strong> (<a href="mailto:bwu512@gmail.com" class="font-semibold text-accent-hover underline">bwu512@gmail.com</a>).
-      </p>
+    <!-- Coordinators & Bottom CTA -->
+    <div class="border-l-2 border-stone-900 pl-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="space-y-1 text-sm text-stone-700">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Questions?</p>
+        <p>
+          Reach out to Bigfoot Coordinator <strong>Benson Tsai</strong> (<a href="mailto:btsai@vrwarp.com" class="font-semibold text-accent-hover underline">btsai@vrwarp.com</a>), Footprints Core Coordinator <strong>Bonnie Wu</strong> (<a href="mailto:bwu512@gmail.com" class="font-semibold text-accent-hover underline">bwu512@gmail.com</a>), or <strong>Pastor Daniel Tai</strong> (<a href="mailto:daniel.tai@cfcchayward.org" class="font-semibold text-accent-hover underline">daniel.tai@cfcchayward.org</a>).
+        </p>
+      </div>
+      <a
+        href={registerUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 inline-flex items-center justify-center rounded-xl bg-accent px-5 py-2.5 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+      >
+        Register Online &nearr;
+      </a>
     </div>
   </section>
 </BaseLayout>
