@@ -9,7 +9,7 @@ export const SITE = {
   fullName: 'The Crossing Ministry at CFCC Hayward',
   tagline: 'Crossing generations and cultures together in Christ.',
   description:
-    'The Crossing is the English-speaking, multiethnic ministry of Chinese For Christ Church of Hayward in the East Bay Area, CA. Join us Sundays at 9:30 AM.',
+    'The Crossing is the English-speaking ministry of Chinese For Christ Church of Hayward in the East Bay Area, CA, with a heart to be a multi-generational and multicultural church. Join us Sundays at 9:30 AM.',
   serviceTime: 'Sundays at 9:30 AM',
   address: {
     street: '157 Smalley Ave',

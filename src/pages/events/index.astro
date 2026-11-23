@@ -10,35 +10,42 @@ const calendarEmbed =
 
 const announcements = [
   {
-    title: 'Membership Class',
-    date: 'Sundays (through Nov 22)',
-    desc: 'For those learning to follow Jesus, applying for church membership, or preparing to be baptized on Thanksgiving Sunday.',
+    title: 'Membership Class (11/22)',
+    date: 'Sunday, Nov 22 • 11:15 AM',
+    desc: 'For those learning to follow Jesus, apply for church membership, or be baptized on Thanksgiving Sunday (11/29), this 3-week class concludes with P. Josh, 11:15 AM this Sunday in Room 201.',
     actionLabel: 'Email Church Office',
     actionHref: 'mailto:church.office@cfcchayward.org?subject=Membership%20Class',
   },
   {
-    title: 'Thanksgiving Celebration Dinner & Fellowship',
+    title: 'Thanksgiving Celebration Dinner and Fellowship (11/21)',
     date: 'Saturday, Nov 21 • 5:00 PM',
-    desc: 'Potluck dinner followed by programs from 6:30–8:00 PM for children, youth, and The Crossing.',
+    desc: 'Join us Saturday for a 5 PM potluck dinner, followed by programs 6:30–8 PM for children, youth, and The Crossing. Sign up online to bring a dish, or donate $5. Volunteers welcome to help set up chairs and tables at 4:15 PM (contact Bonnie, General Affairs Deacon).',
+    actionLabel: 'Potluck Sign-Up Link',
+    actionHref: 'https://docs.google.com/forms/d/e/1FAIpQLSdhDQL0k-qcjfJB8wVcy-IebLlu4vrdaYuOytE8OhfsWxpfvQ/viewform?usp=preview',
   },
   {
-    title: 'Bridging Grace Thanksgiving Delivery',
-    date: 'Sunday, Nov 22',
-    desc: 'Share Jesus’ love through food and grocery deliveries for families in need across the East Bay.',
+    title: 'BG Thanksgiving Delivery (11/22)',
+    date: 'Sunday, Nov 22 • 11:15 AM',
+    desc: 'During this season of Thanksgiving and with some food programs facing uncertainty, Bridging Grace invites you to share Jesus’ love through extra support for our neighbors in need. Pray, donate, or serve at our Annual Thanksgiving Delivery Day at 11:15 AM in the Youth Center. Sign up to volunteer with Lori de St. Aubin, or if you know someone in need contact Mindy at bridginggrace@gmail.com.',
     actionLabel: 'Email Bridging Grace',
     actionHref: 'mailto:bridginggrace@gmail.com?subject=Bridging%20Grace%20Delivery',
   },
   {
-    title: 'Alameda County Community Food Bank Drive',
+    title: 'Quarterly Break (11/25–28)',
+    date: 'Nov 25 – Nov 28',
+    desc: 'There are no official fellowship or Growth Group gatherings next week due to the holiday break. Join us for Thanksgiving worship & baptisms at 9:30 AM next Sunday, 11/29.',
+  },
+  {
+    title: 'Alameda Food Bank (11/29 – 1/3)',
     date: 'Nov 29 – Jan 3',
-    desc: 'Donate canned or dried pantry goods in the red collection barrels located in the Lobby and Fellowship Hall.',
+    desc: 'Donate canned or dried pantry goods to bless families in need this holiday season. Red collection barrels will be located in the Lobby and Fellowship Hall.',
     actionLabel: 'See Serving Teams',
     actionHref: url('/get-connected/serve'),
   },
   {
-    title: 'Hospitality Team Meeting',
+    title: 'Hospitality Meeting (12/6)',
     date: 'Sunday, Dec 6 • 11:15 AM – 12:15 PM',
-    desc: 'Training and appreciation gathering for all hospitality team members in Room 107.',
+    desc: 'All team members, please attend this training and appreciation in Room 107, 11:15 AM – 12:15 PM that Sunday.',
     actionLabel: 'Join Hospitality Team',
     actionHref: url('/get-connected/serve'),
   },
@@ -85,7 +92,7 @@ const announcements = [
         <h3 class="font-display text-xl font-bold text-stone-900">Join Us Sundays at 9:30 AM</h3>
         <p class="text-sm leading-relaxed text-stone-600">
           Worship together with us every Sunday at 157 Smalley Ave, Hayward. We also livestream on our{' '}
-          <a href={SITE.social.youtubeStreams} target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">YouTube Channel</a>.
+          <a href={SITE.social.youtubeStreams} target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">YouTube Channel</a> for those experiencing hardship to attend in-person.
         </p>
       </div>
       <div class="py-8 md:pl-8 space-y-3">
@@ -132,6 +139,34 @@ const announcements = [
         ))}
       </div>
     </div>
+    <!-- Family Care, Prayer & Lobby Resources -->
+    <div class="grid divide-y divide-stone-300 border-y border-stone-300 md:grid-cols-3 md:divide-x md:divide-y-0">
+      <div class="py-7 md:pr-7 space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Congratulations</p>
+        <h3 class="font-display text-lg font-bold text-stone-900">New Babies at The Crossing</h3>
+        <p class="text-sm leading-relaxed text-stone-600">
+          To Will and Eva on the birth of Savannah Yee, and YJ and Stef on the birth of Rainier Tung! Please keep them in prayer. Provide a meal via{' '}
+          <a href="https://www.mealtrain.com/trains/8z7732" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">Yee Family Meal Train</a>{' '}
+          or{' '}
+          <a href="https://www.mealtrain.com/trains/z6gyzd" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">Tung Family Meal Train</a>.
+        </p>
+      </div>
+      <div class="py-7 md:px-7 space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Pray For</p>
+        <h3 class="font-display text-lg font-bold text-stone-900">Church Prayer</h3>
+        <p class="text-sm leading-relaxed text-stone-600">
+          Footprints youth counselors; those struggling with grief &amp; loss; a spirit of thankfulness; new babies at The Crossing.
+        </p>
+      </div>
+      <div class="py-7 md:pl-7 space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Growth Resources</p>
+        <h3 class="font-display text-lg font-bold text-stone-900">Books &amp; Bibles in the Lobby</h3>
+        <p class="text-sm leading-relaxed text-stone-600">
+          We offer a selection of books in the Lobby to encourage your growth in Christ, including ESV Bibles and daily devotional material (free for visitors, or with a donation of any amount for members).
+        </p>
+      </div>
+    </div>
+
     <!-- Church Calendar -->
     <div>
       <h2 class="mb-4 font-display text-2xl font-extrabold text-stone-900">Church Calendar</h2>

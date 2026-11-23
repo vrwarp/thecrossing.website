@@ -1,7 +1,71 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import EmbedFrame from '../../components/EmbedFrame.astro';
 import { url } from '../../lib/url';
+
+const faqUrl = 'https://docs.google.com/document/d/1jEc-5dcMA7BkTEJz-xCxJenQ6U1l2u-H/edit?usp=sharing';
+const enrollmentUrl = 'https://forms.gle/TU8k7bALWgYMVwnV6';
+const calSrc =
+  'https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&mode=AGENDA&src=Z3Jvd3RoZ3JvdXBzY29yZUBnbWFpbC5jb20&color=%23AD1457';
+
+const groups = [
+  {
+    leaders: 'Daniel and Dorcas',
+    schedule: 'South Hayward • Wednesdays 8:00 – 10:00 PM',
+    bio: 'We’re Dorcas and Daniel. We’re parents to 3 kids (10, 8, 4) so we understand hectic lives and busy days. Our group meets in the cleanest areas of our messy home. We’d love to grow deeper in Jesus, in life, and in friendship with you, so come if you like mom jokes (not dad jokes) and random international snacks. Childcare is not available, but will provide caffeine if you need help staying awake.',
+  },
+  {
+    leaders: 'Josh and Melissa',
+    schedule: 'Downtown Hayward • Wednesdays 8:00 – 10:00 PM',
+    bio: 'Josh and Melissa are imperfect works-in-progress welcoming other imperfect works-in-progress to grow deeper in Jesus together at our home near Downtown Hayward. One of us loves superhero comic books and Transformers action figures. We have too many kids and too many hobbies, but no childcare for our group that meets 8 PM Wednesdays. We alternate between Bible study twice a month, a mission-focused prayer night, and a monthly hang out.',
+  },
+  {
+    leaders: 'Derrick and Paula',
+    schedule: 'Union City • Wednesdays 8:00 – 10:00 PM',
+    bio: 'Hi, we’re Paula and Derrick. Our group gathers every Wednesday night at 8pm in Union City for Bible study, and once in a while we swap it for a dinner or a casual hangout. We’ve got two kids, 6 and 4, so we know how full life gets, but we love having people over anyway. And yes, we practice "free range" parenting (kidding... mostly). It’s an adults’ group, so heads-up, childcare isn’t included. Whether you’re single, married, or new to the whole parenting thing, there’s room for you. We come together to actually get to know each other and grow closer to Jesus, so come as you are.',
+  },
+  {
+    leaders: 'Kevin and Rachel',
+    schedule: 'Church Main Bldg • Wednesdays 8:00 – 10:00 PM',
+    bio: 'Hi we’re Kevin and Rachel. I (Kevin) enjoy reading, watching movies, taking pictures, and any fun hangouts people are a part of! I (Rachel) spend most of my time making memories with my baby boy, and I wouldn’t have it any other way! When my husband Victor & I have a little free time, we enjoy tinkering with our espresso machine, playing golf, & taking long walks around our neighborhood. Our group will be meeting at our main church building on Wednesday nights 8–10pm. No childcare provided.',
+  },
+  {
+    leaders: 'Alan and Betty',
+    schedule: 'Union City • Thursdays 8:00 – 10:00 PM',
+    bio: 'Hello!! We are a husband and wife dynamic duo. We love musical worship, trying new food spots, and drinking good coffee. We look forward to growing together with you as we reflect God’s love into our communities.',
+  },
+  {
+    leaders: 'Andrew and Catherine',
+    schedule: 'Downtown Hayward • Thursdays 7:30 – 10:00 PM',
+    bio: 'Hi, we’re Andrew and Catherine. We have a 5 year old daughter and a 2 year old son. We enjoy traveling to see God’s beauty around the world and eating yummy foods. We’ve got a nice collection of Starbucks mugs of different places we and our group members have visited. Come join us and choose a mug for the night, eat some tasty treats, and enjoy some quality time and good discussion. Our group meets at our home near Burbank Elementary School on Thursday nights from 7:30p to 10p. Childcare is unfortunately unavailable.',
+  },
+  {
+    leaders: 'Josh and Lucy',
+    schedule: 'Hayward • Thursdays 8:00 – 10:00 PM',
+    bio: 'We are a couple that enjoys outdoor activities, snacks, and Jesus. We have cats. Come to our house on Thursdays if you want to see them. Our group also studies the Bible, shares and prays together, and hangs out.',
+  },
+  {
+    leaders: 'Pedro (Men’s Group)',
+    schedule: 'Church • Thursdays 8:00 – 10:00 PM',
+    bio: 'Hey guys! We’re a men’s group that loves good food, good sports talk, and everything in-between: fantasy football, cars, stocks, video games... you name it, someone in the group’s into it. Come-as-you-are is our motto, so whether you’re a die-hard fan, a casual scroller, or just here for the snacks, there’s a seat for you. We’d love to grow deeper in Jesus and in friendship together. We typically meet every week: two weeks for Bible study, one week for missional activities, and one week to hangout. No childcare provided.',
+  },
+  {
+    leaders: 'Matt and Valerie',
+    schedule: 'Church Main Bldg • Fridays 7:30 – 9:00 PM',
+    bio: 'Hello there! We’ve been told we are the most boring couple ever. We agree! So come join our group if you want to add some excitement to your Friday evening. Together, we will deepen our understanding and faith in Jesus, challenge one another to grow as imperfect people, and discover ways to serve our neighbors. Note: concurrent programs for kids and teens (grades K–12) are available!',
+  },
+  {
+    leaders: 'Buddy and Christina',
+    schedule: 'Church Main Bldg • Fridays 7:30 – 9:00 PM',
+    bio: 'Welcome to our small group! We’re a relaxed, welcoming community for anyone looking to unwind, connect with others, and end the week on a positive note. Whether you’re raising kids, balancing work and school, or just looking for a place to slow down and build meaningful relationships, we’d love to have you join us. Our group meets at the same time as the church children’s and youth programs, so everyone in the family has a place to connect.',
+  },
+  {
+    leaders: 'Chengjou and Joanna',
+    schedule: 'South Fremont • Saturdays 9:00 – 11:00 AM',
+    bio: 'Hi! We’re Chengjou and Joanna. Our group meets Saturday mornings at our home in Fremont, near I-680. We enjoy studying the Bible together in an environment where real questions, thoughtful conversation, and open discussion are always welcome. Children are welcome, too! They currently stay together in the living room, or quietly sit alongside the adults. Childcare can also be arranged if needed. You might even get to help us taste-test the latest fun flavors of Oreos or Pringles.',
+  },
+];
 ---
 
 <BaseLayout title="Growth Groups" description="Cross-generational weekly home Bible studies at The Crossing.">
@@ -57,25 +121,61 @@ import { url } from '../../lib/url';
     </div>
 
     <div class="border-l-2 border-accent pl-6 space-y-4">
-      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Schedule &amp; Format</p>
-      <h2 class="font-display text-2xl font-bold text-stone-900">What to Expect &amp; How to Join</h2>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">2026–2027 Term</p>
+      <h2 class="font-display text-2xl font-bold text-stone-900">Ready to Connect with a Growth Group?</h2>
       <p class="text-sm leading-relaxed text-stone-700">
-        Groups meet weekly—typically on <strong>weeknight evenings (Tue–Fri) or Sunday afternoons</strong>—in homes across the East Bay (Hayward, Castro Valley, San Leandro, San Lorenzo, Union City, and nearby). Each group follows sermon-based or book-based co-ed Bible study, then breaks into men's and women's groups for sharing and prayer.
+        Fill out our online enrollment form, check the{' '}
+        <a href={faqUrl} target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">Growth Group FAQs</a>, or email{' '}
+        <a href="mailto:growthgroupscore@gmail.com?subject=Growth%20Group%20Inquiry" class="font-semibold text-accent-hover underline">growthgroupscore@gmail.com</a>.
       </p>
       <div class="pt-2 flex flex-wrap gap-3">
         <a
-          href="mailto:growthgroupscore@gmail.com?subject=Growth%20Group%20Interest"
+          href={enrollmentUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           class="rounded-xl bg-accent px-5 py-3 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
         >
-          Email Growth Groups Team
+          Online Enrollment Form &nearr;
         </a>
         <a
-          href="mailto:church.office@cfcchayward.org?subject=Growth%20Group%20Inquiry"
+          href={faqUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           class="rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-100 transition-colors"
         >
-          Ask Church Office
+          Growth Group FAQs &nearr;
+        </a>
+        <a
+          href="mailto:growthgroupscore@gmail.com?subject=Growth%20Group%20Inquiry"
+          class="rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-100 transition-colors"
+        >
+          Email growthgroupscore@gmail.com
         </a>
       </div>
+    </div>
+
+    <div>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Weekly Groups</p>
+      <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Meet Our Growth Groups</h2>
+      <div class="mt-6 grid divide-y divide-stone-300 border-y border-stone-300 md:grid-cols-2 md:divide-y-0">
+        {groups.map((g) => (
+          <div class="border-stone-300 py-6 md:p-6 md:odd:border-r md:border-b md:[&:nth-last-child(-n+2)]:border-b-0 space-y-2">
+            <p class="font-mono text-xs font-medium uppercase tracking-wider text-accent-hover">{g.schedule}</p>
+            <h3 class="font-display text-lg font-bold text-stone-900">{g.leaders}</h3>
+            <p class="text-sm leading-relaxed text-stone-600">{g.bio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Schedule</p>
+      <h2 class="mt-1 mb-4 font-display text-2xl font-extrabold text-stone-900">This Week’s Calendar</h2>
+      <EmbedFrame
+        src={calSrc}
+        title="Growth Groups Calendar"
+        heightClass="h-[520px]"
+      />
     </div>
   </section>
 </BaseLayout>

@@ -8,6 +8,8 @@ const regFormSrc =
   'https://docs.google.com/forms/d/e/1FAIpQLSfQE-rVlIx37P6zeN1sfXtozFcQC-cuFCYk9IzwVc75_tEe_w/viewform?embedded=true';
 const regFormView =
   'https://docs.google.com/forms/d/e/1FAIpQLSfQE-rVlIx37P6zeN1sfXtozFcQC-cuFCYk9IzwVc75_tEe_w/viewform';
+const calSrc =
+  'https://www.google.com/calendar/embed?title=Children%27s%20Ministry%20Calendar&showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=400&wkst=1&bgcolor=%23FFFFFF&src=kbotfggkikjs94n0snnfmc1blk%40group.calendar.google.com&color=%23182C57&ctz=America%2FLos_Angeles';
 ---
 
 <BaseLayout title="Children's Ministry" description="The Rock Children's Ministry (Nursery – 5th Grade) at The Crossing.">
@@ -24,7 +26,7 @@ const regFormView =
     <div class="border-l-2 border-accent pl-5 space-y-1.5">
       <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Visiting for the First Time?</p>
       <p class="text-sm leading-relaxed text-stone-800">
-        <strong>No advance registration is required for a first Sunday visit.</strong> Simply arrive 10–15 minutes before the 9:30 AM service and head to the <strong>1st Floor Children’s Center</strong> (our greeters will gladly walk you there).
+        <strong>No advance registration required.</strong> Simply arrive before service at the <strong>1st Floor Children’s Center</strong> and our greeters will be happy to assist you.
       </p>
     </div>
 
@@ -48,18 +50,19 @@ const regFormView =
 
     <div class="grid divide-y divide-stone-300 border-y border-stone-300 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
       <div class="py-7 lg:pr-7 space-y-2">
-        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / Sundays • 9:30 AM</p>
-        <h2 class="font-display text-xl font-bold text-stone-900">The Rock Children's Church</h2>
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / Sundays • 9:30 AM – 12:30 PM</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">The Rock &amp; Little Foot</h2>
         <p class="text-sm leading-relaxed text-stone-600">
-          For <strong>Nursery, Preschool, and K–5th Grade</strong> on the 1st Floor Children's Center during the 9:30 AM service. Kids experience worship, Bible stories, and age-appropriate small groups.
+          <strong>Little Foot (0–2 yrs):</strong> Sundays 9:30 AM – 12:30 PM @ The Nursery.<br />
+          <strong>The Rock (Preschool – 5th Grade):</strong> Sundays 9:30 AM – 12:30 PM @ Children’s Center (Check-In @ 1st Floor, Check-Out @ 2nd Floor).
         </p>
       </div>
 
       <div class="py-7 lg:px-7 space-y-2">
-        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Fridays • 7:30 PM</p>
-        <h2 class="font-display text-xl font-bold text-stone-900">Shining Stars (K–5th Grade)</h2>
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Fridays • 7:30 – 9:00 PM</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Shining Stars (Preschool – 5th)</h2>
         <p class="text-sm leading-relaxed text-stone-600">
-          Friday nights at 7:30 PM in the Children's Center (covered by the annual registration below), running alongside Youth &amp; Adult groups. Contact Min. Lisa Ko for 11:15 AM Sunday childcare availability.
+          Based on Philippians 2:14–16, Shining Stars equips kids to know, love, and apply God’s Word through engaging activities Fridays 7:30 – 9:00 PM @ Children’s Center.
         </p>
       </div>
 
@@ -74,14 +77,43 @@ const regFormView =
       </div>
     </div>
 
-    <!-- Safety & Check-In -->
+    <!-- Sunday Morning 4-Block Schedule -->
+    <div class="space-y-4">
+      <div>
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Sunday Morning Experience</p>
+        <h2 class="mt-1 font-display text-2xl font-bold text-stone-900">What Do Kids Do on Sundays?</h2>
+      </div>
+      <div class="grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-2 lg:grid-cols-4 sm:divide-x sm:divide-y-0">
+        <div class="py-5 sm:px-5 first:sm:pl-0 space-y-1.5">
+          <p class="font-mono text-xs font-semibold text-accent-hover">9:30 – 10:45 AM</p>
+          <h3 class="font-display text-base font-bold text-stone-900">First Hour</h3>
+          <p class="text-xs leading-relaxed text-stone-600">Interactive lessons that dive into God’s Word in a large group setting.</p>
+        </div>
+        <div class="py-5 sm:px-5 space-y-1.5">
+          <p class="font-mono text-xs font-semibold text-accent-hover">10:45 – 11:15 AM</p>
+          <h3 class="font-display text-base font-bold text-stone-900">Recess</h3>
+          <p class="text-xs leading-relaxed text-stone-600">Fun activities indoors or playground outdoors (weather-permitting).</p>
+        </div>
+        <div class="py-5 sm:px-5 space-y-1.5">
+          <p class="font-mono text-xs font-semibold text-accent-hover">11:15 – 12:20 PM</p>
+          <h3 class="font-display text-base font-bold text-stone-900">Second Hour</h3>
+          <p class="text-xs leading-relaxed text-stone-600">Children’s Worship followed by small group classes and activities.</p>
+        </div>
+        <div class="py-5 sm:px-5 last:sm:pr-0 space-y-1.5">
+          <p class="font-mono text-xs font-semibold text-accent-hover">12:20 – 12:40 PM</p>
+          <h3 class="font-display text-base font-bold text-stone-900">Lunch</h3>
+          <p class="text-xs leading-relaxed text-stone-600">We serve church-provided lunch to kids so you can enjoy your own lunch before pick-up.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Check-In & Parent Notes -->
     <div class="border-l-2 border-stone-900 pl-6 space-y-3">
       <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">For Parents</p>
-      <h2 class="font-display text-xl font-bold text-stone-900">Check-In, Pick-Up &amp; Child Safety</h2>
+      <h2 class="font-display text-xl font-bold text-stone-900">Check-In, Pick-Up &amp; Siblings</h2>
       <ul class="grid gap-x-10 gap-y-3 sm:grid-cols-2 text-sm text-stone-700 list-disc pl-5">
-        <li><strong>Check-In &amp; Pick-Up:</strong> Parents check children in and out directly at the 1st Floor Children’s Center with our volunteer team.</li>
+        <li><strong>Check-In &amp; Check-Out:</strong> Check-In at the 1st Floor Children’s Center; Check-Out on the 2nd Floor.</li>
         <li><strong>Allergies &amp; Medical Notes:</strong> Please note any food allergies or special needs at check-in and on the annual registration form.</li>
-        <li><strong>Screened Volunteers:</strong> All children's ministry teachers and helpers are screened and trained to provide a safe, caring environment.</li>
         <li><strong>Youth Siblings (Grades 6–12):</strong> Older siblings join Main Sanctuary worship at 9:30 AM and can check out <a href={url('/get-connected/youth')} class="font-semibold text-accent-hover underline">Footprints Youth</a>.</li>
       </ul>
     </div>
@@ -94,6 +126,15 @@ const regFormView =
         heightClass="h-[740px]"
         openLabel="Open Registration Form"
         openHref={regFormView}
+      />
+    </div>
+
+    <div>
+      <h2 class="mb-4 font-display text-2xl font-extrabold text-stone-900">Kids Ministry Calendar</h2>
+      <EmbedFrame
+        src={calSrc}
+        title="Children's Ministry Calendar"
+        heightClass="h-[460px]"
       />
     </div>
   </section>

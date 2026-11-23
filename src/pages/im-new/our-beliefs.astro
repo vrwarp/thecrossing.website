@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
 
 const beliefs = [
   {
@@ -24,9 +25,14 @@ const beliefs = [
       'We believe the truth of "justification by faith." We are saved by the grace of Jesus Christ through faith.',
   },
   {
-    title: 'The Church & Mission',
+    title: 'The Church & Sacraments',
     statement:
-      'We believe in the one Holy Universal Church, which is the Body of Christ and to which all believers belong, and in its mission to witness concerning its Head, Jesus Christ, preaching the Gospel among all nations.',
+      'We believe in the one Holy Universal Church, which is the Body of Christ and to which all believers belong, and in its mission to witness concerning its Head, Jesus Christ, preaching the Gospel among all nations. We believe that baptism and the Lord’s Supper are the two most important sacraments and ordinances of the Church, and that they are the scriptural means of the testimony for the Church in this age.',
+  },
+  {
+    title: 'Humanity & Dignity',
+    statement:
+      'We believe that people are created with dignity in the image of God, which defines human identity, gender, and marriage, yet suffer from being fallen and sinful by nature and by choice.',
   },
 ];
 ---
@@ -50,6 +56,17 @@ const beliefs = [
           <p class="sm:col-span-8 text-base leading-relaxed text-stone-700">{b.statement}</p>
         </article>
       ))}
+    </div>
+
+    <div class="mt-10 border-l-2 border-accent pl-5 space-y-2 text-sm text-stone-700">
+      <p>
+        For a detailed explanation of each of these statements and their biblical basis, see our{' '}
+        <a href={url('/im-new/our-church/church-by-laws')} class="font-semibold text-accent-hover underline">Church By-Laws</a>.
+      </p>
+      <p>
+        If you want to learn more about Jesus, contact one of our pastors on our{' '}
+        <a href={url('/contact-us')} class="font-semibold text-accent-hover underline">Contact Page</a>.
+      </p>
     </div>
   </section>
 </BaseLayout>

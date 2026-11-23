@@ -13,36 +13,81 @@ import PageHeader from '../../components/PageHeader.astro';
   />
 
   <section class="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
+    <div class="border-l-2 border-accent pl-6 space-y-3">
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Registration</p>
+      <h2 class="font-display text-2xl font-extrabold text-stone-900">Registration Is Open (Deadline: Oct 25)</h2>
+      <p class="text-sm leading-relaxed text-stone-700">
+        Join us for our first Men's Retreat! Deadline for registration and turning in payment is <strong>October 25</strong>.
+      </p>
+      <a
+        href="https://forms.gle/f7zTDvcVgK6B8n1p9"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center rounded-xl bg-accent px-5 py-3 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+      >
+        Register Online &nearr;
+      </a>
+    </div>
+
     <div class="grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
       <div class="py-8 sm:pr-8 space-y-2">
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / When &amp; Where</p>
         <h2 class="font-display text-xl font-bold text-stone-900">Redwood Glen</h2>
-        <p class="text-sm text-stone-700">100 Wright Dr, Loma Mar, CA 94021 (Siden Conference Center — hotel-style rooms)</p>
+        <p class="text-sm text-stone-700">
+          <a href="https://redwoodglen.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">Redwood Glen</a> at 100 Wright Drive, Loma Mar, CA 94021 (Siden Conference Center — hotel-style rooms)
+        </p>
         <p class="text-sm text-stone-600">Friday 8:00 PM – Sunday 12:00 PM (~1.5 hr drive from Hayward in the Santa Cruz Mountains).</p>
-        <p class="text-xs text-stone-500 pt-1">Note: Dinner is not provided Friday night; Sunday lunch is provided.</p>
+        <p class="text-xs text-stone-500 pt-1">Note: Dinner is not provided Friday night, so please eat with your carpool friends. Sunday lunch is provided.</p>
       </div>
 
       <div class="py-8 sm:pl-8 space-y-2">
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Cost &amp; Payment</p>
         <h2 class="font-display text-xl font-bold text-stone-900">$150 Registration</h2>
         <p class="text-sm text-stone-600">
-          Full cost is minimally $250; you may contribute more to help cover scholarships.
+          The full cost of the retreat is minimally $250; you may contribute more to help cover the full cost (any amount beyond $150 is treated as a donation). <strong>Financial aid is provided</strong> for those who require it.
         </p>
         <ul class="space-y-1.5 pt-1 text-sm text-stone-700">
-          <li><strong>Zelle:</strong> <code class="rounded bg-stone-200/70 px-1.5 py-0.5 font-mono text-[11px] text-stone-900">payments@cfcchayward.org</code> (CFCC Hayward, memo: "Men's Retreat - [Your Name]")</li>
-          <li><strong>Check:</strong> Payable to "CFCC Hayward" with "Men's Retreat - [Your Name]" in memo.</li>
+          <li><strong>Zelle:</strong> <code class="rounded bg-stone-200/70 px-1.5 py-0.5 font-mono text-[11px] text-stone-900">payments@cfcchayward.org</code> (Chinese for Christ Church of Hayward / CFCC Hayward, memo: "Men's Retreat - [Your Name]")</li>
+          <li><strong>Check:</strong> Payable to "CFCC Hayward" with "Men's Retreat - [Your Name]" in the memo.</li>
         </ul>
       </div>
     </div>
 
-    <div class="border-l-2 border-accent pl-6 space-y-3">
-      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Retreat Rhythm</p>
-      <h2 class="font-display text-2xl font-extrabold text-stone-900">What to Expect &amp; Questions</h2>
-      <p class="text-sm leading-relaxed text-stone-700">
-        Our morning and evening sessions make up the heart of the weekend: worship music, biblical teaching from Pastor Matty Blevins, small group discussions, and intentional brotherhood in the redwoods.
-      </p>
+    <div class="grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+      <div class="py-8 sm:pr-8 space-y-3">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Program &amp; Recreation</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">What Is the Program?</h2>
+        <p class="text-sm text-stone-600">
+          Our programs are every morning &amp; evening: message series with Pastor Matthew "Matty" Blevins, fun short activities, and after-hours "Starlight Activities."
+        </p>
+        <p class="text-sm font-semibold text-stone-800 pt-1">What else can I do there?</p>
+        <ul class="list-disc pl-5 text-sm text-stone-600 space-y-1">
+          <li>Hiking trails</li>
+          <li>Basketball court, sand volleyball pit, tetherballs, and horseshoes</li>
+          <li>Ping-pong, foosball &amp; other table games</li>
+          <li>Real conversations with Talking Points</li>
+        </ul>
+      </div>
+
+      <div class="py-8 sm:pl-8 space-y-3">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">Packing List</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">What Do I Need to Bring?</h2>
+        <ul class="list-disc pl-5 text-sm text-stone-600 space-y-1">
+          <li>Reusable water bottle</li>
+          <li>Clothes for 2.5 days (including warm clothes for cold nights!)</li>
+          <li>Sneakers (especially ones you don’t mind getting a little dirty)</li>
+          <li>Toiletries (soap, shampoo, toothbrush, toothpaste, contact lens stuff)</li>
+          <li>Allergy medication</li>
+          <li>Bible / Journal</li>
+          <li>Flashlight</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-l-2 border-stone-900 pl-6 space-y-2">
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Questions?</p>
       <p class="text-sm text-stone-700">
-        Questions about rooming, carpooling, or scholarships? Email{' '}
+        If you have any additional questions or concerns, please reach out to Retreat Coordinator <strong>Pedro Mora</strong> or email{' '}
         <a href="mailto:church.office@cfcchayward.org?subject=Men's%20Retreat%20Question" class="font-semibold text-accent-hover underline">
           church.office@cfcchayward.org
         </a>.
