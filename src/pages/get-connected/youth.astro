@@ -70,12 +70,25 @@ const calSrc =
       </div>
     </div>
 
-    <div class="border-l-2 border-stone-900 pl-6 space-y-2">
-      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">For Parents</p>
-      <h2 class="font-display text-xl font-bold text-stone-900">Friday Night Pick-Up</h2>
-      <p class="text-sm text-stone-600">
-        Youth Group ends at <strong>9:15 PM</strong> at the 2nd floor Youth Center; parents are welcome to meet leaders in the lobby or Youth Center at pick-up.
-      </p>
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div class="border-l-2 border-stone-900 pl-6 space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">For Parents</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Friday Night Pick-Up</h2>
+        <p class="text-sm text-stone-600">
+          Youth Group ends at <strong>9:15 PM</strong> at the 2nd floor Youth Center; parents are welcome to meet leaders in the lobby or Youth Center at pick-up.
+        </p>
+      </div>
+
+      <div class="border-l-2 border-accent pl-6 space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Winter Youth Camp • Feb 12–15, 2027</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Bigfoot 2027 Retreat</h2>
+        <p class="text-sm text-stone-600">
+          4 days &amp; 3 nights at Redwood Glen over President's Day Weekend.{' '}
+          <a href={url('/events/bigfoot')} class="font-semibold text-accent-hover underline">
+            View details &amp; register &rarr;
+          </a>
+        </p>
+      </div>
     </div>
 
     <EmbedFrame

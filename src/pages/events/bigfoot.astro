@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { url } from '../../lib/url';
+
+const registerUrl =
+  'https://docs.google.com/forms/d/e/1FAIpQLSe5xeA4ajf3F-csSUSy3NEfmZjyMsxLW_Zuh8DYowWSqr7hHA/viewform';
+
+const faqs = [
+  {
+    q: 'Where is the retreat located?',
+    html: `<a href="https://redwoodglen.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">Redwood Glen</a> at 100 Wright Drive, Loma Mar, CA 94021 — located in the Santa Cruz Mountains (~1.5 hour drive from Hayward).`,
+  },
+  {
+    q: 'When is the retreat?',
+    html: 'Friday, February 12 through Monday, February 15, 2027 (President’s Day Weekend). We meet at CFCC Hayward (157 Smalley Ave) on Friday at 4:30 PM for the bus ride up the mountain and return Monday around 2:00 PM.',
+  },
+  {
+    q: 'How can I get in contact with my youth?',
+    html: 'The retreat site will not have any cell phone reception. Though there is limited WiFi connectivity, we will not be providing students with access to that network. The retreat site is reachable by phone at <strong>(650) 879-0320</strong>, and Shepherd Lodge (where we stay) also has a landline phone students can use.',
+  },
+  {
+    q: 'What do I need to bring?',
+    html: 'Reusable water bottle, sleeping bag &amp; pillow, clothes for 3.5 days (including warm clothes for cold nights!), sneakers (especially ones you don’t mind getting a little dirty), sandals and towel if you want to shower, toiletries (soap, shampoo, toothbrush, toothpaste, contact lens supplies), allergy medication, Bible/journal, flashlight, and a good attitude!',
+  },
+  {
+    q: "What shouldn't I bring?",
+    html: 'Do not bring things that will distract you or any other student during the camp (including digital devices). Counselors will confiscate items that become a distraction.',
+  },
+];
+---
+
+<BaseLayout
+  title="Bigfoot Youth Retreat"
+  description="Bigfoot 2027 Winter Youth Camp (Grades 6–12) at Redwood Glen, Feb 12–15, 2027."
+  image="/images/events/bigfoot-camp.webp"
+  imageAlt="Redwood Glen camp cabin surrounded by redwood trees"
+>
+  <PageHeader
+    title="Bigfoot 2027"
+    eyebrow="Winter Youth Camp • Feb 12–15, 2027"
+    subtitle="4 days and 3 nights at Redwood Glen (President's Day Weekend) for students in Grades 6–12, sponsored by Footprints Youth."
+    backgroundImage="/images/events/bigfoot-camp.webp"
+    breadcrumbs={[{ label: 'Events', href: '/events' }, { label: 'Bigfoot Youth Retreat' }]}
+  />
+
+  <section class="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 space-y-12">
+    <!-- What Is Bigfoot -->
+    <div class="grid gap-8 md:grid-cols-12 md:items-center">
+      <div class="md:col-span-5 flex justify-center">
+        <img
+          src={url('/images/events/bigfoot-art-1.webp')}
+          alt="Illustration of a student bored while scrolling on a phone surrounded by homework books"
+          class="w-64 sm:w-72 h-auto rounded-2xl"
+        />
+      </div>
+      <div class="md:col-span-7 space-y-4">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Grades 6–12 • President's Day Weekend</p>
+        <h2 class="font-display text-2xl font-extrabold text-stone-900 sm:text-3xl">What Is Bigfoot?</h2>
+        <p class="text-sm leading-relaxed text-stone-700">
+          Are you looking for more out of life than just sitting around doomscrolling on your phone and doing homework? Do you want to discover REAL meaning and purpose in your life? Wanna have tons of fun? Then, this is the camp for you... We want you to come!
+        </p>
+        <p class="text-sm leading-relaxed text-stone-700">
+          BIGFOOT is a camp sponsored by Footprints Christian Youth Group for students in grades 6–12. On top of the wild weekend fun, our program focuses on how believing Jesus' sacrifice for us is supposed to change our lives. Join us for 4 days and 3 nights of action-packed reality!
+        </p>
+        <p class="font-serif italic text-base text-stone-600">
+          “I just need to get away for a weekend • What if I could take off the mask I wear in public • Are there really people out there who’d accept me the way I am • I wonder what it’d be like to really meet God”
+        </p>
+      </div>
+    </div>
+
+    <!-- Registration Banner -->
+    <div class="border-l-2 border-accent pl-6 space-y-4">
+      <img
+        src={url('/images/events/bigfoot-cabin-banner.webp')}
+        alt="Cabin in the redwood hills banner"
+        class="w-full max-w-md rounded-xl border border-stone-200"
+      />
+      <div>
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">2027 Registration</p>
+        <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Join Us February 12–15, 2027</h2>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a
+          href={registerUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center rounded-xl bg-accent px-6 py-3 text-sm font-bold text-obsidian hover:bg-accent-hover transition-colors"
+        >
+          Register Online &nearr;
+        </a>
+      </div>
+    </div>
+
+    <!-- When, Where, Cost & Payment -->
+    <div class="grid divide-y divide-stone-300 border-y border-stone-300 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+      <div class="py-8 sm:pr-8 space-y-2">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">01 / Date, Time &amp; Location</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Redwood Glen</h2>
+        <p class="text-sm text-stone-700">
+          <strong>Dates:</strong> Feb 12 – 15, 2027 (President's Day Weekend)
+        </p>
+        <p class="text-sm text-stone-600">
+          <strong>Departs:</strong> Fri, Feb 12 at 4:30 PM from CFCC Hayward (157 Smalley Ave)<br />
+          <strong>Returns:</strong> Mon, Feb 15 at 2:00 PM at CFCC Hayward
+        </p>
+        <p class="text-sm text-stone-600 pt-1">
+          <strong>Campsite:</strong>{' '}
+          <a href="https://redwoodglen.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent-hover underline">Redwood Glen</a>{' '}
+          (100 Wright Drive, Loma Mar, CA 94021)
+        </p>
+      </div>
+
+      <div class="py-8 sm:pl-8 space-y-2.5">
+        <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-hover">02 / Camp Cost &amp; Payment</p>
+        <h2 class="font-display text-xl font-bold text-stone-900">Registration Tiers</h2>
+        <ul class="space-y-1 text-sm text-stone-700">
+          <li><strong>$125</strong> — Early Bird (before 12/14)</li>
+          <li><strong>$175</strong> — Regular (before 1/11)</li>
+          <li><strong>$250</strong> — Late (before 1/25)</li>
+        </ul>
+        <div class="pt-1 space-y-1.5 text-xs leading-relaxed text-stone-600">
+          <p>
+            <strong>Zelle:</strong>{' '}
+            <code class="rounded bg-stone-200/70 px-1.5 py-0.5 font-mono text-[11px] text-stone-900">payments@cfcchayward.org</code>{' '}
+            (Chinese for Christ Church of Hayward / CFCC Hayward). Memo: <em>"Bigfoot Retreat Registration - [student's name]"</em>.
+          </p>
+          <p>
+            <strong>Check:</strong> Payable to <em>"CFCC Hayward"</em> with <em>"Bigfoot - [student's name]"</em> in the memo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program & Activities -->
+    <div class="grid gap-8 md:grid-cols-12 md:items-center">
+      <div class="md:col-span-8 space-y-4">
+        <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Weekend Schedule</p>
+        <h2 class="font-display text-2xl font-extrabold text-stone-900">What Is the Program?</h2>
+        <p class="text-sm leading-relaxed text-stone-700">
+          Our 2.5-hour focus programs are every morning &amp; evening and make up the bulk of our weekend:
+        </p>
+        <ul class="list-disc pl-5 space-y-1.5 text-sm text-stone-700">
+          <li><strong>45 minutes</strong> of insane team games</li>
+          <li><strong>30 minutes</strong> of wild music</li>
+          <li><strong>30 minutes</strong> of seminars to discover &amp; experience our camp theme</li>
+          <li><strong>45 minutes</strong> of mind-bending discussion &amp; frank sharing with students your age</li>
+        </ul>
+        <p class="text-sm text-stone-700 pt-1">
+          <strong>Plus:</strong> Team Competition Games, Field Activities, After-hours “Starlight Activities”, Campfire &amp; S'mores, Hiking Trails, Ping-pong, Foosball &amp; Board Games.
+        </p>
+      </div>
+      <div class="md:col-span-4 flex justify-center">
+        <img
+          src={url('/images/events/bigfoot-art-2.webp')}
+          alt="Stylized redwood forest illustration"
+          class="w-52 sm:w-60 h-auto"
+        />
+      </div>
+    </div>
+
+    <!-- FAQs -->
+    <div>
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Parent &amp; Camper Info</p>
+      <h2 class="mt-1 font-display text-2xl font-extrabold text-stone-900">Frequently Asked Questions</h2>
+      <div class="mt-6 divide-y divide-stone-300 border-y border-stone-300">
+        {faqs.map((item, idx) => (
+          <details open={idx === 0} class="group py-5">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 font-display text-base font-bold text-stone-900 list-none">
+              <span class="flex items-baseline gap-3">
+                <span class="font-mono text-xs font-medium text-stone-400">
+                  {String(idx + 1).padStart(2, '0')}
+                </span>
+                <span>{item.q}</span>
+              </span>
+              <span
+                class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-stone-300 text-stone-700 transition-transform group-open:rotate-45 group-open:border-stone-900"
+                aria-hidden="true"
+              >
+                <svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M8 3v10M3 8h10" />
+                </svg>
+              </span>
+            </summary>
+            <p class="mt-3 pl-7 text-sm leading-relaxed text-stone-600" set:html={item.html} />
+          </details>
+        ))}
+      </div>
+    </div>
+
+    <!-- Coordinators -->
+    <div class="border-l-2 border-stone-900 pl-6 space-y-1.5 text-sm text-stone-700">
+      <p class="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent-hover">Questions?</p>
+      <p>
+        Reach out to Bigfoot Coordinator <strong>Benson Tsai</strong> (<a href="mailto:btsai@vrwarp.com" class="font-semibold text-accent-hover underline">btsai@vrwarp.com</a>) or Footprints Core Coordinator <strong>Bonnie Wu</strong> (<a href="mailto:bwu512@gmail.com" class="font-semibold text-accent-hover underline">bwu512@gmail.com</a>).
+      </p>
+    </div>
+  </section>
+</BaseLayout>
