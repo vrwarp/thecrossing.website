@@ -67,19 +67,26 @@ Avoid generic AI-template styling (`Inter` everywhere, indigo/purple gradients, 
 - Ensure parent-critical logistics stay prominent on children/youth/after-school pages (first-time visit reassurance, check-in/pick-up times & locations, allergies, screened volunteer/leader policy, consent forms).
 
 ---
+- Every page must have a unique `<title>`, unique `<meta name="description">` (30–200 chars), single `<h1>`, `alt` attributes on all `<img>` tags, and valid canonical/Open Graph/Twitter metadata via `BaseLayout.astro`.
+- Pass `indexable={false}` on non-indexable pages (e.g., `404.astro`) and exclude redirect/utility routes from `@astrojs/sitemap` in `astro.config.mjs` (and `scripts/verify-seo.mjs`).
+- Pass `image` / `imageAlt` / `structuredData` props to `BaseLayout.astro` when a page has specific artwork or Schema.org entities (e.g., `sermons/[slug].astro`). `PageHeader.astro` emits `BreadcrumbList` JSON-LD automatically whenever `breadcrumbs` are provided.
+
+---
 
 ## 4. Directory Map
 
-- `astro.config.mjs` — Astro config (`site`, `base: '/thecrossing.website'`, Tailwind v4 Vite plugin).
+- `astro.config.mjs` — Astro config (`site`, `base: '/thecrossing.website'`, `@astrojs/sitemap` with redirect/404 filter, Tailwind v4 Vite plugin).
+- `public/robots.txt` — Crawler rules and `Sitemap:` pointer to `sitemap-index.xml`.
 - `src/styles/global.css` — Tailwind CSS v4 `@theme` design tokens (obsidian, stone, amber accent, Instrument Serif + Plus Jakarta Sans + JetBrains Mono), overscroll setup, and `.parallax-media` scroll-driven keyframes.
-- `src/layouts/BaseLayout.astro` — Root HTML shell, Google Fonts, `theme-color`, `<Header />`, `<main data-pagefind-body>`, `<Footer />`, `<SearchModal />`.
+- `src/layouts/BaseLayout.astro` — Root HTML shell, canonical URL, robots meta, Open Graph/Twitter cards, JSON-LD (`Church` + `WebSite` on `/`, `WebPage` on inner pages), Google Fonts, `theme-color`, `<Header />`, `<main data-pagefind-body>`, `<Footer />`, `<SearchModal />`.
 - `src/data/site.ts` — Single source of truth for `SITE` (address, service time, contact, social, active `podcasts`, archive links) and `NAV_ITEMS`.
-- `src/lib/url.ts` — Subpath-safe `url(path)` helper.
+- `src/lib/url.ts` — Subpath-safe `url(path)` and `absoluteUrl(path, site)` helpers.
 - `src/content.config.ts` — Zod schema for `sermons` collection (`title`, `book`, `dateRange`, `description`, `coverImage`, `featured`, `order`, `episodes[]`).
 - `src/content/sermons/*.json` — 57 sermon series (2006–2026), one JSON file per series.
 - `src/components/` — Reusable `.astro` UI components (`Header`, `Footer`, `PageHeader`, `YouTubeEmbed`, `EmbedFrame`, `SeriesCard`, `SearchModal`).
 - `src/pages/` — File-based routes matching the site's URLs 1:1.
-- `.github/workflows/ci.yml` — PR & push CI checks (`astro check`, `astro build`, sermon `coverImage` file existence, no hardcoded root-relative links, `thecrossing-website-original` untracked).
+- `scripts/verify-seo.mjs` — Zero-dependency SEO, sitemap, canonical, Open Graph, `<h1>`, and JSON-LD regression check against `dist/`.
+- `.github/workflows/ci.yml` — PR & push CI checks (`astro check`, `astro build`, `verify:seo`, sermon `coverImage` file existence, no hardcoded root-relative links, `thecrossing-website-original` untracked).
 
 ---
 
@@ -102,10 +109,11 @@ Avoid generic AI-template styling (`Inter` everywhere, indigo/purple gradients, 
 
 ## 6. Verification & Release Workflow
 
-### Build & Typecheck (Required After Every Change)
+### Build, Typecheck & SEO Verification (Required After Every Change)
 ```bash
-npm run check   # Type-checks Astro templates & content schemas
-npm run build   # Builds static site to dist/ and generates Pagefind search index
+npm run check       # Type-checks Astro templates & content schemas
+npm run build       # Builds static site to dist/ and generates Pagefind + sitemap
+npm run verify:seo  # Verifies robots.txt, sitemap coverage, canonicals, OG, H1, JSON-LD, and alt tags
 ```
 
 ### Visual Inspection (Recommended for Layout/Style Changes)

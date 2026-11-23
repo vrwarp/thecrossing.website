@@ -17,3 +17,15 @@ export function url(path: string): string {
   const clean = path.replace(/^\/+/, '');
   return clean ? `${base}/${clean}` : `${base}/`;
 }
+
+/**
+ * Resolves a site-relative path (including BASE_URL) to an absolute URL using
+ * Astro.site, for canonical links, Open Graph images, and JSON-LD.
+ */
+export function absoluteUrl(path: string, site: URL | string = 'https://vrwarp.github.io'): string {
+  const origin = typeof site === 'string' ? site : site.origin;
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    return path;
+  }
+  return new URL(url(path), origin).toString();
+}

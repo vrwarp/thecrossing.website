@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vrwarp.github.io/thecrossing.website/sitemap-index.xml

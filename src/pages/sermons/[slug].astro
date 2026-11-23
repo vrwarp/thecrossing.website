@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
-import { url } from '../../lib/url';
+import { absoluteUrl, url } from '../../lib/url';
 
 export async function getStaticPaths() {
   const series = await getCollection('sermons');
@@ -17,9 +17,38 @@ const { entry } = Astro.props;
 const { title, book, dateRange, description, coverImage, episodes } = entry.data;
 const videoEpisodes = episodes.filter((ep): ep is typeof ep & { youtubeId: string } => Boolean(ep.youtubeId));
 const archiveEpisodes = episodes.filter((ep) => !ep.youtubeId);
+
+const siteOrigin = Astro.site ?? 'https://vrwarp.github.io';
+const seriesUrl = absoluteUrl(`/sermons/${entry.id}`, siteOrigin);
+const seriesDescription = description || `Watch ${title} sermon series from The Crossing at CFCC Hayward.`;
+const seriesSchema = {
+  '@type': 'CreativeWorkSeries',
+  '@id': `${seriesUrl}#series`,
+  name: title,
+  description: seriesDescription,
+  url: seriesUrl,
+  image: absoluteUrl(coverImage, siteOrigin),
+  publisher: { '@id': `${absoluteUrl('/', siteOrigin)}#church` },
+  ...(videoEpisodes.length > 0 && {
+    hasPart: videoEpisodes.map((ep) => ({
+      '@type': 'VideoObject',
+      name: ep.title,
+      description: [ep.speaker, ep.scripture, ep.date].filter(Boolean).join(' • ') || `${ep.title} — ${title}`,
+      thumbnailUrl: `https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${ep.youtubeId}`,
+      url: `https://www.youtube.com/watch?v=${ep.youtubeId}`,
+    })),
+  }),
+};
 ---
 
-<BaseLayout title={title} description={description || `Watch ${title} sermon series.`}>
+<BaseLayout
+  title={title}
+  description={seriesDescription}
+  image={coverImage}
+  imageAlt={`${title} sermon series artwork`}
+  structuredData={seriesSchema}
+>
   <PageHeader
     title={title}
     eyebrow={[book, dateRange].filter(Boolean).join(' • ') || 'Sermon Series'}

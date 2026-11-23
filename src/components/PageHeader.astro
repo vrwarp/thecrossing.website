@@ -1,5 +1,5 @@
 ---
-import { url } from '../lib/url';
+import { absoluteUrl, url } from '../lib/url';
 
 export interface Props {
   title: string;
@@ -16,6 +16,31 @@ const {
   backgroundImage,
   breadcrumbs = [],
 } = Astro.props;
+
+const siteOrigin = Astro.site ?? 'https://vrwarp.github.io';
+const breadcrumbSchema =
+  breadcrumbs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: absoluteUrl('/', siteOrigin),
+          },
+          ...breadcrumbs.map((crumb, index) => ({
+            '@type': 'ListItem',
+            position: index + 2,
+            name: crumb.label,
+            item: crumb.href
+              ? absoluteUrl(crumb.href, siteOrigin)
+              : new URL(Astro.url.pathname, siteOrigin).toString(),
+          })),
+        ],
+      }
+    : null;
 ---
 
 <section class="relative overflow-clip bg-obsidian text-white">
@@ -69,4 +94,7 @@ const {
       </p>
     )}
   </div>
+  {breadcrumbSchema && (
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  )}
 </section>

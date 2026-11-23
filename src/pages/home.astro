@@ -1,11 +1,14 @@
 ---
-import { url } from '../lib/url';
+import { absoluteUrl, url } from '../lib/url';
 const target = url('/');
+const canonical = absoluteUrl('/', Astro.site);
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={canonical} />
     <meta http-equiv="refresh" content={`0;url=${target}`} />
     <title>Redirecting to Home</title>
   </head>
