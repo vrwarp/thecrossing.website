@@ -86,7 +86,8 @@ Avoid generic AI-template styling (`Inter` everywhere, indigo/purple gradients, 
 - `src/components/` — Reusable `.astro` UI components (`Header`, `Footer`, `PageHeader`, `YouTubeEmbed`, `EmbedFrame`, `SeriesCard`, `SearchModal`).
 - `src/pages/` — File-based routes matching the site's URLs 1:1.
 - `scripts/verify-seo.mjs` — Zero-dependency SEO, sitemap, canonical, Open Graph, `<h1>`, and JSON-LD regression check against `dist/`.
-- `.github/workflows/ci.yml` — PR & push CI checks (`astro check`, `astro build`, `verify:seo`, sermon `coverImage` file existence, no hardcoded root-relative links, `thecrossing-website-original` untracked).
+- `.github/workflows/ci.yml` — PR CI checks (`astro check`, `astro build`, `verify:seo`, sermon `coverImage` file existence, no hardcoded root-relative links, `thecrossing-website-original` untracked).
+- `.github/workflows/deploy.yml` — Single-job cached GitHub Pages deploy on `main` (`npm ci`, `npm run build`, `npm run verify:seo`, upload & deploy).
 
 ---
 
